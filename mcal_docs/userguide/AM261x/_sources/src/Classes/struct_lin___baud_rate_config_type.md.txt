@@ -1,0 +1,39 @@
+---
+orphan: true
+---
+
+---
+title: Lin_BaudRateConfigType
+summary: Lin Controller BaudRate Configuration. 
+
+---
+
+# Lin_BaudRateConfigType
+
+
+
+Lin Controller BaudRate Configuration.  [More...](#detailed-description)
+
+
+`#include <Lin_Cfg.h>`
+
+## Structure Members
+
+|  Member Type   | Member name    | Brief |
+| -------------- | -------------- | ----- |
+|  uint32 | Prescalar |  Prescaler.  |
+|  uint32 | FractionalDivider |  Fractional divider.  |
+
+## Detailed Description
+
+```cpp
+struct Lin_BaudRateConfigType;
+```
+
+
+**Brief**: 
+Lin Controller BaudRate Configuration. 
+
+Baudrate config type 
+
+

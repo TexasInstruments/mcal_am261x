@@ -1,0 +1,64 @@
+
+Name: config/Cdd_Uart.arxml
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422451836741323425604591447143923192164480512572784
+ 1622974234303425764382733793484908259078301562243395
+
+Name: generate_swcd/swcd/Cdd_Uart_Bswmd.arxml
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377423003465679840305743834615969836417713409650843824
+ 5314241158859651439701109621706026263102720281372862
+
+Name: generate/include/Cdd_Uart_Cfg.h
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377421969217720019892602357127617901759465238871703675
+ 4477696117997135601484196323476273937324643177861076
+
+Name: plugin.xml
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422084302187127436244316764197803266305567536216751
+ 5471318824470809158843094909229551175703578502889291
+
+Name: generate/src/Cdd_Uart_Cfg.c
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426270036188974222636128667181768986872103786334041
+ 2853250464916997165006046909722263041957947532107994
+
+Name: config_ext/Cdd_Uart_Rec.xdm
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377424089597070376281839664428577187790216885010018476
+ 0621980952103217262678715084943725949088900585849563
+
+Name: generate/src/Cdd_Uart_PBcfg.c
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377427006844139941647382343366200241706682700276081009
+ 1809360622170163687319371729163868474234940422920325
+
+Name: config/Cdd_Uart.xdm
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422361160005919884199903004579401204389561178389331
+ 2431276087451376795418573972461333856811684292176636
+
+Name: META-INF/MANIFEST.MF
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377421768474851548342317985407408089191348124880682206
+ 3313351784044740824957612749684521501777014583908302
+

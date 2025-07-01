@@ -1,0 +1,71 @@
+
+Name: generate/include/EthTrcv_Cfg.h
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377420596332789841860127693960511445223123590535160981
+ 1577243322401845148417484952690046843673839568894523
+
+Name: plugin.xml
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426782455798802360021757947381922652805678138820960
+ 7915775616443001488407304740647167881616907214592821
+
+Name: generate_swcd/swcd/EthTrcv_Bswmd.arxml
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426209932078583520140734226411571243531613578767095
+ 0234286966917292814502415830411465061058248825468892
+
+Name: config/EthTrcv.arxml
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426461739131754070599732319030999481084514614379449
+ 4449446542874249609368899502405787193625603933457864
+
+Name: generate/src/EthTrcv_PBcfg.c
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377421597764885539080839740279557929431785328891094326
+ 3823762465178805969183750877093130800542326570866104
+
+Name: generate/src/EthTrcv_Lcfg.c
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377425572513126016384220614870792294224722674755712375
+ 3095881627893895767584062598337421970464062279809458
+
+Name: generate/src/EthTrcv_Cfg.c
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422145747219357337898693215231825591727327013687106
+ 8955526169127475688958658885421587964692372496466020
+
+Name: config/EthTrcv.xdm
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377423789468912539959817435918985263185459111677566636
+ 4311036515287588723319493759463571505427396080068229
+
+Name: config_ext/EthTrcv_Rec.xdm
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377424162180679679595064333073203658158226150029072977
+ 5451998552398261894752448155416449402781663409208858
+
+Name: META-INF/MANIFEST.MF
+SignatureKeyID: TI
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594751769408741249289186441923349862350932692942028534
+ 437643028312391520620789865341955022483539700910891044
+
