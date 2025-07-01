@@ -440,19 +440,19 @@
                 <d:ctr name="EthCtrlOffloading" type="IDENTIFIABLE">
                   <a:a name="IMPORTER_INFO" value="@REC"/>
                   <d:var name="EthCtrlEnableOffloadChecksumICMP" type="BOOLEAN" 
-                         value="false">
+                         value="true">
                     <a:a name="IMPORTER_INFO" value="@REC"/>
                   </d:var>
                   <d:var name="EthCtrlEnableOffloadChecksumIPv4" type="BOOLEAN" 
-                         value="false">
+                         value="true">
                     <a:a name="IMPORTER_INFO" value="@REC"/>
                   </d:var>
                   <d:var name="EthCtrlEnableOffloadChecksumTCP" type="BOOLEAN" 
-                         value="false">
+                         value="true">
                     <a:a name="IMPORTER_INFO" value="@REC"/>
                   </d:var>
                   <d:var name="EthCtrlEnableOffloadChecksumUDP" type="BOOLEAN" 
-                         value="false">
+                         value="true">
                     <a:a name="IMPORTER_INFO" value="@REC"/>
                   </d:var>
                 </d:ctr>

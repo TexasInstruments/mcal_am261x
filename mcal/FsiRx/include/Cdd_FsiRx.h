@@ -47,6 +47,10 @@
 #include "hw_types.h"
 #include "Std_Types.h"
 #include "Cdd_FsiRx_Priv.h"
+#if (CDD_FSI_RX_DMA_ENABLE == STD_ON)
+#include "Cdd_Dma_Cfg.h"
+#include "Cdd_Dma_Priv.h"
+#endif
 
 #ifdef __cplusplus
 extern "C" {

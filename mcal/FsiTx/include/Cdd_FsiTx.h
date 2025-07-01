@@ -48,6 +48,10 @@
 #include "hw_types.h"
 #include "Std_Types.h"
 #include "Cdd_FsiTx_Priv.h"
+#if (CDD_FSI_TX_DMA_ENABLE == STD_ON)
+#include "Cdd_Dma_Cfg.h"
+#include "Cdd_Dma_Priv.h"
+#endif
 
 #ifdef __cplusplus
 extern "C" {

@@ -90,8 +90,6 @@
             linkerBuildOptions="
             --diag_suppress=10068
             --diag_suppress=10063
-            --ram_model
-            --reread_libs
             "
         ></configuration>
         <configuration name="Release"
@@ -101,8 +99,6 @@
             linkerBuildOptions="
             --diag_suppress=10068
             --diag_suppress=10063
-            --ram_model
-            --reread_libs
             "
         ></configuration>
 
