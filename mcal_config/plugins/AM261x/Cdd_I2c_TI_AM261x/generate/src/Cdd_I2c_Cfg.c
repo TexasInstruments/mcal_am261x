@@ -21,7 +21,7 @@
 
 /******************************************************************************
     Project         : [!"$project"!]
-    
+
     SW Ver          : [!"$moduleSoftwareVer"!]
     Module Rele Ver : [!"$moduleReleaseVer"!]
 
@@ -72,7 +72,7 @@ CONST(Cdd_I2c_ConfigType, CDD_I2C_CONFIG_DATA) CddI2cInitParams =
     [!WS "4"!]},
     [!ENDLOOP!][!CR!][!//
 },
-    
+
 };
 
 /** \brief Pointer to CddI2cInitParams */
@@ -93,7 +93,7 @@ VAR(Cdd_I2c_Channel_Config, CDD_I2C_CONFIG_DATA) Cdd_I2cChannelContainer[CDD_I2C
     [!ENDLOOP!][!CR!][!//
 };
 
-CONST(Cdd_I2c_Sequence_Config, CDD_I2C_CONFIG_DATA) Cdd_I2cSequenceContainer[CDD_I2C_MAXIMUM_SEQUENCE_NUMBER] = 
+CONST(Cdd_I2c_Sequence_Config, CDD_I2C_CONFIG_DATA) Cdd_I2cSequenceContainer[CDD_I2C_MAXIMUM_SEQUENCE_NUMBER] =
 {
     [!LOOP "as:modconf('Cdd_I2c')[1]/CddI2cSequenceConfig/*"!][!//
     [[!"num:i(@index)"!]] =
@@ -103,21 +103,22 @@ CONST(Cdd_I2c_Sequence_Config, CDD_I2C_CONFIG_DATA) Cdd_I2cSequenceContainer[CDD
     [!WS "8"!].SeqResult                = CDD_I2C_SEQ_OK,
     [!WS "8"!].SequenceCompleteNotify   = [!"CddI2cSequenceCompleteNotify"!],
     [!WS "8"!].SequenceErrorNotify      = [!"CddI2cSequenceErrorNotify"!],
+    [!WS "8"!].RestartMode              = [!"CddI2cRestartModeType"!],
     [!WS "8"!].ChannelList              =
     [!WS "8"!]{
     [!AUTOSPACING!]
     /* The Number Of Channels generated below are equal to the variable "CddI2cNumberOfChannelsInSequence" */
-    [!FOR "x" = "1" TO "num:i(CddI2cNumberOfChannelsInSequence)"!] 
+    [!FOR "x" = "1" TO "num:i(CddI2cNumberOfChannelsInSequence)"!]
     [!WS "12"!][!"./I2cChannelList/*[num:i($x)]/I2cChannelIndex"!]U,
     [!ENDFOR!][!CR!][!//
     [!WS "8"!]},
     [!WS "4"!]},
-    [!ENDLOOP!][!CR!][!//  
+    [!ENDLOOP!][!CR!][!//
 };
 
-/** \brief CDD_I2C Arbitration loss condition parameter, possible values are CDD_I2C_BURST_MODE 
- * (for detaching from bus) or CDD_I2C_RECURRENT_MODE 
- * (For sending 9 clock pulses to the slave in order to synchronize the bus) 
+/** \brief CDD_I2C Arbitration loss condition parameter, possible values are CDD_I2C_BURST_MODE
+ * (for detaching from bus) or CDD_I2C_RECURRENT_MODE
+ * (For sending 9 clock pulses to the slave in order to synchronize the bus)
 */
 CONST(Cdd_I2c_HandlingType, CDD_I2C_CONFIG_DATA) CddI2cArbitrationLossParam = [!"as:modconf('Cdd_I2c')[1]/CddI2cGeneral/CddI2cArbitrationLossParam"!];
 
@@ -130,7 +131,7 @@ CONST(Cdd_I2c_HandlingType, CDD_I2C_CONFIG_DATA) CddI2cArbitrationLossParam = [!
  * I2C register base address, SOC specific
 */
 CONST(uint32,CDD_I2C_CONST)
-    CddI2cHwUnitBaseAddr[CDD_I2C_HW_UNITS_MAX]    =   
+    CddI2cHwUnitBaseAddr[CDD_I2C_HW_UNITS_MAX]    =
     {
         0x52500000U,     /*I2C0_BASE_ADDR*/
         0x52501000U,     /*I2C1_BASE_ADDR*/

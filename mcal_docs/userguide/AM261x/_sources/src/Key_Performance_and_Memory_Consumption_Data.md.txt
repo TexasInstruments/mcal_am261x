@@ -40,7 +40,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| epwm   | 14245    | 7    | 16072    |
+| epwm   | 14309    | 7    | 16072    |
  
 ### ETH
 
@@ -60,7 +60,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 9912    | 142    | 0    |
+| fls   | 9944    | 142    | 0    |
  
 ### FSIRX
 
@@ -84,7 +84,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| i2c   | 4104    | 274    | 89    |
+| i2c   | 4144    | 274    | 89    |
  
 ### ICU
 
@@ -138,5 +138,5 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| wdg   | 1000    | 1    | 44    |
+| wdg   | 996    | 1    | 44    |
  
