@@ -715,7 +715,7 @@
                     <ECUC-INTEGER-PARAM-DEF UUID="4f815cf1-b16c-4054-bf58-9649ed0040da">
                       <SHORT-NAME>McuClockDivId</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">McuClockDivider value should be less than or equal to 255 as per hardware limitation for MII10                      and it should be less than or equal to 15 for all other modules.</L-2>
+                        <L-2 L="EN">McuClockDivider value should be less than or equal to 255 as per hardware limitation for MII10                     and it should be less than or equal to 15 for all other modules.</L-2>
                       </DESC>
                       <SCOPE>LOCAL</SCOPE>
                       <ORIGIN>Texas Instruments</ORIGIN>
@@ -3365,6 +3365,7 @@
               <DESC>
                 <L-2 L="EN">Container holding all MCU specific published information parameters</L-2>
               </DESC>
+              <REQUIRES-INDEX>true</REQUIRES-INDEX>
               <PARAMETERS>
                 <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:4745b6cf-b46f-4fe4-8bfa-c1a47fdd7412">
                   <SHORT-NAME>McuDeviceVariant</SHORT-NAME>
@@ -3406,6 +3407,7 @@
                   <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
                   <UPPER-MULTIPLICITY-INFINITE>1</UPPER-MULTIPLICITY-INFINITE>
                   <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                  <REQUIRES-INDEX>true</REQUIRES-INDEX>
                   <PARAMETERS>
                     <ECUC-INTEGER-PARAM-DEF UUID="3c8ae31f-1aa5-4bc0-aba0-6f1ede22819b">
                       <SHORT-NAME>McuResetReason</SHORT-NAME>
@@ -3415,6 +3417,7 @@
                       <SCOPE>ECU</SCOPE>
                       <ORIGIN>AUTOSAR_ECUC</ORIGIN>
                       <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <REQUIRES-INDEX>true</REQUIRES-INDEX>
                       <VALUE-CONFIG-CLASSES>
                         <ECUC-VALUE-CONFIGURATION-CLASS>
                           <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>

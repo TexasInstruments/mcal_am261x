@@ -16,36 +16,6 @@
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch0Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
             [!ENDIF!][!//
-            [!IF "GptChannelId = '10'"!][!//
-            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch10Isr</BSW-MODULE-ENTRY-REF>
-            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-            [!ENDIF!][!//
-            [!IF "GptChannelId = '11'"!][!//
-            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch11Isr</BSW-MODULE-ENTRY-REF>
-            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-            [!ENDIF!][!//
-            [!IF "GptChannelId = '12'"!][!//
-            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch12Isr</BSW-MODULE-ENTRY-REF>
-            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-            [!ENDIF!][!//
-            [!IF "GptChannelId = '13'"!][!//
-            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch13Isr</BSW-MODULE-ENTRY-REF>
-            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-            [!ENDIF!][!//
-            [!IF "GptChannelId = '14'"!][!//
-            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch14Isr</BSW-MODULE-ENTRY-REF>
-            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-            [!ENDIF!][!//
-            [!IF "GptChannelId = '15'"!][!//
-            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch15Isr</BSW-MODULE-ENTRY-REF>
-            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-            [!ENDIF!][!//
             [!IF "GptChannelId = '1'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch1Isr</BSW-MODULE-ENTRY-REF>
@@ -90,7 +60,37 @@
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch9Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-            [!ENDIF!][!// 
+            [!ENDIF!][!//
+            [!IF "GptChannelId = '10'"!][!//
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch10Isr</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            [!ENDIF!][!//
+            [!IF "GptChannelId = '11'"!][!//
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch11Isr</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            [!ENDIF!][!//
+            [!IF "GptChannelId = '12'"!][!//
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch12Isr</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            [!ENDIF!][!//
+            [!IF "GptChannelId = '13'"!][!//
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch13Isr</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            [!ENDIF!][!//
+            [!IF "GptChannelId = '14'"!][!//
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch14Isr</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            [!ENDIF!][!//
+            [!IF "GptChannelId = '15'"!][!//
+            <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+              <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_Ch15Isr</BSW-MODULE-ENTRY-REF>
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+            [!ENDIF!][!//
             [!ENDLOOP!][!//
             [!ENDLOOP!][!//
             [!IF "as:modconf('Gpt')[1]/GptConfigurationOfOptApiServices/GptWakeupFunctionalityApi = 'true'"!][!//
@@ -140,7 +140,7 @@
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_GetTimeRemaining</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-            [!ENDIF!][!//         
+            [!ENDIF!][!//
             [!IF "as:modconf('Gpt')[1]/GptConfigurationOfOptApiServices/GptVersionInfoApi = 'true'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Gpt_TI_AM261x/Gpt_ModuleEntry/Gpt_GetVersionInfo</BSW-MODULE-ENTRY-REF>
@@ -377,7 +377,7 @@
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!ENDLOOP!][!//
-                [!ENDLOOP!][!//                
+                [!ENDLOOP!][!//
                 [!IF "as:modconf('Gpt')[1]/GptConfigurationOfOptApiServices/GptWakeupFunctionalityApi = 'true'"!][!//
                 <BSW-CALLED-ENTITY UUID="077420f2-90f2-4729-b2d5-22a33ff2cde3">
                   <SHORT-NAME>Gpt_CheckWakeup</SHORT-NAME>

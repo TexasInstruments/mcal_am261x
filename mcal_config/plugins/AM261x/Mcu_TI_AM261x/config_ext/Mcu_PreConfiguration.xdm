@@ -16,129 +16,130 @@
             <d:ctr type="MODULE-CONFIGURATION">
               <a:a name="DEF" value="ASPath:/TI_AM261x/Mcu"/>
               <d:ctr name="McuPublishedInformation" type="IDENTIFIABLE">
+              <a:a name="REQUIRES-INDEX" value="true"/>
                 <d:lst name="McuResetReasonConf" type="MAP">
                   <d:ctr name="MCU_POWER_ON_RESET" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="1">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_WDT0" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="2">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_WDT1" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="3">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="4">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_EXT_PAD_RESET" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="5">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_HSM_WDT_RESET" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="6">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_DEBUGGER_RESET" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="7">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_TEMP0" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="8">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_TEMP1" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="9">
                     </d:var>
-                  </d:ctr>				  
+                  </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_VMON1_oV" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="10">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_VMON2_oV" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="11">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_VMON3_oV" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="12">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_VMON5_oV" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="13">
                     </d:var>
                   </d:ctr>
 				   <d:ctr name="MCU_WARM_RESET_VMON1_uV" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="14">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_VMON2_uV" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="15">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_VMON3_uV" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="16">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_VMON5_uV" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="17">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_VMON7_uV" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="18">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_VMON8_uV" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="19">
                     </d:var>
                   </d:ctr>
 				  <d:ctr name="MCU_WARM_RESET_SYS_CLK_LOSS" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="20">
                     </d:var>
                   </d:ctr>
                   <d:ctr name="MCU_WARM_RESET_ESM_INTERRUPT" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="21">
                     </d:var>
                   </d:ctr>
                   <d:ctr name="MCU_WARM_RESET_ESM_WDG_INTERRUPT" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="22">
                     </d:var>
                   </d:ctr>
                   <d:ctr name="MCU_WARM_RESET_ESM_ERR_INTERRUPT" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="23">
                     </d:var>
                   </d:ctr>
                   <d:ctr name="MCU_POWER_ON_RESET_ASSERT_SW" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="24">
                     </d:var>
                   </d:ctr>
                   <d:ctr name="MCU_RESET_UNDEFINED" type="IDENTIFIABLE">
-                    <d:var name="McuResetReason" 
+                    <d:var name="McuResetReason"
                            type="INTEGER" value="25">
                     </d:var>
                   </d:ctr>

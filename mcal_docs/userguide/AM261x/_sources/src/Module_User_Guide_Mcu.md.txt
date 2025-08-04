@@ -646,7 +646,7 @@ This container contains the configuration (parameters) for the Clock settings of
 | Item ||
 |--------|---------------|
 | **Name** | McuClockDivId |
-| **Description** | McuClockDivider value should be less than or equal to 255 as per hardware limitation for MII10                      and it should be less than or equal to 15 for all other modules. |
+| **Description** | McuClockDivider value should be less than or equal to 255 as per hardware limitation for MII10                     and it should be less than or equal to 15 for all other modules. |
 | **Origin** | Texas Instruments |
 | **Post-Build-Variant-Value** | false |
 | **Value-Configuration-Class** | -- |
