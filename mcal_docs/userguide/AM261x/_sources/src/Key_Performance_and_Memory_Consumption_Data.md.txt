@@ -60,19 +60,19 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 9914    | 142    | 0    |
+| fls   | 9940    | 142    | 0    |
  
 ### FSIRX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsirx   | 1628    | 2    | 71    |
+| fsirx   | 1632    | 2    | 71    |
  
 ### FSITX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsitx   | 2116    | 9    | 58    |
+| fsitx   | 2120    | 9    | 58    |
  
 ### GPT
 
@@ -84,7 +84,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| i2c   | 3622    | 1    | 280    |
+| i2c   | 3684    | 1    | 1468    |
  
 ### ICU
 
