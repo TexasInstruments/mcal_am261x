@@ -40,7 +40,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| epwm   | 15041    | 7    | 16072    |
+| epwm   | 15037    | 7    | 16072    |
  
 ### ETH
 
@@ -60,19 +60,19 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 9940    | 142    | 0    |
+| fls   | 10082    | 142    | 0    |
  
 ### FSIRX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsirx   | 1632    | 2    | 71    |
+| fsirx   | 1622    | 2    | 71    |
  
 ### FSITX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsitx   | 2120    | 9    | 58    |
+| fsitx   | 2130    | 9    | 58    |
  
 ### GPT
 
@@ -84,7 +84,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| i2c   | 3684    | 1    | 1468    |
+| i2c   | 4334    | 1    | 1540    |
  
 ### ICU
 
@@ -96,7 +96,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| ipc   | 5404    | 149    | 1256    |
+| ipc   | 5650    | 157    | 1256    |
  
 ### LIN
 
