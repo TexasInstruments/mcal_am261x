@@ -1,0 +1,142 @@
+# Key Performance and Memory Consumption Data
+
+## Key Performance Metrics
+
+Will be updated in future release
+
+## Memory Footprints
+
+### ADC
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| adc   | 5476    | 4    | 2983    |
+ 
+### CAN
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| can   | 9510    | 1    | 8008    |
+ 
+### CMPSS
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| cdd_cmpss   | 2010    | 0    | 0    |
+ 
+### DIO
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| dio   | 754    | 0    | 0    |
+ 
+### DMA
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| dma   | 4896    | 16766    | 528    |
+ 
+### EPWM
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| epwm   | 15037    | 7    | 16072    |
+ 
+### ETH
+
+    Will be updated in future release
+
+### ETH_TRCV
+
+    Will be updated in future release
+
+### FLC
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| cdd_flc   | 486    | 0    | 0    |
+ 
+### FLS
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| fls   | 10080    | 142    | 0    |
+ 
+### FSIRX
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| fsirx   | 1622    | 2    | 71    |
+ 
+### FSITX
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| fsitx   | 2130    | 9    | 58    |
+ 
+### GPT
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| gpt   | 2822    | 72    | 774    |
+ 
+### I2C
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| i2c   | 4334    | 1    | 1540    |
+ 
+### ICU
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| icu   | 3746    | 1    | 736    |
+ 
+### IPC
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| ipc   | 5650    | 157    | 1256    |
+ 
+### LIN
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| lin   | 1920    | 9    | 10    |
+ 
+### MCU
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| mcu   | 5914    | 6    | 0    |
+ 
+### PORT
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| port   | 3110    | 1    | 176    |
+     
+### PWM
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| pwm   | 5074    | 7    | 249    |
+ 
+### SPI
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| spi   | 6694    | 1    | 0    |
+ 
+### UART
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| uart   | 4712    | 1    | 196    |
+ 
+### WDG
+
+| Modules   | .text  |  .data  |  .bss  |
+| ------------ | ----------| -------- | ---------- |
+| wdg   | 996    | 1    | 44    |
+ 
