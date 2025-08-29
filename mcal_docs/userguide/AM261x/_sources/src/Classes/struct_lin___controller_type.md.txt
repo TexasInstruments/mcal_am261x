@@ -23,7 +23,7 @@ Lin Controller Configuration definition.  [More...](#detailed-description)
 | -------------- | -------------- | ----- |
 |  uint32 | CntrAddr |  Cntr address.  |
 |  [Lin_InterruptLineNum](../Modules/group___l_i_n.md#enum-lin_interruptlinenum) | IntrLineNum |  Intr Line number.  |
-|  [Lin_LoopbackModeType](../Modules/group___l_i_n.md#enum-lin_loopbackmodetype) | LoopbackMode |  Loopback Mode for this controller.  |
+|  [Lin_LoopbackModeType](../Modules/group___l_i_n.md#enum-lin_loopbackmodetype) | LoopbackMode |  Loopback Mode for this controller  |
 
 ## Detailed Description
 

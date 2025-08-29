@@ -60,7 +60,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 10080    | 142    | 0    |
+| fls   | 10108    | 142    | 0    |
  
 ### FSIRX
 
@@ -96,7 +96,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| ipc   | 5650    | 157    | 1256    |
+| ipc   | 5666    | 157    | 1256    |
  
 ### LIN
 
@@ -108,7 +108,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| mcu   | 5914    | 6    | 0    |
+| mcu   | 6082    | 6    | 0    |
  
 ### PORT
 
