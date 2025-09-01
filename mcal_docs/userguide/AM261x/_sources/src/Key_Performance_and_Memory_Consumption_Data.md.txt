@@ -22,7 +22,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| cdd_cmpss   | 2010    | 0    | 0    |
+| cdd_cmpss   | 2008    | 0    | 0    |
  
 ### DIO
 
@@ -54,7 +54,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| cdd_flc   | 486    | 0    | 0    |
+| cdd_flc   | 484    | 0    | 0    |
  
 ### FLS
 
@@ -66,7 +66,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsirx   | 1622    | 2    | 71    |
+| fsirx   | 1674    | 2    | 71    |
  
 ### FSITX
 
