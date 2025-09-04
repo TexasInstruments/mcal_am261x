@@ -10,7 +10,7 @@
  *   stipulated in the agreement under which this program has been
  *   supplied.
  * ==================================================================== */
-[!IF "as:modconf('Wdg')[node:exists(.//WdgDeviceVariant)]/IMPLEMENTATION_CONFIG_VARIANT = 'VariantPreCompile'"!]
+[!IF "as:modconf('Wdg')[as:path(node:dtos(.))='/TI_AM261x/Wdg']/IMPLEMENTATION_CONFIG_VARIANT = 'VariantPreCompile'"!]
 /**
  *  \file     Wdg_Cfg.c
  *
@@ -92,23 +92,23 @@ const uint32 Wdg_ResetChannelAddr[WDG_MAX_INSTANCES] =
 #include "Wdg_MemMap.h"
 
 /*<WDG_CFG_CONFIG>*/
-[!LOOP "as:modconf('Wdg')[node:exists(.//WdgDeviceVariant)]/WdgSettingsConfig"!]
+[!LOOP "as:modconf('Wdg')[as:path(node:dtos(.))='/TI_AM261x/Wdg']/WdgSettingsConfig"!]
 CONST(Wdg_ConfigType, WDG_CFG) [!"@name"!] =
 {
    .defaultMode = [!"WdgDefaultMode"!],
    .instanceId = [!"WdgInstanceId"!]U,
-   .initialTimeOut = ([!"num:i(as:modconf('Wdg')[node:exists(.//WdgDeviceVariant)]/WdgGeneral/WdgInitialTimeout * 1000)"!]U),
+   .initialTimeOut = ([!"num:i(as:modconf('Wdg')[as:path(node:dtos(.))='/TI_AM261x/Wdg']/WdgGeneral/WdgInitialTimeout * 1000)"!]U),
    .fastModeCfg =
    {
-       .reaction = [!"as:modconf('Wdg')[node:exists(.//WdgDeviceVariant)]/WdgSettingsConfig[1]/WdgSettingsFast/WdgReaction "!],
-       .windowSize = WDG_[!"as:modconf('Wdg')[node:exists(.//WdgDeviceVariant)]/WdgSettingsConfig[1]/WdgSettingsFast/WdgWindowSize"!],
-	   .preloadValue = ([!"as:modconf('Wdg')[node:exists(.//WdgDeviceVariant)]/WdgSettingsConfig[1]/WdgSettingsFast/WdgPreloadValue"!]U),
+       .reaction = [!"as:modconf('Wdg')[as:path(node:dtos(.))='/TI_AM261x/Wdg']/WdgSettingsConfig[1]/WdgSettingsFast/WdgReaction "!],
+       .windowSize = WDG_[!"as:modconf('Wdg')[as:path(node:dtos(.))='/TI_AM261x/Wdg']/WdgSettingsConfig[1]/WdgSettingsFast/WdgWindowSize"!],
+	   .preloadValue = ([!"as:modconf('Wdg')[as:path(node:dtos(.))='/TI_AM261x/Wdg']/WdgSettingsConfig[1]/WdgSettingsFast/WdgPreloadValue"!]U),
    },
    .slowModeCfg =
    {
-       .reaction = [!"as:modconf('Wdg')[node:exists(.//WdgDeviceVariant)]/WdgSettingsConfig[1]/WdgSettingsSlow/WdgReaction"!],
-       .windowSize = WDG_[!"as:modconf('Wdg')[node:exists(.//WdgDeviceVariant)]/WdgSettingsConfig[1]/WdgSettingsSlow/WdgWindowSize"!],
-	   .preloadValue = ([!"as:modconf('Wdg')[node:exists(.//WdgDeviceVariant)]/WdgSettingsConfig[1]/WdgSettingsSlow/WdgPreloadValue"!]U),
+       .reaction = [!"as:modconf('Wdg')[as:path(node:dtos(.))='/TI_AM261x/Wdg']/WdgSettingsConfig[1]/WdgSettingsSlow/WdgReaction"!],
+       .windowSize = WDG_[!"as:modconf('Wdg')[as:path(node:dtos(.))='/TI_AM261x/Wdg']/WdgSettingsConfig[1]/WdgSettingsSlow/WdgWindowSize"!],
+	   .preloadValue = ([!"as:modconf('Wdg')[as:path(node:dtos(.))='/TI_AM261x/Wdg']/WdgSettingsConfig[1]/WdgSettingsSlow/WdgPreloadValue"!]U),
    },
 };
 [!ENDLOOP!]
