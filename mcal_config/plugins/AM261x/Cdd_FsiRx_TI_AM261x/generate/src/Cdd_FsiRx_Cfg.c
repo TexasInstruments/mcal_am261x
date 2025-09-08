@@ -97,18 +97,18 @@ extern "C" {
 [!NOCODE!]
 /**
  **Rx0 Base address - 0x5029 0000h
-   
+
   So for the first instance (RX0), offset is not needed. Base adress will be 1344864256 itself.
   [That is why HWunitBase"   = "$HWunitOffset*0". which gives HWunitOffset=0 which will added to
   1344864256. So base adress for Rx0 is same.]
-  
+
 */
 [!ENDNOCODE!][!//
 [!MACRO "GetAddress", "HWNumber"!][!//
 [!NOCODE!]
     [!VAR "BaseAddr" = "BaseAddr + 1344864256"!]
     [!VAR "HWunitOffset" = "HWunitOffset + 4096"!]
-    
+
     [!IF "($HWNumber = 'CDD_FSI_RX_HWUNIT_0')"!]
     [!VAR "HWunitBase"   = "$HWunitOffset*0"!]
     [!ENDIF!]
@@ -170,7 +170,7 @@ extern "C" {
 /* Create runtime configurations. */
 [!LOOP "as:modconf('Cdd_FsiRx')[1]/CddFsiRxConfigSet"!]
 [!VAR "HwLpCnt" = "0"!]
-CONST(struct Cdd_FsiRx_ConfigType_s, CDD_FSI_RX_CONFIG_DATA) [!"@name"!] =
+CONST(struct Cdd_FsiRx_ConfigType_s, CDD_FSI_RX_CONFIG_DATA) Cdd_FsiRx_Config =
 {
     .maxHwUnit = [!"num:i(count(CddFsiRxHwUnit/*))"!]U,
     .cddFsiRxResetNotification = [!IF "not(node:empty(CddFsiRxResetNotification))"!] [!"CddFsiRxResetNotification"!][!ELSE!]NULL_PTR[!ENDIF!],
@@ -178,7 +178,7 @@ CONST(struct Cdd_FsiRx_ConfigType_s, CDD_FSI_RX_CONFIG_DATA) [!"@name"!] =
     .cddFsiRxUnderRunNotification = [!IF "not(node:empty(CddFsiRxUnderRunNotification))"!] [!"CddFsiRxUnderRunNotification"!][!ELSE!]NULL_PTR[!ENDIF!],
     .cddFsiRxPingFrameReceivedNotification = [!IF "not(node:empty(CddFsiRxPingFrameReceivedNotification))"!] [!"CddFsiRxPingFrameReceivedNotification"!][!ELSE!]NULL_PTR[!ENDIF!],
     .cddFsiRxDataFrameReceivedNotification = [!IF "not(node:empty(CddFsiRxDataFrameReceivedNotification))"!] [!"CddFsiRxDataFrameReceivedNotification"!][!ELSE!]NULL_PTR[!ENDIF!],
-   
+
     .hwUnitCfg  =
     {
         [!VAR "HwLpCnt" = "0"!][!//
@@ -202,8 +202,8 @@ CONST(struct Cdd_FsiRx_ConfigType_s, CDD_FSI_RX_CONFIG_DATA) [!"@name"!] =
             [!ENDNOCODE!][!//
         },
          [!VAR "HwLpCnt" = "$HwLpCnt+1"!]
-         [!ENDLOOP!]   
-    },      
+         [!ENDLOOP!]
+    },
 };
 
 [!ENDLOOP!]

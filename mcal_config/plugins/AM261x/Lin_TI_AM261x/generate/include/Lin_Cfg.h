@@ -20,16 +20,16 @@
  *  Generator:  Elektrobit Tresos
  *
  *  Description:  This file contains generated configuration data
- *                                                                     
+ *
  *********************************************************************************************************************/
- 
+
 #ifndef LIN_CFG_H
 #define LIN_CFG_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
- 
+
 /**
  * \addtogroup LIN Lin
  * @{
@@ -43,7 +43,7 @@ extern "C" {
 /*********************************************************************************************************************
  * Other Header Files
  *********************************************************************************************************************/
- 
+
 /*********************************************************************************************************************
  * Version Check (if required)
  *********************************************************************************************************************/
@@ -89,7 +89,7 @@ extern "C" {
 //! \brief Pointer to Lin Config Set to be used during Pre-Compile
 //
 //*****************************************************************************
-#define LIN_INIT_CONFIG_PC                   LinGlobalConfig
+#define LIN_INIT_CONFIG_PC                   Lin_Config
 [!ENDIF!]
 
 
@@ -143,7 +143,7 @@ extern "C" {
 //
 //*****************************************************************************
 [!LOOP "as:modconf('Lin')[1]/LinGlobalConfig/LinChannel/*"!][!//
-#define [!"LinInstance"!]_[!"substring-after(LinInterruptLineSelect, 'LIN_INTERRUPT_')"!]                  
+#define [!"LinInstance"!]_[!"substring-after(LinInterruptLineSelect, 'LIN_INTERRUPT_')"!]
 [!ENDLOOP!][!//
 
 //*****************************************************************************
@@ -188,9 +188,9 @@ extern "C" {
  typedef enum
 {
    /** \brief Use Interrupt Line 0 */
-   LIN_INTERRUPT_LINE_NUM_0 = 0x0U, 
+   LIN_INTERRUPT_LINE_NUM_0 = 0x0U,
    /** \brief Use Interrupt Line 1 */
-   LIN_INTERRUPT_LINE_NUM_1 = 0x1U  
+   LIN_INTERRUPT_LINE_NUM_1 = 0x1U
 } Lin_InterruptLineNum;
 
 /** \brief Loopback mode type */
@@ -213,11 +213,11 @@ typedef enum Lin_LoopbackModeTag
 typedef struct Lin_ControllerTag
 {
    /** \brief Cntr address */
-   uint32 CntrAddr;                    
-   /** \brief Intr Line number */            
-   Lin_InterruptLineNum IntrLineNum;       
-   /** \brief Loopback Mode for this controller  */      
-   Lin_LoopbackModeType LoopbackMode;              
+   uint32 CntrAddr;
+   /** \brief Intr Line number */
+   Lin_InterruptLineNum IntrLineNum;
+   /** \brief Loopback Mode for this controller  */
+   Lin_LoopbackModeType LoopbackMode;
 } Lin_ControllerType;
 
 //*****************************************************************************
@@ -238,7 +238,7 @@ typedef struct Lin_BaudrateConfigTag
  * Exported Object Declarations
  *********************************************************************************************************************/
 /** \brief LIN Configuration struct declaration */
-extern const struct Lin_ConfigTag LinGlobalConfig;
+extern const struct Lin_ConfigTag Lin_Config;
 
 #if (STD_ON == LIN_REGISTER_READBACK_API)
 /**
@@ -256,7 +256,7 @@ typedef struct
     uint32      Scigcr1;
     /**< Control Register */
     uint32      Scigcr2;
-    
+
 
 } Lin_RegisterReadbackType;
 #endif  /* #if (STD_ON == LIN_REGISTER_READBACK_API) */
@@ -264,11 +264,11 @@ typedef struct
 /*********************************************************************************************************************
  *  Exported Function Prototypes
  *********************************************************************************************************************/
- 
+
 /*********************************************************************************************************************
  *  Exported Inline Function Definitions and Function-Like Macros
  *********************************************************************************************************************/
- 
+
 #ifdef __cplusplus
 }
 #endif

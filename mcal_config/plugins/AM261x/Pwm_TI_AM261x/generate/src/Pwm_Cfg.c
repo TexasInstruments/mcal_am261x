@@ -62,21 +62,21 @@ extern "C" {
     [!VAR "BaseAddr" = "num:hextoint('0x50000000')"!]
     [!VAR "Channeloffset" = "num:hextoint('0x1000')"!]
     [!VAR "HwUnitOffset" = "num:hextoint('0x40000')"!]
-    [!VAR "ChannelBase"  = "num:i($Channeloffset*$ChannelNumber)"!]  
+    [!VAR "ChannelBase"  = "num:i($Channeloffset*$ChannelNumber)"!]
 
     [!IF "($HwUnitId = 'PWM_CONTROLSS_G0')"!]
       [!VAR "HwUnitBase"   = "num:i($HwUnitOffset*0)"!]
     [!ELSEIF "($HwUnitId = 'PWM_CONTROLSS_G1')"!]
       [!VAR "HwUnitBase"   = "num:i($HwUnitOffset*1)"!]
     [!ENDIF!]
-    
-    [!CODE!][!"num:inttohex($BaseAddr+$ChannelBase+$HwUnitBase)"!][!ENDCODE!] 
+
+    [!CODE!][!"num:inttohex($BaseAddr+$ChannelBase+$HwUnitBase)"!][!ENDCODE!]
 [!ENDNOCODE!]
 [!ENDMACRO!]
 
 /* Pwm Channel Configuration parameters */
 [!LOOP "as:modconf('Pwm')[1]/PwmChannelConfigSet"!]
-CONST(struct Pwm_ConfigType_PC_s, PWM_CONFIG_DATA) [!"@name"!]_PC =
+CONST(struct Pwm_ConfigType_PC_s, PWM_CONFIG_DATA) Pwm_Config_PC =
 {
     .chCfg =
     {
@@ -94,7 +94,7 @@ CONST(struct Pwm_ConfigType_PC_s, PWM_CONFIG_DATA) [!"@name"!]_PC =
 [!VAR "Ticks" = "0"!]
 /* Pwm Channel Configuration parameters */
 [!LOOP "as:modconf('Pwm')[1]/PwmChannelConfigSet"!]
-CONST(struct Pwm_ConfigType_s, PWM_CONFIG_DATA) [!"@name"!] =
+CONST(struct Pwm_ConfigType_s, PWM_CONFIG_DATA) Pwm_Config =
 {
     .chCfg =
     {
@@ -146,6 +146,6 @@ CONST(struct Pwm_ConfigType_s, PWM_CONFIG_DATA) [!"@name"!] =
  *  END OF FILE: Pwm_Cfg.c                                                                                          *
  *********************************************************************************************************************/
 [!ELSE!]
-/* The last generated configuration variant is not 
+/* The last generated configuration variant is not
        PRE-COMPILE variant. Refer Pwm_PBcfg.c */
 [!ENDIF!]

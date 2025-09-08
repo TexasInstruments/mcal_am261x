@@ -93,7 +93,7 @@ const uint32 Wdg_ResetChannelAddr[WDG_MAX_INSTANCES] =
 
 /*<WDG_CFG_CONFIG>*/
 [!LOOP "as:modconf('Wdg')[as:path(node:dtos(.))='/TI_AM261x/Wdg']/WdgSettingsConfig"!]
-CONST(Wdg_ConfigType, WDG_CFG) [!"@name"!] =
+CONST(Wdg_ConfigType, WDG_CFG) Wdg_Config =
 {
    .defaultMode = [!"WdgDefaultMode"!],
    .instanceId = [!"WdgInstanceId"!]U,

@@ -97,11 +97,11 @@ extern "C" {
 [!NOCODE!]
 /**
  **Tx0 Base address - 0x5028 0000h
-   
+
   So for the first instance (TX0), offset is not needed. Base adress will be 1344798720 itself.
   [That is why HWunitBase"   = "$HWunitOffset*0". which gives HWunitOffset=0 which will added to
   1344798720. So base adress for Tx0 is same.]
-  
+
 
 */
 [!ENDNOCODE!][!//
@@ -153,7 +153,7 @@ extern "C" {
 /* Create runtime configurations. */
 [!LOOP "as:modconf('Cdd_FsiTx')[1]/CddFsiTxConfigSet"!]
 [!VAR "HwLpCnt" = "0"!]
-CONST(struct Cdd_FsiTx_ConfigType_s, CDD_FSI_TX_CONFIG_DATA) [!"@name"!] =
+CONST(struct Cdd_FsiTx_ConfigType_s, CDD_FSI_TX_CONFIG_DATA) Cdd_FsiTx_Config =
 {
     .maxHwUnit = [!"num:i(count(CddFsiTxHwUnit/*))"!]U,
     .cddFsiTxNotification = [!IF "not(node:empty(CddFsiTxNotification))"!] [!"CddFsiTxNotification"!][!ELSE!]NULL_PTR[!ENDIF!],
@@ -175,8 +175,8 @@ CONST(struct Cdd_FsiTx_ConfigType_s, CDD_FSI_TX_CONFIG_DATA) [!"@name"!] =
             [!NOCODE!][!//
             [!IF "CddFsiTxTriggerSrc = 'CDD_FSI_TX_TRIGG_SRC_HW'"!]
             [!CODE!]
-            #if (STD_ON == CDD_FSI_TX_EXTERNAL_TRIGGER_ENABLE)   
-            .extFrameTriggsrc  =  [!"CddFsiTxExtHwTrigSrc"!], 
+            #if (STD_ON == CDD_FSI_TX_EXTERNAL_TRIGGER_ENABLE)
+            .extFrameTriggsrc  =  [!"CddFsiTxExtHwTrigSrc"!],
             .extPingsrc  =  [!"CddFsiTxExtPingTrigSrc"!],
             #endif
              [!ENDCODE!]
@@ -193,8 +193,8 @@ CONST(struct Cdd_FsiTx_ConfigType_s, CDD_FSI_TX_CONFIG_DATA) [!"@name"!] =
           [!ENDNOCODE!][!//
         },
          [!VAR "HwLpCnt" = "$HwLpCnt+1"!]
-        [!ENDLOOP!] 
-    },        
+        [!ENDLOOP!]
+    },
 };
 
 [!ENDLOOP!]

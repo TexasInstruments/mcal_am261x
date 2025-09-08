@@ -135,7 +135,7 @@ extern "C" {
  *  \brief Pre Compile config macro name.
  */
 [!LOOP "as:modconf('Adc')[1]/AdcConfigSet"!]
-#define ADC_INIT_CONFIG_PC       [!"@name"!]
+#define ADC_INIT_CONFIG_PC       Adc_Config
 [!ENDLOOP!]
 [!ENDIF!]
 
@@ -198,8 +198,8 @@ extern "C" {
 
 /** \brief Alignment of ADC raw results in ADC result buffer
  *  (left/right alignment) */
-#define ADC_ALIGN_LEFT                  (0) 
-#define ADC_ALIGN_RIGHT                 (1) 
+#define ADC_ALIGN_LEFT                  (0)
+#define ADC_ALIGN_RIGHT                 (1)
 #define ADC_RESULT_ALIGNMENT            ([!" as:modconf('Adc')[1]/AdcGeneral/AdcResultAlignment"!])
 
 [!LOOP "as:modconf('Adc')[1]/AdcConfigSet"!]
@@ -371,7 +371,7 @@ extern "C" {
 /* @} */
 
 /** \brief Maximum DMA channels avialable. */
-#define ADC_MAX_DMA_CHANNELS      ((uint8)[!" as:modconf('Adc')[1]/AdcGeneral/AdcMaxDmaChannelId"!]U)  
+#define ADC_MAX_DMA_CHANNELS      ((uint8)[!" as:modconf('Adc')[1]/AdcGeneral/AdcMaxDmaChannelId"!]U)
 [!ENDCODE!][!//
 [!ENDIF!]
 [!ENDNOCODE!][!//
@@ -383,7 +383,7 @@ extern "C" {
 /* ========================================================================== */
 [!LOOP "as:modconf('Adc')[1]/AdcConfigSet"!]
 /** \brief ADC Configuration struct declaration */
-extern const struct Adc_ConfigType_s [!"@name"!];
+extern const struct Adc_ConfigType_s Adc_Config;
 [!ENDLOOP!]
 
 #ifdef __cplusplus
