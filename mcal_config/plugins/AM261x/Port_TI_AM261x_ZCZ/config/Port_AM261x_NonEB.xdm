@@ -41,7 +41,7 @@
 								<a:da name="DEFAULT" value="VariantPostBuild"/>
 								<a:da name="RANGE">
 									<a:v>VariantPostBuild</a:v>
-									<a:v>VariantPreCompile</a:v> 
+									<a:v>VariantPreCompile</a:v>
 								</a:da>
 							</v:var>
 							<v:lst name="PortConfigSet"
@@ -52,7 +52,7 @@
 									<a:a name="DESC"
                                         value="EN: This container contains the multiple configuration set and sub containers of the AUTOSAR Port module"/>
 									<a:a name="UUID" value="b06da423-74e4-476a-aa7b-6e9e59a63467"/>
-									<a:a name="REQUIRES-INDEX" value="true"/>							 
+									<a:a name="REQUIRES-INDEX" value="true"/>
 									<v:lst name="PortContainer" type="MAP">
 										<a:da name="MIN" value="1"/>
 										<v:ctr name="PortContainer" type="IDENTIFIABLE">
@@ -60,7 +60,7 @@
                                                     value="EN: Container collecting the PortPins."/>
 											<a:a name="UUID"
                                                 value="dd2dd5f0-f6fd-4d62-b0d0-107a1ee85a99"/>
-												<a:a name="REQUIRES-INDEX" value="true"/>							 
+												<a:a name="REQUIRES-INDEX" value="true"/>
 											<v:var name="PortNumberOfPortPins" type="INTEGER">
 												<a:a name="DESC"
                                                 value="EN: The number of specified PortPins in this PortContainer."/>
@@ -95,7 +95,7 @@
                                                                 type="IMPLEMENTATIONCONFIGCLASS">
 															<icc:v class="PostBuild">VariantPostBuild</icc:v>
 															<icc:v class="PreCompile">VariantPreCompile</icc:v>
-															
+
 														</a:a>
 														<a:a name="ORIGIN" value="Texas Instruments"/>
 														<a:a name="SCOPE" value="LOCAL"/>
@@ -179,7 +179,7 @@
                                                             type="IMPLEMENTATIONCONFIGCLASS">
 															<icc:v class="PostBuild">VariantPostBuild</icc:v>
 															<icc:v class="PreCompile">VariantPreCompile</icc:v>
-															
+
 														</a:a>
 														<a:a name="ORIGIN" value="Texas Instruments"/>
 														<a:a name="SCOPE" value="LOCAL"/>
@@ -1129,7 +1129,7 @@
 														<a:a name="UUID"
                                                         value="28150d9d-10bf-491d-a6f5-478585de3da6"/>
 														<!--<a:da name="DEFAULT" type="XPath" expr="num:i(string-length(substring-before(ecu:get('Port_TI_AM261x_Pins'),node:value(../PortPinName))) - string-length(translate(substring-before(ecu:get('Port_TI_AM261x_Pins'),node:value(../PortPinName)),',','')) + 1)" />-->
-										
+
 														<a:da name="DEFAULT" value="1"/>
 														<a:da name="ENABLE" value = "true"/>
 													</v:var>
@@ -1278,13 +1278,13 @@
                                                                 type="IMPLEMENTATIONCONFIGCLASS">
 															<icc:v class="PostBuild">VariantPostBuild</icc:v>
 															<icc:v class="PreCompile">VariantPreCompile</icc:v>
-															
+
 														</a:a>
-														<a:a name="ORIGIN" value="AUTOSAR_ECUC"/>
+														<a:a name="ORIGIN" value="Texas Instruments"/>
 														<a:a name="SCOPE" value="LOCAL"/>
 														<a:a name="SYMBOLICNAMEVALUE" value="false"/>
 														<a:a name="UUID"
-                                                            value="e47f6d25-3cf5-452f-aba7-65777f52bb3d"/>														
+                                                            value="e47f6d25-3cf5-452f-aba7-65777f52bb3d"/>
 														<a:da name="RANGE">
 															<a:v>WARMRSTn_MUXMODE_0</a:v>
 															<a:v>EPWM3_B_MUXMODE_0</a:v>
@@ -3239,9 +3239,9 @@ v														</a:da>
 														</a:da>
 													</v:var>
 													<v:var name="PortGpioOwnerCore" type="INTEGER">
-                                                        <a:a name="DESC" 
+                                                        <a:a name="DESC"
                                                             value="EN: PIN ownership of GPIO. 0 - R5FSS0 Core0, 1 - R5FSS0 Core1"/>
-                                                        <a:a name="IMPLEMENTATIONCONFIGCLASS" 
+                                                        <a:a name="IMPLEMENTATIONCONFIGCLASS"
                                                             type="IMPLEMENTATIONCONFIGCLASS">
                                                             <icc:v class="PreCompile">VariantPostBuild</icc:v>
                                                             <icc:v class="PreCompile">VariantPreCompile</icc:v>
@@ -3283,7 +3283,7 @@ v														</a:da>
 											</v:var>
 											<v:var name="PortPinSelectEdgeTrigger" type="ENUMERATION">
 												<a:a name="DESC" value="EN: Type of EdgeTrigger selection "/>
-												<a:a name="IMPLEMENTATIONCONFIGCLASS" type="IMPLEMENTATIONCONFIGCLASS">		
+												<a:a name="IMPLEMENTATIONCONFIGCLASS" type="IMPLEMENTATIONCONFIGCLASS">
 													<icc:v class="PostBuild">VariantPostBuild</icc:v>
 													<icc:v class="PreCompile">VariantPreCompile</icc:v>
 												</a:a>
@@ -3298,7 +3298,7 @@ v														</a:da>
 											</v:var>
 											<v:var name="PortPinSelectInterruptType" type="ENUMERATION">
 												<a:a name="DESC" value="EN: Select Interrupt type "/>
-												<a:a name="IMPLEMENTATIONCONFIGCLASS" type="IMPLEMENTATIONCONFIGCLASS">		
+												<a:a name="IMPLEMENTATIONCONFIGCLASS" type="IMPLEMENTATIONCONFIGCLASS">
 													<icc:v class="PostBuild">VariantPostBuild</icc:v>
 													<icc:v class="PreCompile">VariantPreCompile</icc:v>
 												</a:a>
@@ -3322,18 +3322,18 @@ v														</a:da>
                                                <a:da name="DEFAULT" value="NULL_PTR"/>
                                                <a:da name="ENABLE" value="true"/>
                                             </v:var>
-											
+
 											<v:ref name="PortMcuGpioXbarReference" type="REFERENCE">
 												<a:a name="DESC" value="EN: Reference to the McuGpioXbarIntrConfiguration container"/>
 												<a:a name="IMPLEMENTATIONCONFIGCLASS" type="IMPLEMENTATIONCONFIGCLASS">
 													<icc:v class="PostBuild">VariantPostBuild</icc:v>
 													<icc:v class="PreCompile">VariantPreCompile</icc:v>
 												</a:a>
-												<a:a name="ORIGIN" value="Texas Instruments"/> 
+												<a:a name="ORIGIN" value="Texas Instruments"/>
 												<a:a name="UUID" value="0bc2d872-8a83-44a2-8934-8fb46a095dqc"/>
 												<a:da name="REF" value="ASPathDataOfSchema:/TI_AM261x/Mcu/McuModuleConfiguration/McuGpioXbarIntrConfiguration"/>
 											</v:ref>
-																						
+
 										</v:ctr>
 									</v:lst>
 								</v:ctr>
@@ -3500,7 +3500,7 @@ v														</a:da>
 									<a:a name="UUID" value="0bc2dd41-8a83-44a2-8114-8fb46a095ddc"/>
 									<a:da name="DEFAULT" value="true"/>
 								</v:var>
-								
+
 								<v:ref name="PortOsCounterRef" type="REFERENCE">
 									<a:a name="DESC"
                                                 value="EN: This parameter contains a reference to the OsCounter, which is used by the PORT driver."/>
@@ -3551,9 +3551,9 @@ v														</a:da>
 								  </a:da>
 								</v:var>
 								<v:var name="PortGpioHostCoreId" type="INTEGER">
-								<a:a name="DESC" 
+								<a:a name="DESC"
 									value="EN: R5F CPU ownership of GPIO. 0 - R5FSS0 Core0, 1 - R5FSS0 Core1"/>
-								<a:a name="IMPLEMENTATIONCONFIGCLASS" 
+								<a:a name="IMPLEMENTATIONCONFIGCLASS"
 									type="IMPLEMENTATIONCONFIGCLASS">
 								    <icc:v class="PreCompile">VariantPostBuild</icc:v>
                                     <icc:v class="PreCompile">VariantPreCompile</icc:v>

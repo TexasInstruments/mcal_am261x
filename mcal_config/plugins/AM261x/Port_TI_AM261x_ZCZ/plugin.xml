@@ -100,7 +100,8 @@
         point="dreisoft.tresos.autosar2.api.plugin.ecuresource">
      <ecuresource
            derivate="AM261x"
-           file="resources/AM261x.properties"
+           file="resources/AM261x_Port.properties"
+           moduleId="Port_TI_AM261x"
            target="ARM">
          <parameter
                name="subderivate"

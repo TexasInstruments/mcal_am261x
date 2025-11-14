@@ -16,7 +16,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| can   | 9510    | 1    | 8008    |
+| can   | 9528    | 1    | 8008    |
  
 ### CMPSS
 
@@ -60,7 +60,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 10108    | 142    | 0    |
+| fls   | 8938    | 138    | 0    |
  
 ### FSIRX
 
@@ -84,7 +84,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| i2c   | 4334    | 1    | 1540    |
+| i2c   | 4266    | 1    | 1540    |
  
 ### ICU
 
@@ -96,19 +96,19 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| ipc   | 5666    | 157    | 1256    |
+| ipc   | 5682    | 157    | 1256    |
  
 ### LIN
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| lin   | 1920    | 9    | 10    |
+| lin   | 1940    | 9    | 10    |
  
 ### MCU
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| mcu   | 6082    | 6    | 0    |
+| mcu   | 6138    | 6    | 0    |
  
 ### PORT
 
