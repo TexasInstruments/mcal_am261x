@@ -10,7 +10,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| adc   | 5476    | 4    | 2983    |
+| adc   | 5476    | 4    | 2984    |
  
 ### CAN
 
@@ -22,7 +22,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| cdd_cmpss   | 2008    | 0    | 0    |
+| cdd_cmpss   | 2010    | 0    | 0    |
  
 ### DIO
 
@@ -54,13 +54,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| cdd_flc   | 484    | 0    | 0    |
+| cdd_flc   | 486    | 0    | 0    |
  
 ### FLS
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 8938    | 138    | 0    |
+| fls   | 11838    | 478    | 8240    |
  
 ### FSIRX
 
@@ -72,13 +72,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsitx   | 2130    | 9    | 58    |
+| fsitx   | 2130    | 9    | 61    |
  
 ### GPT
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| gpt   | 2822    | 72    | 774    |
+| gpt   | 2822    | 72    | 776    |
  
 ### I2C
 
@@ -102,13 +102,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| lin   | 1940    | 9    | 10    |
+| lin   | 2246    | 9    | 10    |
  
 ### MCU
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| mcu   | 6138    | 6    | 0    |
+| mcu   | 6146    | 6    | 0    |
  
 ### PORT
 
@@ -126,7 +126,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| spi   | 6690    | 1    | 0    |
+| spi   | 6688    | 1    | 2604    |
  
 ### UART
 

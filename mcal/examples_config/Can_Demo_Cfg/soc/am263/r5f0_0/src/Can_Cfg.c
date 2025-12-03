@@ -37,7 +37,7 @@
 /** \brief Can configuration Minor Version */
 #define CAN_CFG_C_MINOR_VERSION           (2U)
 /** \brief Can configuration Patch Version */
-#define CAN_CFG_C_PATCH_VERSION           (0U)
+#define CAN_CFG_C_PATCH_VERSION           (1U)
 
 /*  Version checking  */
  #if (   (CAN_SW_MAJOR_VERSION != (10U))||(CAN_SW_MINOR_VERSION != (2U)))
@@ -49,11 +49,15 @@
 /**********************************************************************************************************************
  *  GLOBAL DATA
  *********************************************************************************************************************/
-#define CAN_START_SEC_CONFIG_DATA
+
+#define CAN_START_SEC_VAR_INIT_UNSPECIFIED
 #include "Can_MemMap.h"
 
+#define CAN_STOP_SEC_VAR_INIT_UNSPECIFIED
+#include "Can_MemMap.h"
 
-
+#define CAN_START_SEC_CONFIG_DATA
+#include "Can_MemMap.h"
 /* Controller structure defined here for all config sets */
 
 
@@ -122,7 +126,11 @@ const struct Can_ControllerStruct_PC
 	    CAN_CONTROLLER_INSTANCE_MCAN3,  /* Controller Instance */
 	};
 
+#define  CAN_STOP_SEC_CONFIG_DATA
+#include "Can_MemMap.h"
 
+#define CAN_START_SEC_VAR_INIT_UNSPECIFIED
+#include "Can_MemMap.h"
 
 const struct Can_ControllerStruct_PC
     *CanConfigSet_CanController_List_PC[CAN_NUM_CONTROLLER]=
@@ -134,7 +142,11 @@ const struct Can_ControllerStruct_PC
 };
 
 
+#define CAN_STOP_SEC_VAR_INIT_UNSPECIFIED
+#include "Can_MemMap.h"
 
+#define CAN_START_SEC_CONFIG_DATA
+#include "Can_MemMap.h"
 /* All the Mailbox objects(MB's) will be defined here for all config sets */
 static const struct Can_MailboxStruct_PC
     CanConfigSet_PC_CanHardwareObject_0 =
@@ -216,7 +228,11 @@ static const struct Can_MailboxStruct_PC
 {
     CanConf_CanHardwareObject_CanHardwareObject_15,  /* CanObjectId - Holds handle Id */
 };
+#define  CAN_STOP_SEC_CONFIG_DATA
+#include "Can_MemMap.h"
 
+#define CAN_START_SEC_VAR_INIT_UNSPECIFIED
+#include "Can_MemMap.h"
 
 /* List of the Mailboxes */
 const struct Can_MailboxStruct_PC
@@ -239,7 +255,11 @@ const struct Can_MailboxStruct_PC
     &CanConfigSet_PC_CanHardwareObject_14,
     &CanConfigSet_PC_CanHardwareObject_15,
 };
+#define CAN_STOP_SEC_VAR_INIT_UNSPECIFIED
+#include "Can_MemMap.h"
 
+#define CAN_START_SEC_CONFIG_DATA
+#include "Can_MemMap.h"
 
 #define  CAN_STOP_SEC_CONFIG_DATA
 #include "Can_MemMap.h"

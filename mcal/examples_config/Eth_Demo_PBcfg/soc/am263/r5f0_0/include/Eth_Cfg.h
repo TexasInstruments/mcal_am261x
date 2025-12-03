@@ -75,7 +75,7 @@ extern "C" {
 /** \brief Eth configuration Major Version */
 #define ETH_CFG_MAJOR_VERSION           (10U)
 /** \brief Eth configuration Minor Version */
-#define ETH_CFG_MINOR_VERSION           (2U)
+#define ETH_CFG_MINOR_VERSION           (3U)
 /** \brief Eth configuration Patch Version */
 #define ETH_CFG_PATCH_VERSION           (0U)
 /* @} */
@@ -110,7 +110,7 @@ extern "C" {
 /* @} */
 
 /** \brief Enable/disable Eth traffic shaping  */
-#define ETH_TRAFFIC_SHAPING_API   (STD_OFF)
+#define ETH_TRAFFIC_SHAPING_API   (STD_ON)
 
 /** \brief Enable MDIO Manual Software BitBang Operation
  *  This will also disable MDIO interrupt

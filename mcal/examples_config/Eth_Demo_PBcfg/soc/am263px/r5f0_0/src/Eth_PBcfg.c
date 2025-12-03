@@ -39,11 +39,11 @@
  ******************************************************************************/
 
 /*  Version checking  */
- #if ((ETH_SW_MAJOR_VERSION != (10U))||(ETH_SW_MINOR_VERSION != (2U)))
+ #if ((ETH_SW_MAJOR_VERSION != (10U))||(ETH_SW_MINOR_VERSION != (3U)))
   #error "Version numbers of Eth_PBcfg.c and Eth.h are inconsistent!"
 #endif
 
-#if ((ETH_CFG_MAJOR_VERSION != (10U)) || (ETH_CFG_MINOR_VERSION != (2U)))
+#if ((ETH_CFG_MAJOR_VERSION != (10U)) || (ETH_CFG_MINOR_VERSION != (3U)))
   #error "Version numbers of Eth_PBcfg.c and Eth_Cfg.h are inconsistent!"
 #endif
 
@@ -84,6 +84,43 @@ VAR(struct Eth_ConfigType_s, ETH_PBCFG)
                     0xFFU,
                 },
             },
+#if (ETH_TRAFFIC_SHAPING_API == STD_ON)
+            .shaperCfg =
+            {
+                {
+                    .queueNum = (uint8)0U,
+                    .idleSlope = (uint32)0U,
+                },
+                {
+                    .queueNum = (uint8)1U,
+                    .idleSlope = (uint32)0U,
+                },
+                {
+                    .queueNum = (uint8)2U,
+                    .idleSlope = (uint32)0U,
+                },
+                {
+                    .queueNum = (uint8)3U,
+                    .idleSlope = (uint32)0U,
+                },
+                {
+                    .queueNum = (uint8)4U,
+                    .idleSlope = (uint32)0U,
+                },
+                {
+                    .queueNum = (uint8)5U,
+                    .idleSlope = (uint32)0U,
+                },
+                {
+                    .queueNum = (uint8)6U,
+                    .idleSlope = (uint32)0U,
+                },
+                {
+                    .queueNum = (uint8)7U,
+                    .idleSlope = (uint32)0U,
+                },
+            }
+#endif
        },
 
 #if (STD_ON == ETH_ENABLE_MII_API)

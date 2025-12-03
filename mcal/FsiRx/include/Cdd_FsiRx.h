@@ -44,7 +44,11 @@
 /* ========================================================================== */
 
 #include "sys_common.h"
-#include "hw_types.h"
+#define CDD_FSIRX_START_SEC_CODE
+#include "Cdd_FsiRx_MemMap.h"
+#include "hw_types.h" /* Map the static inline functions in this file as well */
+#define CDD_FSIRX_STOP_SEC_CODE
+#include "Cdd_FsiRx_MemMap.h"
 #include "Std_Types.h"
 #include "Cdd_FsiRx_Priv.h"
 
@@ -79,7 +83,7 @@ extern "C" {
 /** \brief Driver Implementation Minor Version */
 #define CDD_FSI_RX_SW_MINOR_VERSION (2U)
 /** \brief Driver Implementation patch Version */
-#define CDD_FSI_RX_SW_PATCH_VERSION (0U)
+#define CDD_FSI_RX_SW_PATCH_VERSION (1U)
 /**   @} */
 /**
  *  \name CDD FsiRx Driver Module AUTOSAR Version Info

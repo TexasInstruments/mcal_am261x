@@ -38,7 +38,7 @@
 /** \brief Can configuration Minor Version */
 #define CAN_PBCFG_C_MINOR_VERSION           (2U)
 /** \brief Can configuration Patch Version */
-#define CAN_PBCFG_C_PATCH_VERSION           (0U)
+#define CAN_PBCFG_C_PATCH_VERSION           (1U)
 
 /*  Version checking  */
  #if (   (CAN_SW_MAJOR_VERSION != (10U))||(CAN_SW_MINOR_VERSION != (2U)))
@@ -50,9 +50,9 @@
 /**********************************************************************************************************************
  *  GLOBAL DATA
  *********************************************************************************************************************/
-#define CAN_START_SEC_CONFIG_DATA
-#include "Can_MemMap.h"
 
+#define CAN_START_SEC_VAR_INIT_UNSPECIFIED
+#include "Can_MemMap.h"
 
 
 
@@ -635,13 +635,11 @@ static Can_MailboxType
     &CanConfigSet_CanHardwareObject_14,
     &CanConfigSet_CanHardwareObject_15,
 };
-
-#define CAN_STOP_SEC_CONFIG_DATA
+#define CAN_STOP_SEC_VAR_INIT_UNSPECIFIED
 #include "Can_MemMap.h"
 
 #define CAN_START_SEC_CONFIG_DATA
 #include "Can_MemMap.h"
-
 /*Can Config struct */
 const struct Can_ConfigType_s Can_Config =
 {
@@ -657,9 +655,9 @@ const struct Can_ConfigType_s Can_Config =
         [3] = 0U
     }
 };
-
 #define  CAN_STOP_SEC_CONFIG_DATA
 #include "Can_MemMap.h"
+
 /*********************************************************************************************************************
  *  End of File: Can_PBcfg.c
  *********************************************************************************************************************/

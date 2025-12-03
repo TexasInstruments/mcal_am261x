@@ -118,7 +118,7 @@ typedef enum modes{
 /** \brief Fls configuration Major Version */
 #define FLS_CFG_MAJOR_VERSION           (10U)
 /** \brief Fls configuration Minor Version */
-#define FLS_CFG_MINOR_VERSION           (2U)
+#define FLS_CFG_MINOR_VERSION           (3U)
 /** \brief Fls configuration Patch Version */
 #define FLS_CFG_PATCH_VERSION           (0U)
 /* @} */
@@ -211,6 +211,11 @@ typedef enum modes{
 /** \brief Enable PHY */
 #define FLS_OSPI_PHY_ENABLE                   (STD_OFF)
 
+/** \brief PHY control mode */
+#define FLS_OSPI_PHY_CONTROL_MODE              (FLS_PHY_MASTER_MODE)
+
+/** \brief PHY DLL Lock mode */
+#define FLS_OSPI_PHY_DLL_LOCK_MODE              (FLS_PHY_DLL_HALF_CYCLE)
 
 /**
  * \name FLS interrupt configuration
