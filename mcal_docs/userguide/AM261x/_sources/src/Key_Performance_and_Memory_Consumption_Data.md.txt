@@ -102,7 +102,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| lin   | 2246    | 9    | 10    |
+| lin   | 2240    | 9    | 10    |
  
 ### MCU
 
