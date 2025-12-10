@@ -132,11 +132,11 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| uart   | 4712    | 1    | 196    |
+| uart   | 4748    | 1    | 196    |
  
 ### WDG
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| wdg   | 996    | 1    | 44    |
+| wdg   | 1076    | 1    | 44    |
  
