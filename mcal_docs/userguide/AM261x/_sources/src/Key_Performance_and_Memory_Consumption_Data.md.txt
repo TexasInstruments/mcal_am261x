@@ -66,13 +66,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsirx   | 1674    | 2    | 71    |
+| fsirx   | 1674    | 3    | 70    |
  
 ### FSITX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsitx   | 2130    | 9    | 61    |
+| fsitx   | 2130    | 10    | 57    |
  
 ### GPT
 
