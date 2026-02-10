@@ -194,6 +194,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '10'"!][!//
@@ -206,6 +207,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '11'"!][!//
@@ -218,6 +220,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '12'"!][!//
@@ -230,6 +233,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '13'"!][!//
@@ -242,6 +246,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '14'"!][!//
@@ -254,6 +259,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '15'"!][!//
@@ -266,6 +272,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '1'"!][!//
@@ -278,6 +285,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '2'"!][!//
@@ -290,6 +298,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '3'"!][!//
@@ -302,6 +311,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '4'"!][!//
@@ -314,6 +324,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '5'"!][!//
@@ -326,6 +337,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '6'"!][!//
@@ -338,6 +350,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '7'"!][!//
@@ -350,6 +363,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '8'"!][!//
@@ -362,6 +376,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "GptChannelId = '9'"!][!//
@@ -374,6 +389,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!ENDLOOP!][!//

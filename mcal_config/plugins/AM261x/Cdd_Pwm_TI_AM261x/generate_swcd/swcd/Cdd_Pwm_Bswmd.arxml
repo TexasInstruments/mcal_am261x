@@ -12,26 +12,26 @@
           [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmChopperEnable = 'true'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_ChopperCfg</BSW-MODULE-ENTRY-REF>
-            </BSW-MODULE-ENTRY-REF-CONDITIONAL> 
+            </BSW-MODULE-ENTRY-REF-CONDITIONAL>
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_ChopperEnable</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-          [!ENDIF!][!// 
+          [!ENDIF!][!//
           [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmGetCounterStatus"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_ClearCounterStatus</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-          [!ENDIF!][!// 
+          [!ENDIF!][!//
           [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmCounterComparatorCfg"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_CounterComparatorCfg</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-          [!ENDIF!][!// 
-          [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmDeInitApi"!][!// 
+          [!ENDIF!][!//
+          [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmDeInitApi"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_DeInit</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-          [!ENDIF!][!// 
+          [!ENDIF!][!//
           [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDeadBandEnable"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_DeadbandBypass</BSW-MODULE-ENTRY-REF>
@@ -54,15 +54,15 @@
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSetFallingEdgeDelay</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-          [!ENDIF!][!// 
-          [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmNotificationSupported"!][!// 
+          [!ENDIF!][!//
+          [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmNotificationSupported"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_DisableNotification</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_EnableNotification</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-          [!ENDIF!][!//  
+          [!ENDIF!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_EtGetEventCount</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
@@ -76,209 +76,209 @@
           [!VAR "Group" = "(num:i(substring-after(CddPwmGroupUnit,'CDD_PWM_CONTROLSS_G')))"!]
           [!VAR "Channel" = "(num:i(substring-after(CddPwmHwChannel,'CDD_PWM_CHANNEL_')))"!]
           [!IF "num:i($Group) = '0'"!][!//
-          [!IF "num:i($Channel) = '0'"!][!//   
+          [!IF "num:i($Channel) = '0'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch0Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '1'"!][!//  
+          [!IF "num:i($Channel) = '1'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch1Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '2'"!][!//  
+          [!IF "num:i($Channel) = '2'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch2Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '3'"!][!//  
+          [!IF "num:i($Channel) = '3'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch3Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '4'"!][!//  
+          [!IF "num:i($Channel) = '4'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch4Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '5'"!][!//  
+          [!IF "num:i($Channel) = '5'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch5Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '6'"!][!//  
+          [!IF "num:i($Channel) = '6'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch6Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '7'"!][!//  
+          [!IF "num:i($Channel) = '7'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch7Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '8'"!][!//  
+          [!IF "num:i($Channel) = '8'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch8Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '9'"!][!//  
+          [!IF "num:i($Channel) = '9'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch9Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '0'"!][!//  
+          [!IF "num:i($Channel) = '0'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh0Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '1'"!][!//  
+          [!IF "num:i($Channel) = '1'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh1Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '2'"!][!//  
+          [!IF "num:i($Channel) = '2'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh2Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '3'"!][!//  
+          [!IF "num:i($Channel) = '3'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh3Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '4'"!][!//  
+          [!IF "num:i($Channel) = '4'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh4Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '5'"!][!//  
+          [!IF "num:i($Channel) = '5'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh5Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '6'"!][!//  
+          [!IF "num:i($Channel) = '6'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh6Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '7'"!][!//  
+          [!IF "num:i($Channel) = '7'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh7Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '8'"!][!//  
+          [!IF "num:i($Channel) = '8'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh8Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '9'"!][!//  
+          [!IF "num:i($Channel) = '9'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh9Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
           [!ELSEIF "num:i($Group) = '1'"!][!//
-          [!IF "num:i($Channel) = '0'"!][!//  
+          [!IF "num:i($Channel) = '0'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch0Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '1'"!][!//  
+          [!IF "num:i($Channel) = '1'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch1Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '2'"!][!//  
+          [!IF "num:i($Channel) = '2'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch2Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '3'"!][!//  
+          [!IF "num:i($Channel) = '3'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch3Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '4'"!][!//  
+          [!IF "num:i($Channel) = '4'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch4Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '5'"!][!//  
+          [!IF "num:i($Channel) = '5'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch5Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '6'"!][!//  
+          [!IF "num:i($Channel) = '6'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch6Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '7'"!][!//  
+          [!IF "num:i($Channel) = '7'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch7Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '8'"!][!//  
+          [!IF "num:i($Channel) = '8'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch8Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '9'"!][!//  
+          [!IF "num:i($Channel) = '9'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch9Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '0'"!][!//  
+          [!IF "num:i($Channel) = '0'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh0Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '1'"!][!//  
+          [!IF "num:i($Channel) = '1'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh1Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '2'"!][!//  
+          [!IF "num:i($Channel) = '2'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh2Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '3'"!][!//  
+          [!IF "num:i($Channel) = '3'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh3Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '4'"!][!//  
+          [!IF "num:i($Channel) = '4'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh4Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '5'"!][!//  
+          [!IF "num:i($Channel) = '5'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh5Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '6'"!][!//  
+          [!IF "num:i($Channel) = '6'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh6Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '7'"!][!//  
+          [!IF "num:i($Channel) = '7'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh7Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '8'"!][!//  
+          [!IF "num:i($Channel) = '8'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh8Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "num:i($Channel) = '9'"!][!//  
+          [!IF "num:i($Channel) = '9'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh9Isr</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-          [!ENDIF!][!//          
           [!ENDIF!][!//
-          [!ENDLOOP!][!// 
+          [!ENDIF!][!//
+          [!ENDLOOP!][!//
           [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmGetCounterApi"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_GetCounter</BSW-MODULE-ENTRY-REF>
@@ -311,7 +311,7 @@
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSetXcmpRegValue</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmHrSfoCalibrationEnable"!][!//  
+          [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmHrSfoCalibrationEnable"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSfoCalibration</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
@@ -334,7 +334,7 @@
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetAbsoluteThreshold</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetAdcTriggerApi"!][!//  
+          [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetAdcTriggerApi"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetAdcTrigger</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
@@ -370,16 +370,16 @@
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetCmpShadowRegValue</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
           [!ENDIF!][!//
-          [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetPinAction"!][!// 
+          [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetPinAction"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetPinAction</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-          [!ENDIF!][!// 
+          [!ENDIF!][!//
           [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetRelativeThreshold"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetRelativeThreshold</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-          [!ENDIF!][!//  
+          [!ENDIF!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_StartChannelCounter</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
@@ -413,7 +413,7 @@
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_TzTripEventEnable</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-          [!ENDIF!][!// 
+          [!ENDIF!][!//
           </EXPECTED-ENTRYS>
           <MODULE-ID>255</MODULE-ID>
         [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
@@ -428,7 +428,7 @@
               </TARGET-MODULE-REFS>
             </BSW-MODULE-DEPENDENCY>
           </BSW-MODULE-DEPENDENCYS>
-        [!ENDIF!][!//  
+        [!ENDIF!][!//
           <INTERNAL-BEHAVIORS>
             <BSW-INTERNAL-BEHAVIOR UUID="e90894d1-e602-443f-99b6-73c0f777f13e">
               <SHORT-NAME>Cdd_Pwm_Behavior</SHORT-NAME>
@@ -452,9 +452,9 @@
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//   
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_ChopperCfg</IMPLEMENTED-ENTRY-REF>
-                </BSW-CALLED-ENTITY>  
+                </BSW-CALLED-ENTITY>
                 <BSW-CALLED-ENTITY UUID="e99dc420-55c3-4af2-b28c-45b6a08bba93">
                   <SHORT-NAME>Cdd_Pwm_ChopperEnable</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
@@ -463,8 +463,8 @@
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_ChopperEnable</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmGetCounterStatus"!][!// 
+              [!ENDIF!][!//
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmGetCounterStatus"!][!//
                 <BSW-CALLED-ENTITY UUID="fa5bc6c2-76cd-444b-ac05-b47e6cf9dd34">
                   <SHORT-NAME>Cdd_Pwm_ClearCounterStatus</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
@@ -484,14 +484,14 @@
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_CounterComparatorCfg</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!ENDIF!][!//
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmDeInitApi"!][!// 
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmDeInitApi"!][!//
                 <BSW-CALLED-ENTITY UUID="d3fa43d3-acd0-48a5-9e62-f7375493b22d">
                   <SHORT-NAME>Cdd_Pwm_DeInit</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_DeInit</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!ENDIF!][!//
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDeadBandEnable"!][!// 
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDeadBandEnable"!][!//
                 <BSW-CALLED-ENTITY UUID="c11daaf8-12ce-40c3-83ee-20da8d0a7db8">
                   <SHORT-NAME>Cdd_Pwm_DeadbandBypass</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
@@ -513,7 +513,7 @@
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_DeadbandCfg</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="0407c44a-1856-4264-9ed2-a03e9e39209e">
@@ -542,21 +542,21 @@
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSetFallingEdgeDelay</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!ENDIF!][!//
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmNotificationSupported"!][!//  
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmNotificationSupported"!][!//
                 <BSW-CALLED-ENTITY UUID="b3ed811e-0535-4656-8f54-e5a0d320f420">
                   <SHORT-NAME>Cdd_Pwm_DisableNotification</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//  
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!// 
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_DisableNotification</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
                 <BSW-CALLED-ENTITY UUID="c251dcf9-0fc5-497a-959b-31cfd6059217">
@@ -565,17 +565,17 @@
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//  
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_EnableNotification</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
-              [!ENDIF!][!//  
+              [!ENDIF!][!//
                 <BSW-CALLED-ENTITY UUID="b5e060b4-ecc9-4837-a307-a6a7edd0ec1f">
                   <SHORT-NAME>Cdd_Pwm_EtGetEventCount</SHORT-NAME>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
@@ -601,7 +601,7 @@
               [!VAR "CddGroup" = "(num:i(substring-after(CddPwmGroupUnit,'CDD_PWM_CONTROLSS_G')))"!]
               [!VAR "CddChannel" = "(num:i(substring-after(CddPwmHwChannel,'CDD_PWM_CHANNEL_')))"!]
               [!IF "num:i($CddGroup) = '0'"!][!//
-              [!IF "num:i($CddChannel) = '0'"!][!//  
+              [!IF "num:i($CddChannel) = '0'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="63139a6f-a38a-449c-af3f-2d983fac8ed8">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch0Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -610,10 +610,11 @@
                   <INTERRUPT-CATEGORY>CAT-2</INTERRUPT-CATEGORY>
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '1'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '1'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="2e067f35-ff64-42b5-948e-f79cfb628c73">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch1Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -623,9 +624,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '2'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '2'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="0b6d687b-0219-4a27-b2c2-f8beb392076b">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch2Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -635,9 +637,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '3'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '3'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="7e0e3327-9b81-4438-a395-fec38aae45ae">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch3Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -647,9 +650,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '4'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '4'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="f4064529-389b-4576-ae45-3218e94cfd7b">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch4Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -659,9 +663,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '5'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '5'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="f3bfd963-ac2e-4358-b436-ad92bd52afcc">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch5Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -671,9 +676,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '6'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '6'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="d5941174-51bd-4c19-a6e9-b53c99c64a23">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch6Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -683,9 +689,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '7'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '7'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="552aa5f0-bb47-40db-a0be-f861f555080e">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch7Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -695,9 +702,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '8'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '8'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="5981319f-670f-474b-9219-f1a689e92de8">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch8Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -707,9 +715,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '9'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '9'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="b0b5294a-34e0-4472-a812-d2fcc3d285e8">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch9Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -719,9 +728,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '0'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '0'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="d03d4552-3a3a-4af8-904a-ea76c9c17700">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh0Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -731,9 +741,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '1'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '1'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="50637d54-7edf-4f54-800a-86f7b1e2afda">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh1Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -743,9 +754,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '2'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '2'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="409bb255-93c1-433f-82d3-f651df47e24f">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh2Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -755,9 +767,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '3'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '3'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="284b8e67-4e19-4a0a-8ab7-ae344f070ecd">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh3Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -767,9 +780,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '4'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '4'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="8236d5e9-7f75-4ccd-adf8-6c31d17e772d">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh4Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -779,9 +793,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '5'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '5'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="35e011ad-0c5e-4506-b911-ac82ecc08e74">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh5Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -791,9 +806,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '6'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '6'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="c57f20ae-36ec-43fd-80df-18147f43892a">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh6Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -803,9 +819,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '7'"!][!// 
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '7'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="7d85eb42-9a3c-4d5f-881d-7fb8cf77b839">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh7Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -815,9 +832,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '8'"!][!//   
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '8'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="8365cdf7-bf4d-4864-a7a7-dcdce4778045">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh8Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -827,9 +845,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "num:i($CddChannel) = '9'"!][!//  
+              [!ENDIF!][!//
+              [!IF "num:i($CddChannel) = '9'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="9fc21e33-91dd-40d5-a83d-9358e514643d">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh9Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -839,10 +858,11 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!ELSEIF "num:i($CddGroup) = '1'"!][!//  
-              [!IF "num:i($CddChannel) = '0'"!][!//   
+              [!ELSEIF "num:i($CddGroup) = '1'"!][!//
+              [!IF "num:i($CddChannel) = '0'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="c503a4d6-1f38-4466-9e5f-6ac4f1fb9600">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch0Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -852,9 +872,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '1'"!][!//  
+              [!IF "num:i($CddChannel) = '1'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="baeeee79-4cb3-4e30-964f-b047b15d4404">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch1Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -864,9 +885,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '2'"!][!//  
+              [!IF "num:i($CddChannel) = '2'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="5709ac18-8dcc-454d-9035-b7407e7a9319">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch2Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -876,9 +898,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '3'"!][!//  
+              [!IF "num:i($CddChannel) = '3'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="a4395272-8549-46de-aec6-5fd2afece801">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch3Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -888,9 +911,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '4'"!][!//  
+              [!IF "num:i($CddChannel) = '4'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="ad5b5eea-c85a-4e7e-8445-454f28fc76d1">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch4Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -900,9 +924,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '5'"!][!//  
+              [!IF "num:i($CddChannel) = '5'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="07e3a7ce-ad40-4480-b6f4-a41e154965b0">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch5Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -912,9 +937,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '6'"!][!//  
+              [!IF "num:i($CddChannel) = '6'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="b5bfa310-1a5b-4126-ace7-230555fd713a">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch6Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -924,9 +950,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '7'"!][!//  
+              [!IF "num:i($CddChannel) = '7'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="76557256-295c-4fe9-b3b1-4e978285f707">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch7Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -936,9 +963,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '8'"!][!//  
+              [!IF "num:i($CddChannel) = '8'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="8097d590-62f1-405f-a404-897b9b7d4c4e">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch8Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -948,9 +976,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '9'"!][!//  
+              [!IF "num:i($CddChannel) = '9'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="a06d974e-225b-474a-9e18-13534d670708">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch9Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -960,9 +989,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '0'"!][!//  
+              [!IF "num:i($CddChannel) = '0'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="33cadb6c-8eae-415f-881e-f3449793f48a">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh0Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -972,9 +1002,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '1'"!][!//  
+              [!IF "num:i($CddChannel) = '1'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="fb82291e-7240-4340-8dbd-6a58059542f4">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh1Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -984,9 +1015,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '2'"!][!//  
+              [!IF "num:i($CddChannel) = '2'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="7f54cdff-b524-4034-a70a-ece430fa74d4">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh2Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -996,9 +1028,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '3'"!][!//  
+              [!IF "num:i($CddChannel) = '3'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="ab6133ad-462d-4f7c-8a00-cd27c31e7276">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh3Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -1008,9 +1041,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '4'"!][!//  
+              [!IF "num:i($CddChannel) = '4'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="bb30e6b4-b731-4787-bdf0-cbe06416da0b">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh4Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -1020,9 +1054,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '5'"!][!//  
+              [!IF "num:i($CddChannel) = '5'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="07116d04-6ddc-4bea-a34a-439f37fe9af8">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh5Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -1032,9 +1067,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '6'"!][!//  
+              [!IF "num:i($CddChannel) = '6'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="d556c00a-dbdb-4197-9b4f-d5311436f384">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh6Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -1044,9 +1080,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '7'"!][!//  
+              [!IF "num:i($CddChannel) = '7'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="93bb7e1f-d666-48af-9119-1341ecd31a51">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh7Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -1056,9 +1093,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '8'"!][!//  
+              [!IF "num:i($CddChannel) = '8'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="f52e17c8-c9df-4a6d-9714-0b3c7d9d6081">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh8Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -1068,9 +1106,10 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
-              [!IF "num:i($CddChannel) = '9'"!][!//  
+              [!IF "num:i($CddChannel) = '9'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="12f8f097-4835-4dd9-8791-345bf641d84c">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh9Isr</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -1080,10 +1119,11 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//              
               [!ENDIF!][!//
-              [!ENDLOOP!][!// 
+              [!ENDIF!][!//
+              [!ENDLOOP!][!//
               [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmGetCounterApi"!][!//
                 <BSW-CALLED-ENTITY UUID="7d85106d-5f44-4a41-9a0d-3cf7fd41cd52">
                   <SHORT-NAME>Cdd_Pwm_GetCounter</SHORT-NAME>
@@ -1098,47 +1138,47 @@
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_GetCounter</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
-              [!ENDIF!][!//  
+              [!ENDIF!][!//
               [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmGetCounterStatus"!][!//
                 <BSW-CALLED-ENTITY UUID="f05f12c9-092a-4072-963e-4d4f62932f5e">
                   <SHORT-NAME>Cdd_Pwm_GetCounterStatus</SHORT-NAME>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_GetCounterStatus</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmVersionInfoApi"!][!//  
+              [!ENDIF!][!//
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmVersionInfoApi"!][!//
                 <BSW-CALLED-ENTITY UUID="7db2b452-9134-4012-a79f-7d8af50423fa">
                   <SHORT-NAME>Cdd_Pwm_GetVersionInfo</SHORT-NAME>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//  
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_GetVersionInfo</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!ENDIF!][!//
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmHrSetPeriodDutyEnable"!][!//  
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmHrSetPeriodDutyEnable"!][!//
                 <BSW-CALLED-ENTITY UUID="a7c22435-e947-4060-8544-7e111dddb4a3">
                   <SHORT-NAME>Cdd_Pwm_HrSetPeriodDutyPhase</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//   
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSetPeriodDutyPhase</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="77b338a9-06bd-45b5-9d56-23fb1f86fcb6">
@@ -1162,89 +1202,89 @@
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSetXcmpRegValue</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!ENDIF!][!//
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmHrSfoCalibrationEnable"!][!//   
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmHrSfoCalibrationEnable"!][!//
                 <BSW-CALLED-ENTITY UUID="b8417436-c994-4ae0-8478-c133581ca5d1">
                   <SHORT-NAME>Cdd_Pwm_HrSfoCalibration</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//   
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSfoCalibration</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!ENDIF!][!//
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmHrSfoStatusEnable"!][!//  
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmHrSfoStatusEnable"!][!//
                 <BSW-CALLED-ENTITY UUID="3f1e05b2-2ee4-4f07-9fec-9184871e0fc9">
                   <SHORT-NAME>Cdd_Pwm_HrSfoStatus</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//   
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!// 
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSfoStatus</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
-              [!ENDIF!][!//  
+              [!ENDIF!][!//
                 <BSW-CALLED-ENTITY UUID="809716a8-9a23-4fbb-89ea-b4c4c04aef34">
                   <SHORT-NAME>Cdd_Pwm_Init</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!// 
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_Init</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmEnableRegisterReadbackApi"!][!//
                 <BSW-CALLED-ENTITY UUID="3af20b70-0db9-4ba5-8820-7d4757febf5f">
                   <SHORT-NAME>Cdd_Pwm_RegisterReadback</SHORT-NAME>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//   
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//   
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_RegisterReadback</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!ENDIF!][!//
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetAbsoluteThreshold"!][!//   
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetAbsoluteThreshold"!][!//
                 <BSW-CALLED-ENTITY UUID="35236871-7084-4324-b749-5083db864102">
                   <SHORT-NAME>Cdd_Pwm_SetAbsoluteThreshold</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//   
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetAbsoluteThreshold</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!ENDIF!][!//
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetAdcTriggerApi"!][!// 
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetAdcTriggerApi"!][!//
                 <BSW-CALLED-ENTITY UUID="739d0d15-6a93-4811-8957-40c275400b58">
                   <SHORT-NAME>Cdd_Pwm_SetAdcTrigger</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
@@ -1254,7 +1294,7 @@
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetAdcTrigger</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!ENDIF!][!//
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetOutputToIdle"!][!// 
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetOutputToIdle"!][!//
                 <BSW-CALLED-ENTITY UUID="55826993-91fa-4952-90aa-cff867b3ee34">
                   <SHORT-NAME>Cdd_Pwm_SetOutputToIdle</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
@@ -1264,7 +1304,7 @@
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetOutputToIdle</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!ENDIF!][!//
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetPeriodDutyPhase"!][!// 
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetPeriodDutyPhase"!][!//
                 <BSW-CALLED-ENTITY UUID="506a2c70-208c-4d94-9af4-9e99fdda1da8">
                   <SHORT-NAME>Cdd_Pwm_SetPeriodDutyPhase</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
@@ -1311,57 +1351,57 @@
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetCmpShadowRegValue</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
-              [!ENDIF!][!// 
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetPinAction"!][!// 
+              [!ENDIF!][!//
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetPinAction"!][!//
                 <BSW-CALLED-ENTITY UUID="792c7039-0740-4297-9132-b4400dd88a2c">
                   <SHORT-NAME>Cdd_Pwm_SetPinAction</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//   
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetPinAction</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!ENDIF!][!//
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetRelativeThreshold"!][!//  
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmSetRelativeThreshold"!][!//
                 <BSW-CALLED-ENTITY UUID="212c9471-6a17-46b3-a449-530254f85741">
                   <SHORT-NAME>Cdd_Pwm_SetRelativeThreshold</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//   
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetRelativeThreshold</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
-              [!ENDIF!][!//  
+              [!ENDIF!][!//
                 <BSW-CALLED-ENTITY UUID="4ba382f7-e26f-4451-92f0-6c96410956ea">
                   <SHORT-NAME>Cdd_Pwm_StartChannelCounter</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//   
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_StartChannelCounter</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
                 <BSW-CALLED-ENTITY UUID="beb60699-0b40-4e72-b541-f70fc244512a">
@@ -1370,14 +1410,14 @@
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
-                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//   
+                [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
                     <BSW-DIRECT-CALL-POINT>
                       <SHORT-NAME>Det</SHORT-NAME>
                       <CALLED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BSWModuleEntry/Det_ReportError</CALLED-ENTRY-REF>
                     </BSW-DIRECT-CALL-POINT>
                   </CALL-POINTS>
-                [!ENDIF!][!//  
+                [!ENDIF!][!//
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_StopChannelCounter</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
               [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmChannelTimerBaseSyncEnable"!][!//
@@ -1397,8 +1437,8 @@
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SyncEnable</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
-              [!ENDIF!][!//  
-              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTripZoneEnable"!][!//  
+              [!ENDIF!][!//
+              [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTripZoneEnable"!][!//
                 <BSW-CALLED-ENTITY UUID="a4ea2add-7efe-4629-a3bf-0c99f6db2e6b">
                   <SHORT-NAME>Cdd_Pwm_TzEventStatusClear</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
@@ -1447,7 +1487,7 @@
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_TzTripEventEnable</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
-              [!ENDIF!][!//  
+              [!ENDIF!][!//
               </ENTITYS>
             </BSW-INTERNAL-BEHAVIOR>
           </INTERNAL-BEHAVIORS>

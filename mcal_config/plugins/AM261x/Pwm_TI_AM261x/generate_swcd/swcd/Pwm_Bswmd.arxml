@@ -149,12 +149,12 @@
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Pwm_TI_AM261x/Pwm_ModuleEntry/Pwm_SetDutyCycle</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
             [!ENDIF!][!//
-            [!IF "as:modconf('Pwm')[1]/PwmConfigurationOfOptApiServices/PwmSetOutputToIdle = 'true'"!][!//            
+            [!IF "as:modconf('Pwm')[1]/PwmConfigurationOfOptApiServices/PwmSetOutputToIdle = 'true'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Pwm_TI_AM261x/Pwm_ModuleEntry/Pwm_SetOutputToIdle</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
             [!ENDIF!][!//
-            [!IF "as:modconf('Pwm')[1]/PwmConfigurationOfOptApiServices/PwmSetPeriodAndDuty = 'true'"!][!//            
+            [!IF "as:modconf('Pwm')[1]/PwmConfigurationOfOptApiServices/PwmSetPeriodAndDuty = 'true'"!][!//
             <BSW-MODULE-ENTRY-REF-CONDITIONAL>
               <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Pwm_TI_AM261x/Pwm_ModuleEntry/Pwm_SetPeriodAndDuty</BSW-MODULE-ENTRY-REF>
             </BSW-MODULE-ENTRY-REF-CONDITIONAL>
@@ -194,6 +194,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '10'"!][!//
@@ -206,6 +207,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '11'"!][!//
@@ -218,6 +220,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '12'"!][!//
@@ -230,6 +233,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '13'"!][!//
@@ -242,6 +246,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '14'"!][!//
@@ -254,6 +259,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '15'"!][!//
@@ -266,6 +272,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '16'"!][!//
@@ -278,6 +285,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '17'"!][!//
@@ -290,6 +298,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '18'"!][!//
@@ -302,6 +311,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '19'"!][!//
@@ -314,6 +324,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '1'"!][!//
@@ -326,6 +337,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '2'"!][!//
@@ -338,6 +350,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '3'"!][!//
@@ -350,6 +363,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '4'"!][!//
@@ -362,6 +376,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '5'"!][!//
@@ -374,6 +389,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '6'"!][!//
@@ -386,6 +402,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '7'"!][!//
@@ -398,6 +415,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '8'"!][!//
@@ -410,6 +428,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "PwmChannelId = '9'"!][!//
@@ -422,6 +441,7 @@
                   [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!ENDLOOP!][!//
@@ -536,7 +556,7 @@
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Pwm_TI_AM261x/Pwm_ModuleEntry/Pwm_SetDutyCycle</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
                 [!ENDIF!][!//
-                [!IF "as:modconf('Pwm')[1]/PwmConfigurationOfOptApiServices/PwmSetOutputToIdle = 'true'"!][!//            
+                [!IF "as:modconf('Pwm')[1]/PwmConfigurationOfOptApiServices/PwmSetOutputToIdle = 'true'"!][!//
                 <BSW-CALLED-ENTITY UUID="240ddd05-fe4b-478c-adbe-ffa8c43c254f">
                   <SHORT-NAME>Pwm_SetOutputToIdle</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
@@ -554,7 +574,7 @@
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Pwm_TI_AM261x/Pwm_ModuleEntry/Pwm_SetOutputToIdle</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
                 [!ENDIF!][!//
-                [!IF "as:modconf('Pwm')[1]/PwmConfigurationOfOptApiServices/PwmSetPeriodAndDuty = 'true'"!][!//            
+                [!IF "as:modconf('Pwm')[1]/PwmConfigurationOfOptApiServices/PwmSetPeriodAndDuty = 'true'"!][!//
                 <BSW-CALLED-ENTITY UUID="35dac5a9-edfc-43ef-970c-b31a587d9b6b">
                   <SHORT-NAME>Pwm_SetPeriodAndDuty</SHORT-NAME>
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>

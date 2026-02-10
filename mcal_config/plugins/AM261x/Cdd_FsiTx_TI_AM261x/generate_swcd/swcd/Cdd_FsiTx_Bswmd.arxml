@@ -118,6 +118,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!IF "CddFsiTxHwUnitId = 'CDD_FSI_TX_HWUNIT_0'"!][!//
@@ -130,6 +131,7 @@
                   [!ELSE!]
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                   [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 [!ENDIF!][!//
                 [!ENDLOOP!][!//

@@ -185,6 +185,7 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 <BSW-INTERRUPT-ENTITY UUID="ac14fa3b-a94f-4fcc-97ce-afe493122c21">
                   <SHORT-NAME>Adc_ADCINT2_IrqUnit0</SHORT-NAME>
@@ -215,6 +216,7 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 <BSW-INTERRUPT-ENTITY UUID="32fdacd4-223c-401d-9c48-02a701a26916">
                   <SHORT-NAME>Adc_ADCINT3_IrqUnit0</SHORT-NAME>
@@ -245,6 +247,7 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 <BSW-INTERRUPT-ENTITY UUID="6e272686-e112-422a-a1ad-682919b2631b">
                   <SHORT-NAME>Adc_ADCINT4_IrqUnit0</SHORT-NAME>
@@ -275,6 +278,7 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
               [!IF "AdcHwUnitId = 'ADC_HWUNIT_1'"!][!//
@@ -307,6 +311,7 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 <BSW-INTERRUPT-ENTITY UUID="ac14fa3b-a94f-4fcc-97ce-afe493122c22">
                   <SHORT-NAME>Adc_ADCINT2_IrqUnit1</SHORT-NAME>
@@ -337,6 +342,7 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 <BSW-INTERRUPT-ENTITY UUID="32fdacd4-223c-401d-9c48-02a701a26926">
                   <SHORT-NAME>Adc_ADCINT3_IrqUnit1</SHORT-NAME>
@@ -367,6 +373,7 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 <BSW-INTERRUPT-ENTITY UUID="6e272686-e112-422a-a1ad-682919b2637b">
                   <SHORT-NAME>Adc_ADCINT4_IrqUnit1</SHORT-NAME>
@@ -397,6 +404,7 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
               [!ENDIF!][!//
               [!IF "AdcHwUnitId = 'ADC_HWUNIT_2'"!][!//
@@ -429,6 +437,7 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 <BSW-INTERRUPT-ENTITY UUID="ac14fa3b-a94f-4fcc-97ce-afe493120c22">
                   <SHORT-NAME>Adc_ADCINT2_IrqUnit2</SHORT-NAME>
@@ -459,6 +468,7 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 <BSW-INTERRUPT-ENTITY UUID="32fdacd4-223c-401d-9c48-02a701a96926">
                   <SHORT-NAME>Adc_ADCINT3_IrqUnit2</SHORT-NAME>
@@ -489,6 +499,7 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
                 <BSW-INTERRUPT-ENTITY UUID="6e272686-e112-422a-a1ad-682919b2437b">
                   <SHORT-NAME>Adc_ADCINT4_IrqUnit2</SHORT-NAME>
@@ -519,8 +530,9 @@
                 [!ELSE!][!//
                   <INTERRUPT-CATEGORY>CAT-1</INTERRUPT-CATEGORY>
                 [!ENDIF!][!//
+                  <INTERRUPT-SOURCE>Hardware</INTERRUPT-SOURCE>
                 </BSW-INTERRUPT-ENTITY>
-              [!ENDIF!][!//              
+              [!ENDIF!][!//
               [!ENDLOOP!][!//
               [!ENDLOOP!][!//
               [!IF "as:modconf('Adc')[1]/AdcGeneral/AdcDeInitApi = 'true'"!][!//
@@ -1175,7 +1187,7 @@
             [!ENDIF!][!//
               <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
               <BSW-ENTRY-KIND>CONCRETE</BSW-ENTRY-KIND>
-            </BSW-MODULE-ENTRY>                        
+            </BSW-MODULE-ENTRY>
             <BSW-MODULE-ENTRY UUID="ad2befa7-4cd5-4c70-966c-2dfa1ae6bbda">
               <SHORT-NAME>Adc_DeInit</SHORT-NAME>
               <SERVICE-ID>1</SERVICE-ID>
