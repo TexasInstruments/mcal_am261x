@@ -40,7 +40,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| epwm   | 15029    | 7    | 16072    |
+| epwm   | 14955    | 7    | 15912    |
  
 ### ETH
 
@@ -96,7 +96,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| ipc   | 5728    | 157    | 1256    |
+| ipc   | 5742    | 157    | 1256    |
  
 ### LIN
 
