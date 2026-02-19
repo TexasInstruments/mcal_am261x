@@ -60,7 +60,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 11868    | 478    | 8240    |
+| fls   | 11894    | 478    | 8240    |
  
 ### FSIRX
 
@@ -96,7 +96,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| ipc   | 5742    | 157    | 1256    |
+| ipc   | 5790    | 157    | 1256    |
  
 ### LIN
 
@@ -114,7 +114,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| port   | 3066    | 1    | 176    |
+| port   | 3072    | 1    | 176    |
      
 ### PWM
 
