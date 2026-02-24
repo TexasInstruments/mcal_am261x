@@ -55,7 +55,7 @@
 
 /**
  *  \defgroup DRV_CDD_EDMA_MODULE APIs for EDMA
- *  \ingroup DRV_MODULE
+ *  \ingroup DMA
  *
  *  This module contains APIs to program and use the EDMA.
  *
