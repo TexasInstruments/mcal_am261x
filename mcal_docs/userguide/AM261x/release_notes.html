@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1 id="introduction">Introduction</h1>
-<p>This is the release notes for MCAL AM26xx 11.02.00 done on 25-Feb-2026.
+<p>This is the release notes for MCAL AM26xx 11.02.00 done on 03-Mar-2026.
 The MCAL package consists of MCAL Driver &amp; Applications for AM26xx family of devices. The MCAL modules are compliant to AUTOSAR specification versioned <strong>4.3.1</strong>.</p>
 <h2 id="licensing">Licensing</h2>
 <p>Refer to manifest file <a href="./mcal_manifest.html">mcal_manifest.html</a> and <a href="./license.md">license.md</a> present in installation base path</p>
@@ -267,12 +267,20 @@ This document details about supported driver, installation, dependencies, build 
       <td>The Fls_Config_SFDP_1 structure in CFG files is writable and is now placed in SEC_VAR_INIT_UNSPECIFIED section</td>
     </tr>
     <tr>
+      <td>MCAL-35984</td>
+      <td>Fls Write API causes issue for write sizes less than 4 byte</td>
+      <td>FLS</td>
+      <td>Major</td>
+      <td>AM263Px, AM261x</td>
+      <td>FLS DAC write now supports 2-byte writes, additional checks have been added to report DET when trying to write odd number of bytes in DDR modes</td>
+    </tr>
+    <tr>
       <td>MCAL-35747</td>
       <td>Extra closing tag FLS_bswmd.arxml</td>
       <td>FLS</td>
       <td>Minor</td>
       <td>AM263x, AM263Px, AM261x</td>
-      <td>See description</td>
+      <td></td>
     </tr>
     <tr>
       <td>MCAL-35751</td>
@@ -280,7 +288,23 @@ This document details about supported driver, installation, dependencies, build 
       <td>FLS</td>
       <td>Minor</td>
       <td>AM263Px, AM261x</td>
-      <td>See description</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MCAL-35979,MCAL-35981</td>
+      <td>Functions Wdg_SetMode and Wdg_SetTriggerCondition updated to have exclusive areas.</td>
+      <td>WDG</td>
+      <td>Minor</td>
+      <td>AM263x, AM263Px, AM261x</td>
+      <td>Wdg_SetMode and Wdg_SetTriggerCondition are updated to have exclusive area while updating mode and trigger conditions</td>
+    </tr>
+    <tr>
+      <td>MCAL-35982</td>
+      <td>Removal of Wdg_ProcessTimeout() call from Wdg_SetTriggerCondition()</td>
+      <td>WDG</td>
+      <td>Minor</td>
+      <td>AM263x, AM263Px, AM261x</td>
+      <td>Wdg_ProcessTimeout() is removed from Wdg_SetTriggerCondition()</td>
     </tr>
   </tbody>
 </table>
