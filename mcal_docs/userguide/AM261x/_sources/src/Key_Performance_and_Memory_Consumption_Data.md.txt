@@ -60,7 +60,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 12128    | 482    | 8240    |
+| fls   | 12152    | 482    | 8240    |
  
 ### FSIRX
 
@@ -120,7 +120,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| pwm   | 5074    | 7    | 249    |
+| pwm   | 5070    | 7    | 249    |
  
 ### SPI
 
