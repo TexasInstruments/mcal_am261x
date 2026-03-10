@@ -96,7 +96,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| ipc   | 5790    | 157    | 1256    |
+| ipc   | 5792    | 157    | 1256    |
  
 ### LIN
 
