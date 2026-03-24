@@ -50,6 +50,11 @@ This document details about supported driver, installation, dependencies, build 
       <td>AM263Px</td>
     </tr>
     <tr>
+      <td>Non-blocking Flash Erase</td>
+      <td>FLS</td>
+      <td>AM263Px, AM261</td>
+    </tr>
+    <tr>
       <td>Bug Fixes</td>
       <td>All</td>
       <td>Please refer Fixed Defects section for more details.</td>
@@ -77,6 +82,12 @@ This document details about supported driver, installation, dependencies, build 
       <td>CDD PWM</td>
       <td>Channel parameter type changed from uint32 to Cdd_Pwm_ChannelType in multiple APIs</td>
       <td>Application shall use Cdd_Pwm_ChannelType for channel parameters instead of uint32. This is done as part of the MISRAC fixes</td>
+    </tr>
+    <tr>
+      <td>FLS</td>
+      <td>Flash erase operations are now non-blocking</td>
+      <td>The application must periodically schedule <code>Fls_MainFunction</code>
+          to process erase completion and update the job result.</td><br>
     </tr>
   </tbody>
 </table>
