@@ -1,3 +1,18 @@
+commit 9003a0b1d911cd6acf9d7d24cbd8db1ce6c6cb3a
+Author: Akash <a-verma3@ti.com>
+Date:   Mon Mar 23 15:00:01 2026 +0530
+
+    am263px: Dma: Klockwork and Coverage fix for Dma module
+    
+    Fixes: MCAL-35535
+    
+    Signed-off-by: Akash Verma
+
+ mcal/Dma/src/Cdd_Dma.c                             | 10 +++
+ mcal/Dma/src/Cdd_Dma_Priv.c                        | 14 ++--
+ .../dma_test/testLib/dmaTestNegativeTestCase.c     | 80 ++++++++++++++++++----
+ 3 files changed, 82 insertions(+), 22 deletions(-)
+
 commit 473999987ea5303954ca107a7eaa959f383c9342
 Author: Swathi G Bhat <s-bhat2@ti.com>
 Date:   Wed Mar 18 23:57:45 2026 +0530

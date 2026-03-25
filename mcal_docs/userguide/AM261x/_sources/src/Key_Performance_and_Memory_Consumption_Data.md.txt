@@ -34,7 +34,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| dma   | 4856    | 16766    | 528    |
+| dma   | 4894    | 16766    | 528    |
  
 ### EPWM
 
