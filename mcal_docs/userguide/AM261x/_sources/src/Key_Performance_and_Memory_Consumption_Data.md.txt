@@ -10,7 +10,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| adc   | 5504    | 4    | 2984    |
+| adc   | 5524    | 4    | 2984    |
  
 ### CAN
 
@@ -60,7 +60,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 12504    | 482    | 8240    |
+| fls   | 12510    | 482    | 8240    |
  
 ### FSIRX
 
@@ -78,13 +78,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| gpt   | 2822    | 72    | 776    |
+| gpt   | 2818    | 72    | 776    |
  
 ### I2C
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| i2c   | 4288    | 1    | 1540    |
+| i2c   | 4598    | 1    | 1588    |
  
 ### ICU
 
@@ -126,7 +126,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| spi   | 6696    | 1    | 2604    |
+| spi   | 6680    | 1    | 2604    |
  
 ### UART
 
