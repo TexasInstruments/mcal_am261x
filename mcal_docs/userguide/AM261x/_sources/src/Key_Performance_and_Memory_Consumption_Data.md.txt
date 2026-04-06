@@ -60,7 +60,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 12510    | 482    | 8240    |
+| fls   | 12506    | 482    | 8240    |
  
 ### FSIRX
 
@@ -126,17 +126,17 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| spi   | 6680    | 1    | 2604    |
+| spi   | 6646    | 1    | 2604    |
  
 ### UART
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| uart   | 4748    | 1    | 196    |
+| uart   | 4674    | 1    | 196    |
  
 ### WDG
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| wdg   | 1030    | 1    | 44    |
+| wdg   | 1042    | 1    | 44    |
  
