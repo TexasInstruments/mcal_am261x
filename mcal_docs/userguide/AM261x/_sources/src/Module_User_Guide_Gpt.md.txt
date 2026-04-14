@@ -356,10 +356,10 @@ Not Supported
 
 
 
-#### GptChannelConfigSet
+### GptChannelConfigSet
 This container is the base of a Configuration Set which contains the configured GPT channels. This way, different configuration sets can be defined for post-build process.
 
-##### GptChannelConfiguration
+#### GptChannelConfiguration
 Configuration of an individual GPT channel.
 
 ###### GptChannelId
@@ -462,10 +462,10 @@ Function pointer to callback function (for wakeup notification).
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-#### GptConfigurationOfOptApiServices
+### GptConfigurationOfOptApiServices
 This container contains all configuration switches for configuring optional API services of the GPT driver.
 
-##### GptDeinitApi
+###### GptDeinitApi
 
 | Item ||
 |--------|---------------|
@@ -478,7 +478,7 @@ This container contains all configuration switches for configuring optional API 
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### GptEnableDisableNotificationApi
+###### GptEnableDisableNotificationApi
 
 | Item ||
 |--------|---------------|
@@ -491,7 +491,7 @@ This container contains all configuration switches for configuring optional API 
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### GptTimeElapsedApi
+###### GptTimeElapsedApi
 
 | Item ||
 |--------|---------------|
@@ -504,7 +504,7 @@ This container contains all configuration switches for configuring optional API 
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### GptTimeRemainingApi
+###### GptTimeRemainingApi
 
 | Item ||
 |--------|---------------|
@@ -517,7 +517,7 @@ This container contains all configuration switches for configuring optional API 
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### GptVersionInfoApi
+###### GptVersionInfoApi
 
 | Item ||
 |--------|---------------|
@@ -530,7 +530,7 @@ This container contains all configuration switches for configuring optional API 
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### GptRegisterReadback
+###### GptRegisterReadback
 
 | Item ||
 |--------|---------------|
@@ -543,7 +543,7 @@ This container contains all configuration switches for configuring optional API 
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### GptWakeupFunctionalityApi
+###### GptWakeupFunctionalityApi
 
 | Item ||
 |--------|---------------|
@@ -556,10 +556,10 @@ This container contains all configuration switches for configuring optional API 
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-#### GptDriverConfiguration
+### GptDriverConfiguration
 This container contains the module-wide configuration (parameters) of the GPT Driver
 
-##### GptDevErrorDetect
+###### GptDevErrorDetect
 
 | Item ||
 |--------|---------------|
@@ -572,7 +572,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### GptPredefTimer100us32bitEnable
+###### GptPredefTimer100us32bitEnable
 
 | Item ||
 |--------|---------------|
@@ -585,7 +585,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### GptPredefTimer1usEnablingGrade
+###### GptPredefTimer1usEnablingGrade
 
 | Item ||
 |--------|---------------|
@@ -599,7 +599,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Default-value** | GPT_PREDEF_UNDEFINED |
 | **Range** | GPT_PREDEF_UNDEFINED |
 
-##### GptReportWakeupSource
+###### GptReportWakeupSource
 
 | Item ||
 |--------|---------------|
@@ -612,7 +612,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### GptTypeofInterruptFunction
+###### GptTypeofInterruptFunction
 
 | Item ||
 |--------|---------------|
@@ -626,7 +626,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Default-value** | GPT_ISR_CAT1 |
 | **Range** | GPT_ISR_VOID<br>GPT_ISR_CAT1<br>GPT_ISR_CAT2 |
 
-##### GptPrescaler
+###### GptPrescaler
 
 | Item ||
 |--------|---------------|
@@ -641,7 +641,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Max-value** | 2147483647 |
 | **Min-value** | 0 |
 
-##### GptModule0CounterBlk0Frequency
+###### GptModule0CounterBlk0Frequency
 
 | Item ||
 |--------|---------------|
@@ -656,7 +656,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Max-value** | 2147483647 |
 | **Min-value** | 0 |
 
-##### GptModule0CounterBlk1Frequency
+###### GptModule0CounterBlk1Frequency
 
 | Item ||
 |--------|---------------|
@@ -671,7 +671,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Max-value** | 2147483647 |
 | **Min-value** | 0 |
 
-##### GptModule1CounterBlk0Frequency
+###### GptModule1CounterBlk0Frequency
 
 | Item ||
 |--------|---------------|
@@ -686,7 +686,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Max-value** | 2147483647 |
 | **Min-value** | 0 |
 
-##### GptModule1CounterBlk1Frequency
+###### GptModule1CounterBlk1Frequency
 
 | Item ||
 |--------|---------------|
@@ -701,7 +701,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Max-value** | 2147483647 |
 | **Min-value** | 0 |
 
-##### GptModule2CounterBlk0Frequency
+###### GptModule2CounterBlk0Frequency
 
 | Item ||
 |--------|---------------|
@@ -716,7 +716,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Max-value** | 2147483647 |
 | **Min-value** | 0 |
 
-##### GptModule2CounterBlk1Frequency
+###### GptModule2CounterBlk1Frequency
 
 | Item ||
 |--------|---------------|
@@ -731,7 +731,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Max-value** | 2147483647 |
 | **Min-value** | 0 |
 
-##### GptModule3CounterBlk0Frequency
+###### GptModule3CounterBlk0Frequency
 
 | Item ||
 |--------|---------------|
@@ -746,7 +746,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Max-value** | 2147483647 |
 | **Min-value** | 0 |
 
-##### GptModule3CounterBlk1Frequency
+###### GptModule3CounterBlk1Frequency
 
 | Item ||
 |--------|---------------|
@@ -761,7 +761,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Max-value** | 2147483647 |
 | **Min-value** | 0 |
 
-##### GptDefaultOSCounterId
+###### GptDefaultOSCounterId
 
 | Item ||
 |--------|---------------|
@@ -780,7 +780,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Max-value** | 16 |
 | **Min-value** | 0 |
 
-##### GptTimeoutDuration
+###### GptTimeoutDuration
 
 | Item ||
 |--------|---------------|
@@ -795,7 +795,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | **Max-value** | 4294967295 |
 | **Min-value** | 1 |
 
-##### GptOsCounterRef
+###### GptOsCounterRef
 
 | Item ||
 |--------|---------------|
@@ -811,7 +811,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### GptClockReferencePoint
+#### GptClockReferencePoint
 This container contains a parameter, which represents a reference to a container of the type McuClockReferencePoint (defined in module MCU).
 
 ###### GptClockReference

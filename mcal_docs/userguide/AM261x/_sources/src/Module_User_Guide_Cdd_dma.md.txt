@@ -252,10 +252,10 @@ Not supported
 
 
 
-#### CddDmaDriverHandler
+###### CddDmaDriverHandler
 This container contains the configuration parameters and sub containers of the AUTOSAR Complex device driver (CDD) module.
 
-##### CddDmaTransferType
+###### CddDmaTransferType
 
 | Item ||
 |--------|---------------|
@@ -268,7 +268,7 @@ This container contains the configuration parameters and sub containers of the A
 | **Default-value** | CDD_DMA_TRANSFER_TYPE_MEMORY_TRANSFER |
 | **Range** | CDD_DMA_TRANSFER_TYPE_UART_TX<br>CDD_DMA_TRANSFER_TYPE_UART_RX<br>CDD_DMA_TRANSFER_TYPE_ADC<br>CDD_DMA_TRANSFER_TYPE_MCSPI<br>CDD_DMA_TRANSFER_TYPE_MEMORY_TRANSFER<br>CDD_DMA_TRANSFER_TYPE_FLS |
 
-##### CddDmaInstance
+###### CddDmaInstance
 
 | Item ||
 |--------|---------------|
@@ -281,7 +281,7 @@ This container contains the configuration parameters and sub containers of the A
 | **Default-value** | CDD_DMA_MSS_A |
 | **Range** | CDD_DMA_MSS_A |
 
-##### CddDmaRegionID
+###### CddDmaRegionID
 
 | Item ||
 |--------|---------------|
@@ -295,7 +295,7 @@ This container contains the configuration parameters and sub containers of the A
 | **Max-value** | 7 |
 | **Min-value** | 0 |
 
-##### CddDmaTccNumber
+###### CddDmaTccNumber
 
 | Item ||
 |--------|---------------|
@@ -309,7 +309,7 @@ This container contains the configuration parameters and sub containers of the A
 | **Max-value** | 63 |
 | **Min-value** | 0 |
 
-##### CddDmaQueueNumber
+###### CddDmaQueueNumber
 
 | Item ||
 |--------|---------------|
@@ -323,7 +323,7 @@ This container contains the configuration parameters and sub containers of the A
 | **Max-value** | 1 |
 | **Min-value** | 0 |
 
-##### CddDmaEnableInterrupt
+###### CddDmaEnableInterrupt
 
 | Item ||
 |--------|---------------|
@@ -335,7 +335,7 @@ This container contains the configuration parameters and sub containers of the A
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### CddDmaTransferModeSelect
+###### CddDmaTransferModeSelect
 
 | Item ||
 |--------|---------------|
@@ -348,7 +348,7 @@ This container contains the configuration parameters and sub containers of the A
 | **Default-value** | CDD_DMA_TRANSFER_MODE_NORMAL |
 | **Range** | CDD_DMA_TRANSFER_MODE_NORMAL<br>CDD_DMA_TRANSFER_MODE_LINKING<br>CDD_DMA_TRANSFER_MODE_CHAINING |
 
-##### CddDmaChannelGroup
+###### CddDmaChannelGroup
 This container contains the DMA Channel Group.
 
 ###### CddDmaChannel
@@ -365,7 +365,7 @@ This container contains the DMA Channel Group.
 | **Max-value** | 63 |
 | **Min-value** | 0 |
 
-##### CddDmaParamSets
+###### CddDmaParamSets
 This container contains the DMA params.
 
 ###### CddDmaPramNumber
@@ -382,7 +382,7 @@ This container contains the DMA params.
 | **Max-value** | 255 |
 | **Min-value** | 0 |
 
-##### CddDmaChannelTriggerConfiguration
+###### CddDmaChannelTriggerConfiguration
 This container contains the DMA Channel Trigger reasource.
 
 ###### CddDmaDmaChannelModule
@@ -437,10 +437,10 @@ This container contains the DMA Channel Trigger reasource.
 | **Default-value** | CDD_DMA_XBAR_ADC0_INT1 |
 | **Range** | CDD_DMA_XBAR_EPWM0_SOCA<br>CDD_DMA_XBAR_EPWM1_SOCA<br>CDD_DMA_XBAR_EPWM2_SOCA<br>CDD_DMA_XBAR_EPWM3_SOCA<br>CDD_DMA_XBAR_EPWM4_SOCA<br>CDD_DMA_XBAR_EPWM5_SOCA<br>CDD_DMA_XBAR_EPWM6_SOCA<br>CDD_DMA_XBAR_EPWM7_SOCA<br>CDD_DMA_XBAR_EPWM8_SOCA<br>CDD_DMA_XBAR_EPWM9_SOCA<br>CDD_DMA_XBAR_EPWM0_SOCB<br>CDD_DMA_XBAR_EPWM1_SOCB<br>CDD_DMA_XBAR_EPWM2_SOCB<br>CDD_DMA_XBAR_EPWM3_SOCB<br>CDD_DMA_XBAR_EPWM4_SOCB<br>CDD_DMA_XBAR_EPWM5_SOCB<br>CDD_DMA_XBAR_EPWM6_SOCB<br>CDD_DMA_XBAR_EPWM7_SOCB<br>CDD_DMA_XBAR_EPWM8_SOCB<br>CDD_DMA_XBAR_EPWM9_SOCB<br>CDD_DMA_XBAR_ADC0_INT1<br>CDD_DMA_XBAR_ADC0_INT2<br>CDD_DMA_XBAR_ADC0_INT3<br>CDD_DMA_XBAR_ADC0_INT4<br>CDD_DMA_XBAR_ADC0_EVTINT<br>CDD_DMA_XBAR_ADC1_INT1<br>CDD_DMA_XBAR_ADC1_INT2<br>CDD_DMA_XBAR_ADC1_INT3<br>CDD_DMA_XBAR_ADC1_INT4<br>CDD_DMA_XBAR_ADC1_EVTINT<br>CDD_DMA_XBAR_ADC2_INT1<br>CDD_DMA_XBAR_ADC2_INT2<br>CDD_DMA_XBAR_ADC2_INT3<br>CDD_DMA_XBAR_ADC2_INT4<br>CDD_DMA_XBAR_ADC2_EVTINT<br>CDD_DMA_XBAR_FSI0_RX_DMA_EVT<br>CDD_DMA_XBAR_FSI0_DMA_TRIG1<br>CDD_DMA_XBAR_FSI0_DMA_TRIG2<br>CDD_DMA_XBAR_FSI0_TX_DMA_EVT<br>CDD_DMA_XBAR_SD0_FILT0_DRINT<br>CDD_DMA_XBAR_SD0_FILT1_DRINT<br>CDD_DMA_XBAR_SD0_FILT2_DRINT<br>CDD_DMA_XBAR_SD0_FILT3_DRINT<br>CDD_DMA_XBAR_SD1_FILT0_DRINT<br>CDD_DMA_XBAR_SD1_FILT1_DRINT<br>CDD_DMA_XBAR_SD1_FILT2_DRINT<br>CDD_DMA_XBAR_SD1_FILT3_DRINT<br>CDD_DMA_XBAR_ECAP0_DMA_INT<br>CDD_DMA_XBAR_ECAP1_DMA_INT<br>CDD_DMA_XBAR_ECAP2_DMA_INT<br>CDD_DMA_XBAR_ECAP3_DMA_INT<br>CDD_DMA_XBAR_ECAP4_DMA_INT<br>CDD_DMA_XBAR_ECAP5_DMA_INT<br>CDD_DMA_XBAR_ECAP6_DMA_INT<br>CDD_DMA_XBAR_ECAP7_DMA_INT |
 
-#### CddDmaGeneral
+###### CddDmaGeneral
 General configuration settings for the Complex Device Driver
 
-##### CddDmaVersionInfoApi
+###### CddDmaVersionInfoApi
 
 | Item ||
 |--------|---------------|
@@ -452,7 +452,7 @@ General configuration settings for the Complex Device Driver
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### CddDmaDeinitApi
+###### CddDmaDeinitApi
 
 | Item ||
 |--------|---------------|
@@ -464,7 +464,7 @@ General configuration settings for the Complex Device Driver
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### CddDmaDevErrorDetect
+###### CddDmaDevErrorDetect
 
 | Item ||
 |--------|---------------|
@@ -476,7 +476,7 @@ General configuration settings for the Complex Device Driver
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### CddDmaRegisterReadBackApi
+###### CddDmaRegisterReadBackApi
 
 | Item ||
 |--------|---------------|
@@ -487,6 +487,19 @@ General configuration settings for the Complex Device Driver
 | **Value-Configuration-Class** | -- |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
+
+###### CddDmaIrqType
+
+| Item ||
+|--------|---------------|
+| **Name** | CddDmaIrqType |
+| **Description** | This parameter specifies the category of Interrupt ReQuest for callbacks. |
+| **Origin** | Texas Instruments |
+| **Post-Build-Variant-Value** | false |
+| **Value-Configuration-Class** | -- |
+| Pre-Compile-Time | VARIANT-PRE-COMPILE |
+| **Default-value** | CDD_DMA_ISR_VOID |
+| **Range** | CDD_DMA_ISR_VOID<br>CDD_DMA_ISR_CAT1<br>CDD_DMA_ISR_CAT2 |
 Below parameters are applicable for AM261x device only
 
 1. Parameter "CddDmaDmaChannelModule" represents the Cdd_Dma channel of EDMA module i.e., from 0 to 63.

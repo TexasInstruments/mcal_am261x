@@ -40,7 +40,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| epwm   | 15265    | 7    | 15912    |
+| epwm   | 15327    | 7    | 15432    |
  
 ### ETH
 
@@ -78,7 +78,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| gpt   | 2818    | 72    | 776    |
+| gpt   | 2822    | 72    | 776    |
  
 ### I2C
 
@@ -102,7 +102,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| lin   | 2240    | 9    | 10    |
+| lin   | 2224    | 9    | 10    |
  
 ### MCU
 
@@ -114,7 +114,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| port   | 3072    | 1    | 176    |
+| port   | 3074    | 1    | 176    |
      
 ### PWM
 
@@ -126,7 +126,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| spi   | 6646    | 1    | 2604    |
+| spi   | 6642    | 1    | 2604    |
  
 ### UART
 

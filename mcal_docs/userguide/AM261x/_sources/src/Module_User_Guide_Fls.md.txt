@@ -381,15 +381,15 @@ Not supported
 
 
 
-#### FlsConfigSet
+### FlsConfigSet
 Container for runtime configuration parameters of the flash driver.
 
-##### FlsAcErase
+###### FlsAcErase
 
 | Item ||
 |--------|---------------|
 | **Name** | FlsAcErase |
-| **Description** | Instance Id of OSPI. In this variant only one is supported |
+| **Description** | Address offset in RAM to which the erase flash access code shall be loaded. Currenly, Flash Access code Erase/Write functionality is not supported. |
 | **Origin** | Texas Instruments |
 | **Post-Build-Variant-Value** | true |
 | **Value-Configuration-Class** | -- |
@@ -398,7 +398,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Max-value** | 1 |
 | **Min-value** | 0 |
 
-##### FlsAcWrite
+###### FlsAcWrite
 
 | Item ||
 |--------|---------------|
@@ -412,7 +412,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Max-value** | 4294967295 |
 | **Min-value** | 0 |
 
-##### FlsCallCycle
+###### FlsCallCycle
 
 | Item ||
 |--------|---------------|
@@ -427,7 +427,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Max-value** | INF |
 | **Min-value** | 0.0 |
 
-##### FlsDefaultMode
+###### FlsDefaultMode
 
 | Item ||
 |--------|---------------|
@@ -441,7 +441,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Default-value** | MEMIF_MODE_SLOW |
 | **Range** | MEMIF_MODE_FAST<br>MEMIF_MODE_SLOW |
 
-##### FlsEnableDMA
+###### FlsEnableDMA
 
 | Item ||
 |--------|---------------|
@@ -455,7 +455,7 @@ Container for runtime configuration parameters of the flash driver.
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### FlsJobEndNotification
+###### FlsJobEndNotification
 
 | Item ||
 |--------|---------------|
@@ -471,7 +471,7 @@ Container for runtime configuration parameters of the flash driver.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### FlsJobErrorNotification
+###### FlsJobErrorNotification
 
 | Item ||
 |--------|---------------|
@@ -487,7 +487,7 @@ Container for runtime configuration parameters of the flash driver.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### FlsMaxReadFastMode
+###### FlsMaxReadFastMode
 
 | Item ||
 |--------|---------------|
@@ -502,7 +502,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Max-value** | 4294967295 |
 | **Min-value** | 0 |
 
-##### FlsMaxReadNormalMode
+###### FlsMaxReadNormalMode
 
 | Item ||
 |--------|---------------|
@@ -517,7 +517,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Max-value** | 4294967295 |
 | **Min-value** | 0 |
 
-##### FlsMaxWriteFastMode
+###### FlsMaxWriteFastMode
 
 | Item ||
 |--------|---------------|
@@ -532,7 +532,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Max-value** | 4294967295 |
 | **Min-value** | 0 |
 
-##### FlsMaxWriteNormalMode
+###### FlsMaxWriteNormalMode
 
 | Item ||
 |--------|---------------|
@@ -547,7 +547,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Max-value** | 4294967295 |
 | **Min-value** | 0 |
 
-##### FlsProtection
+###### FlsProtection
 
 | Item ||
 |--------|---------------|
@@ -561,7 +561,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Max-value** | 4294967295 |
 | **Min-value** | 0 |
 
-##### FlsBaudRateDiv
+###### FlsBaudRateDiv
 
 | Item ||
 |--------|---------------|
@@ -575,7 +575,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Max-value** | 4294967295 |
 | **Min-value** | 0 |
 
-##### FlsProtocol
+###### FlsProtocol
 
 | Item ||
 |--------|---------------|
@@ -589,7 +589,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Default-value** | FLS_8D_8D_8D |
 | **Range** | FLS_1S_1S_1S<br>FLS_1S_1S_2S<br>FLS_1S_1S_4S<br>FLS_1S_1S_8S<br>FLS_4S_4S_4S<br>FLS_4S_4D_4D<br>FLS_8S_8S_8S<br>FLS_8D_8D_8D |
 
-##### FlsDacEnable
+###### FlsDacEnable
 
 | Item ||
 |--------|---------------|
@@ -602,7 +602,7 @@ Container for runtime configuration parameters of the flash driver.
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### FlsOspiClkSpeed
+###### FlsOspiClkSpeed
 
 | Item ||
 |--------|---------------|
@@ -615,7 +615,7 @@ Container for runtime configuration parameters of the flash driver.
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | 133333333 |
 
-##### FlsPhyEnable
+###### FlsPhyEnable
 
 | Item ||
 |--------|---------------|
@@ -628,7 +628,7 @@ Container for runtime configuration parameters of the flash driver.
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### FlsPhyControlMode
+###### FlsPhyControlMode
 
 | Item ||
 |--------|---------------|
@@ -642,7 +642,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Default-value** | FLS_PHY_MASTER_MODE |
 | **Range** | FLS_PHY_MASTER_MODE<br>FLS_PHY_BYPASS_MODE |
 
-##### FlsPhyDllLockMode
+###### FlsPhyDllLockMode
 
 | Item ||
 |--------|---------------|
@@ -656,7 +656,7 @@ Container for runtime configuration parameters of the flash driver.
 | **Default-value** | FLS_PHY_DLL_HALF_CYCLE |
 | **Range** | FLS_PHY_DLL_HALF_CYCLE<br>FLS_PHY_DLL_FULL_CYCLE |
 
-##### FlsHwUnitCddDmaHandler
+###### FlsHwUnitCddDmaHandler
 
 | Item ||
 |--------|---------------|
@@ -672,7 +672,7 @@ Container for runtime configuration parameters of the flash driver.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### FlsFlashConfigList
+#### FlsFlashConfigList
 List of flash memory configurations.
 
 ##### FlsFlashConfiguration
@@ -1300,7 +1300,7 @@ Configuration description of external flash devices.
 | **Max-value** | 65535 |
 | **Min-value** | 0 |
 
-##### FlsProtocolConfigs
+###### FlsProtocolConfigs
 List of protocol related configuration parameters
 
 ###### FlsProtocolReadCmd
@@ -1738,7 +1738,7 @@ List of protocol related configuration parameters
 | **Max-value** | 65535 |
 | **Min-value** | 0 |
 
-##### FlsExternalDriver
+#### FlsExternalDriver
 This container is present for external Flash drivers only. Internal Flash drivers do not use the parameter listed in this container, hence its multiplicity is 0 for internal drivers. Currently, not supported as only one external driver present.
 
 ###### FlsSpiReference
@@ -1757,7 +1757,7 @@ This container is present for external Flash drivers only. Internal Flash driver
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### FlsSectorList
+#### FlsSectorList
 List of flashable sectors and pages.The maximum number of sectors/sector size/pages/pagesize that can be configured, is based on external flash used, and care must be taken to configure these parameters as per the external flash used
 
 ##### FlsSector
@@ -1823,10 +1823,10 @@ Configuration description of a flashable sector
 | **Max-value** | 4294967295 |
 | **Min-value** | 0 |
 
-#### FlsGeneral
+### FlsGeneral
 Container for general parameters of the flash driver. These parameters are always pre-compile.
 
-##### FlsAcLoadOnJobStart
+###### FlsAcLoadOnJobStart
 
 | Item ||
 |--------|---------------|
@@ -1839,7 +1839,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### FlsBaseAddress
+###### FlsBaseAddress
 
 | Item ||
 |--------|---------------|
@@ -1854,7 +1854,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | **Max-value** | 4294967295 |
 | **Min-value** | 0 |
 
-##### FlsBlankCheckApi
+###### FlsBlankCheckApi
 
 | Item ||
 |--------|---------------|
@@ -1867,7 +1867,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### FlsCancelApi
+###### FlsCancelApi
 
 | Item ||
 |--------|---------------|
@@ -1879,7 +1879,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### FlsCompareApi
+###### FlsCompareApi
 
 | Item ||
 |--------|---------------|
@@ -1891,7 +1891,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### FlsDevErrorDetect
+###### FlsDevErrorDetect
 
 | Item ||
 |--------|---------------|
@@ -1904,7 +1904,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### FlsDriverIndex
+###### FlsDriverIndex
 
 | Item ||
 |--------|---------------|
@@ -1918,7 +1918,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | **Max-value** | 254 |
 | **Min-value** | 0 |
 
-##### FlsEraseVerificationEnabled
+###### FlsEraseVerificationEnabled
 
 | Item ||
 |--------|---------------|
@@ -1931,7 +1931,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### FlsGetJobResultApi
+###### FlsGetJobResultApi
 
 | Item ||
 |--------|---------------|
@@ -1943,7 +1943,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### FlsGetStatusApi
+###### FlsGetStatusApi
 
 | Item ||
 |--------|---------------|
@@ -1955,7 +1955,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### FlsSetModeApi
+###### FlsSetModeApi
 
 | Item ||
 |--------|---------------|
@@ -1967,7 +1967,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### FlsTimeoutSupervisionEnabled
+###### FlsTimeoutSupervisionEnabled
 
 | Item ||
 |--------|---------------|
@@ -1980,7 +1980,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### FlsTotalSize
+###### FlsTotalSize
 
 | Item ||
 |--------|---------------|
@@ -1995,7 +1995,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | **Max-value** | 4294967295 |
 | **Min-value** | 0 |
 
-##### FlsUseInterrupts
+###### FlsUseInterrupts
 
 | Item ||
 |--------|---------------|
@@ -2008,7 +2008,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### FlsVersionInfoApi
+###### FlsVersionInfoApi
 
 | Item ||
 |--------|---------------|
@@ -2021,7 +2021,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### FlsWriteVerificationEnabled
+###### FlsWriteVerificationEnabled
 
 | Item ||
 |--------|---------------|
@@ -2034,7 +2034,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### FlsOspiCtrlBaseAddr
+###### FlsOspiCtrlBaseAddr
 
 | Item ||
 |--------|---------------|
@@ -2049,7 +2049,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | **Max-value** | 4294967295 |
 | **Min-value** | 1 |
 
-##### FlsIrqType
+###### FlsIrqType
 
 | Item ||
 |--------|---------------|
@@ -2063,7 +2063,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | **Default-value** | FLS_ISR_CAT1 |
 | **Range** | FLS_ISR_VOID<br>FLS_ISR_CAT1<br>FLS_ISR_CAT2 |
 
-##### FlsDefaultOSCounterId
+###### FlsDefaultOSCounterId
 
 | Item ||
 |--------|---------------|
@@ -2078,7 +2078,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | **Max-value** | 16 |
 | **Min-value** | 0 |
 
-##### FlsExternalFlashSelect
+###### FlsExternalFlashSelect
 
 | Item ||
 |--------|---------------|
@@ -2090,7 +2090,7 @@ Container for general parameters of the flash driver. These parameters are alway
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### FlsOsCounterRef
+###### FlsOsCounterRef
 
 | Item ||
 |--------|---------------|

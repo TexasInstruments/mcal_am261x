@@ -417,10 +417,10 @@ Not supported
 
 
 
-#### EthConfigSet
+### EthConfigSet
 This container contains the configuration parameters and sub containers of the AUTOSAR Eth module.
 
-##### EthCtrlConfig
+#### EthCtrlConfig
 Configuration of the individual controller
 
 ###### EthCtrlEnableMii
@@ -846,7 +846,7 @@ Represents a Fifo at the ingress side.
 | Item ||
 |--------|---------------|
 | **Name** | EthDemEventParameterRefs |
-| **Description** | Reference to the DemEventParameter which shall be issued when the error "Timeout on blocking API call occurs " has occurred. |
+| **Description** | Container for the references to DemEventParameter elements which shall be invoked using the API Dem_SetEventStatus in case the corresponding error occurs. The EventId is taken from the referenced DemEventParameter's DemEventId symbolic value. The standardized errors are provided in this container and can be extended by vendor-specific error references. |
 | **Post-build-variant-multiplicity** | false |
 | **Multiplicity-Configuration-Class** | -- |
 | Link Time | VARIANT-LINK-TIME |
@@ -988,7 +988,7 @@ MAC Init Configurations
 | Item ||
 |--------|---------------|
 | **Name** | EthRxThresholdConfig |
-| **Description** | Number of remaining RX buffers to trigger RX threshold interrupt |
+| **Description** | Structure for RX threshold interrupt configuration |
 | **Post-build-variant-multiplicity** | false |
 | **Origin** | Texas Instruments |
 | **Post-Build-Variant-Value** | false |
@@ -1096,10 +1096,10 @@ Structure for CPTS Ethernet Message Configuration
 | **Default-value** | ETH_CPTS_MESSAGE_SYNC |
 | **Range** | ETH_CPTS_MESSAGE_SYNC<br>ETH_CPTS_MESSAGE_DELAY_REQ<br>ETH_CPTS_MESSAGE_PDELAY_REQ<br>ETH_CPTS_MESSAGE_PDELAY_RESP<br>ETH_CPTS_MESSAGE_FOLLOW_UP<br>ETH_CPTS_MESSAGE_DELAY_RESP<br>ETH_CPTS_MESSAGE_PDELAY_RESP_FOLLOW_UP<br>ETH_CPTS_MESSAGE_ANNOUNCE<br>ETH_CPTS_MESSAGE_SIGNALING<br>ETH_CPTS_MESSAGE_MANAGEMENT<br>ETH_CPTS_MESSAGE_ALL |
 
-#### EthGeneral
+### EthGeneral
 General configuration of Ethernet Driver module
 
-##### EthDevErrorDetect
+###### EthDevErrorDetect
 
 | Item ||
 |--------|---------------|
@@ -1113,7 +1113,7 @@ General configuration of Ethernet Driver module
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### EthGetDropCountApi
+###### EthGetDropCountApi
 
 | Item ||
 |--------|---------------|
@@ -1127,7 +1127,7 @@ General configuration of Ethernet Driver module
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### EthGetEtherStatsApi
+###### EthGetEtherStatsApi
 
 | Item ||
 |--------|---------------|
@@ -1141,7 +1141,7 @@ General configuration of Ethernet Driver module
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### EthGetTxErrorCounterValuesApi
+###### EthGetTxErrorCounterValuesApi
 
 | Item ||
 |--------|---------------|
@@ -1155,7 +1155,7 @@ General configuration of Ethernet Driver module
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### EthGetTxStatsApi
+###### EthGetTxStatsApi
 
 | Item ||
 |--------|---------------|
@@ -1169,7 +1169,7 @@ General configuration of Ethernet Driver module
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### EthGlobalTimeSupport
+###### EthGlobalTimeSupport
 
 | Item ||
 |--------|---------------|
@@ -1183,7 +1183,7 @@ General configuration of Ethernet Driver module
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### EthIndex
+###### EthIndex
 
 | Item ||
 |--------|---------------|
@@ -1199,7 +1199,7 @@ General configuration of Ethernet Driver module
 | **Max-value** | 255 |
 | **Min-value** | 0 |
 
-##### EthMainFunctionPeriod
+###### EthMainFunctionPeriod
 
 | Item ||
 |--------|---------------|
@@ -1215,7 +1215,7 @@ General configuration of Ethernet Driver module
 | **Max-value** | INF |
 | **Min-value** | 0.0 |
 
-##### EthMaxCtrlsSupported
+###### EthMaxCtrlsSupported
 
 | Item ||
 |--------|---------------|
@@ -1231,12 +1231,12 @@ General configuration of Ethernet Driver module
 | **Max-value** | 255 |
 | **Min-value** | 1 |
 
-##### EthUpdatePhysAddrFilter
+###### EthUpdatePhysAddrFilter
 
 | Item ||
 |--------|---------------|
 | **Name** | EthUpdatePhysAddrFilter |
-| **Description** | Tags: atp.Status=obsolete |
+| **Description** | Enables/Disables optional API Eth_UpdatePhysAddrFilter. |
 | **Origin** | AUTOSAR_ECUC |
 | **Post-build-variant-multiplicity** | false |
 | **Post-Build-Variant-Value** | false |
@@ -1246,7 +1246,7 @@ General configuration of Ethernet Driver module
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### EthVersionInfoApi
+###### EthVersionInfoApi
 
 | Item ||
 |--------|---------------|
@@ -1260,7 +1260,7 @@ General configuration of Ethernet Driver module
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### EthTrafficShapingSupport
+###### EthTrafficShapingSupport
 
 | Item ||
 |--------|---------------|
@@ -1274,7 +1274,7 @@ General configuration of Ethernet Driver module
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### EthMdioManualOperation
+###### EthMdioManualOperation
 
 | Item ||
 |--------|---------------|
@@ -1288,7 +1288,7 @@ General configuration of Ethernet Driver module
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### Eth_MdioLowDelay
+###### Eth_MdioLowDelay
 
 | Item ||
 |--------|---------------|
@@ -1304,7 +1304,7 @@ General configuration of Ethernet Driver module
 | **Max-value** | 4294967295 |
 | **Min-value** | 0 |
 
-##### Eth_MdioHighDelay
+###### Eth_MdioHighDelay
 
 | Item ||
 |--------|---------------|
@@ -1320,7 +1320,7 @@ General configuration of Ethernet Driver module
 | **Max-value** | 4294967295 |
 | **Min-value** | 0 |
 
-##### EthUseDefaultMacAddr
+###### EthUseDefaultMacAddr
 
 | Item ||
 |--------|---------------|
@@ -1334,7 +1334,7 @@ General configuration of Ethernet Driver module
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### EthIrqType
+###### EthIrqType
 
 | Item ||
 |--------|---------------|
@@ -1349,7 +1349,7 @@ General configuration of Ethernet Driver module
 | **Default-value** | ETH_ISR_CAT1 |
 | **Range** | ETH_ISR_VOID<br>ETH_ISR_CAT1<br>ETH_ISR_CAT2 |
 
-##### EthBufLenByte
+###### EthBufLenByte
 
 | Item ||
 |--------|---------------|
@@ -1365,7 +1365,7 @@ General configuration of Ethernet Driver module
 | **Max-value** | 1522 |
 | **Min-value** | 0 |
 
-##### EthDefaultOSCounterId
+###### EthDefaultOSCounterId
 
 | Item ||
 |--------|---------------|
@@ -1384,7 +1384,7 @@ General configuration of Ethernet Driver module
 | **Max-value** | 16 |
 | **Min-value** | 0 |
 
-##### EthTimeoutDuration
+###### EthTimeoutDuration
 
 | Item ||
 |--------|---------------|
@@ -1399,7 +1399,7 @@ General configuration of Ethernet Driver module
 | **Max-value** | 4294967295 |
 | **Min-value** | 1 |
 
-##### EthOsCounterRef
+###### EthOsCounterRef
 
 | Item ||
 |--------|---------------|
@@ -1415,7 +1415,7 @@ General configuration of Ethernet Driver module
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### EthInterruptConfig
+#### EthInterruptConfig
 interrupt configuration- misc interrupts flags.
 
 ###### EthStatsInterruptEnable
@@ -1460,7 +1460,7 @@ interrupt configuration- misc interrupts flags.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### EthCtrlOffloading
+#### EthCtrlOffloading
 Configuration of hardware offloading features.
 
 ###### EthCtrlEnableOffloadChecksumICMP

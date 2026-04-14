@@ -355,10 +355,10 @@ Refer [AUTOSAR_SWS_CANDriver section: 10 Configuration specification](https://ww
 
 
 
-#### CanConfigSet
+### CanConfigSet
 This container contains the multiple configuration container and sub containers of the AUTOSAR Can module.
 
-##### CanController
+#### CanController
 This container contains the configuration parameters of the CAN controller(s).
 
 ###### CanControllerId
@@ -659,7 +659,7 @@ This container contains bit timing related configuration parameters of the CAN c
 | **Max-value** | 255 |
 | **Min-value** | 0 |
 
-##### CanControllerFdBaudrateConfig
+###### CanControllerFdBaudrateConfig
 This optional container contains bit timing related configuration parameters of the CAN controller(s) for payload and CRC of a CAN FD frame. If this container exists the controller supports CAN FD frames.
 
 ###### CanControllerFdBaudRate
@@ -796,7 +796,7 @@ This container is only included and valid if TTCAN SWS is used and TTCAN is enab
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### CanHardwareObject
+#### CanHardwareObject
 This container contains the configuration (parameters) of CAN Hardware Objects.
 
 ###### CanFdPaddingValue
@@ -986,7 +986,7 @@ This container is only valid for HRHs and contains the configuration (parameters
 ##### CanTTHardwareObjectTrigger
 This container is only included and valid if TTCAN SWS is used and TTCAN is enabled.
 
-##### CanIcom
+#### CanIcom
 This container contains the parameters for configuring pretended networking
 
 ##### CanIcomConfig
@@ -1019,10 +1019,10 @@ This container contains the configuration parameters of the ICOM Configuration.
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### CanIcomWakeupCauses
+###### CanIcomWakeupCauses
 This container contains the configuration parameters of the wakeup causes to leave the power saving mode.
 
-##### CanIcomRxMessage
+###### CanIcomRxMessage
 This container contains the configuration parameters for the wakeup causes for matching received messages. It has to be configured as often as received messages are defined as wakeup cause.
 
 ###### CanIcomMessageId
@@ -1052,7 +1052,7 @@ This container contains the configuration parameters for the wakeup causes for m
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### CanIcomRxMessageSignalConfig
+###### CanIcomRxMessageSignalConfig
 This container contains the configuration parameters for the wakeup causes for matching signals.
 
 ###### CanIcomSignalMask
@@ -1112,10 +1112,10 @@ This container contains the configuration parameters for the wakeup causes for m
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-#### CanGeneral
+### CanGeneral
 This container contains the parameters related each CAN Driver Unit.
 
-##### CanDevErrorDetect
+###### CanDevErrorDetect
 
 | Item ||
 |--------|---------------|
@@ -1128,7 +1128,7 @@ This container contains the parameters related each CAN Driver Unit.
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-##### CanDeInitApi
+###### CanDeInitApi
 
 | Item ||
 |--------|---------------|
@@ -1141,7 +1141,7 @@ This container contains the parameters related each CAN Driver Unit.
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### CanIndex
+###### CanIndex
 
 | Item ||
 |--------|---------------|
@@ -1156,7 +1156,7 @@ This container contains the parameters related each CAN Driver Unit.
 | **Max-value** | 255 |
 | **Min-value** | 0 |
 
-##### CanLPduReceiveCalloutFunction
+###### CanLPduReceiveCalloutFunction
 
 | Item ||
 |--------|---------------|
@@ -1172,7 +1172,7 @@ This container contains the parameters related each CAN Driver Unit.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### CanMainFunctionBusoffPeriod
+###### CanMainFunctionBusoffPeriod
 
 | Item ||
 |--------|---------------|
@@ -1191,7 +1191,7 @@ This container contains the parameters related each CAN Driver Unit.
 | **Max-value** | 65.535 |
 | **Min-value** | 0.001 |
 
-##### CanMainFunctionModePeriod
+###### CanMainFunctionModePeriod
 
 | Item ||
 |--------|---------------|
@@ -1206,7 +1206,7 @@ This container contains the parameters related each CAN Driver Unit.
 | **Max-value** | 65.535 |
 | **Min-value** | 0.001 |
 
-##### CanMainFunctionReadPeriod
+###### CanMainFunctionReadPeriod
 
 | Item ||
 |--------|---------------|
@@ -1220,7 +1220,7 @@ This container contains the parameters related each CAN Driver Unit.
 | **Max-value** | 65.535 |
 | **Min-value** | 0.001 |
 
-##### CanMainFunctionWritePeriod
+###### CanMainFunctionWritePeriod
 
 | Item ||
 |--------|---------------|
@@ -1234,7 +1234,7 @@ This container contains the parameters related each CAN Driver Unit.
 | **Max-value** | 65.535 |
 | **Min-value** | 0.001 |
 
-##### CanSetBaudrateApi
+###### CanSetBaudrateApi
 
 | Item ||
 |--------|---------------|
@@ -1247,7 +1247,7 @@ This container contains the parameters related each CAN Driver Unit.
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### CanTimeoutDuration
+###### CanTimeoutDuration
 
 | Item ||
 |--------|---------------|
@@ -1262,7 +1262,7 @@ This container contains the parameters related each CAN Driver Unit.
 | **Max-value** | 65.535 |
 | **Min-value** | 0.001 |
 
-##### CanDefaultOSCounterId
+###### CanDefaultOSCounterId
 
 | Item ||
 |--------|---------------|
@@ -1281,7 +1281,7 @@ This container contains the parameters related each CAN Driver Unit.
 | **Max-value** | 16 |
 | **Min-value** | 0 |
 
-##### CanVersionInfoApi
+###### CanVersionInfoApi
 
 | Item ||
 |--------|---------------|
@@ -1294,7 +1294,7 @@ This container contains the parameters related each CAN Driver Unit.
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### CanMaxNrOfTxObjects
+###### CanMaxNrOfTxObjects
 
 | Item ||
 |--------|---------------|
@@ -1309,7 +1309,7 @@ This container contains the parameters related each CAN Driver Unit.
 | **Max-value** | 3 |
 | **Min-value** | 0 |
 
-##### CanTypeofInterruptFunction
+###### CanTypeofInterruptFunction
 
 | Item ||
 |--------|---------------|
@@ -1323,7 +1323,7 @@ This container contains the parameters related each CAN Driver Unit.
 | **Default-value** | CAN_ISR_CAT2 |
 | **Range** | CAN_ISR_VOID<br>CAN_ISR_CAT1<br>CAN_ISR_CAT2 |
 
-##### CanLoopBackTest_Enable
+###### CanLoopBackTest_Enable
 
 | Item ||
 |--------|---------------|
@@ -1336,7 +1336,7 @@ This container contains the parameters related each CAN Driver Unit.
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-##### CanOsCounterRef
+###### CanOsCounterRef
 
 | Item ||
 |--------|---------------|
@@ -1352,7 +1352,7 @@ This container contains the parameters related each CAN Driver Unit.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### CanSupportTTCANRef
+###### CanSupportTTCANRef
 
 | Item ||
 |--------|---------------|
@@ -1364,7 +1364,7 @@ This container contains the parameters related each CAN Driver Unit.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### CanIcomGeneral
+#### CanIcomGeneral
 This container contains the general configuration parameters of the ICOM Configuration.
 
 ###### CanIcomVariant
@@ -1381,7 +1381,7 @@ This container contains the general configuration parameters of the ICOM Configu
 | **Default-value** | CAN_ICOM_VARIANT_NONE |
 | **Range** | CAN_ICOM_VARIANT_HW<br>CAN_ICOM_VARIANT_NONE<br>CAN_ICOM_VARIANT_SW |
 
-##### CanMainFunctionRWPeriods
+#### CanMainFunctionRWPeriods
 This container contains the parameter for configuring the period for cyclic call to Can_MainFunction_Read or Can_MainFunction_Write depending on the referring item.
 
 ###### CanMainFunctionPeriod

@@ -665,10 +665,10 @@ Not Supported
 
 
 
-#### CddPwmConfigurationOfOptionalApis
+###### CddPwmConfigurationOfOptionalApis
 Configuration of optional APIs.
 
-##### CddPwmDeInitApi
+###### CddPwmDeInitApi
 
 | Item ||
 |--------|---------------|
@@ -681,7 +681,7 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmGetCounterApi
+###### CddPwmGetCounterApi
 
 | Item ||
 |--------|---------------|
@@ -694,7 +694,7 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmVersionInfoApi
+###### CddPwmVersionInfoApi
 
 | Item ||
 |--------|---------------|
@@ -707,7 +707,7 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmEnableRegisterReadbackApi
+###### CddPwmEnableRegisterReadbackApi
 
 | Item ||
 |--------|---------------|
@@ -720,7 +720,7 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmSetRelativeThreshold
+###### CddPwmSetRelativeThreshold
 
 | Item ||
 |--------|---------------|
@@ -733,7 +733,7 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmSetAbsoluteThreshold
+###### CddPwmSetAbsoluteThreshold
 
 | Item ||
 |--------|---------------|
@@ -746,7 +746,7 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmSetPinAction
+###### CddPwmSetPinAction
 
 | Item ||
 |--------|---------------|
@@ -759,7 +759,7 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmSetPeriodDutyPhase
+###### CddPwmSetPeriodDutyPhase
 
 | Item ||
 |--------|---------------|
@@ -772,7 +772,7 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmSetOutputToIdle
+###### CddPwmSetOutputToIdle
 
 | Item ||
 |--------|---------------|
@@ -785,7 +785,7 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmGetCounterStatus
+###### CddPwmGetCounterStatus
 
 | Item ||
 |--------|---------------|
@@ -798,7 +798,7 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmCounterComparatorCfg
+###### CddPwmCounterComparatorCfg
 
 | Item ||
 |--------|---------------|
@@ -811,7 +811,7 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmSetAdcTriggerApi
+###### CddPwmSetAdcTriggerApi
 
 | Item ||
 |--------|---------------|
@@ -824,7 +824,7 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmNotificationSupported
+###### CddPwmNotificationSupported
 
 | Item ||
 |--------|---------------|
@@ -837,10 +837,10 @@ Configuration of optional APIs.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-#### CddPwmGeneral
+###### CddPwmGeneral
 This container contains the module-wide configuration parameters of the CDD PWM Driver
 
-##### CddPwmDevErrorDetect
+###### CddPwmDevErrorDetect
 
 | Item ||
 |--------|---------------|
@@ -853,7 +853,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmEventTriggerEnable
+###### CddPwmEventTriggerEnable
 
 | Item ||
 |--------|---------------|
@@ -866,7 +866,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmTripZoneEnable
+###### CddPwmTripZoneEnable
 
 | Item ||
 |--------|---------------|
@@ -879,7 +879,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmDigitalCompareEnable
+###### CddPwmDigitalCompareEnable
 
 | Item ||
 |--------|---------------|
@@ -892,7 +892,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | false |
 
-##### CddPwmDeadBandEnable
+###### CddPwmDeadBandEnable
 
 | Item ||
 |--------|---------------|
@@ -905,7 +905,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmChopperEnable
+###### CddPwmChopperEnable
 
 | Item ||
 |--------|---------------|
@@ -918,7 +918,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmActionQualifierEnable
+###### CddPwmActionQualifierEnable
 
 | Item ||
 |--------|---------------|
@@ -931,7 +931,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmChannelTimerBaseSyncEnable
+###### CddPwmChannelTimerBaseSyncEnable
 
 | Item ||
 |--------|---------------|
@@ -944,7 +944,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmChannelHighResPwmEnable
+###### CddPwmChannelHighResPwmEnable
 
 | Item ||
 |--------|---------------|
@@ -957,7 +957,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmHrSetPeriodDutyEnable
+###### CddPwmHrSetPeriodDutyEnable
 
 | Item ||
 |--------|---------------|
@@ -970,7 +970,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmHrSfoCalibrationEnable
+###### CddPwmHrSfoCalibrationEnable
 
 | Item ||
 |--------|---------------|
@@ -983,7 +983,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmHrSfoStatusEnable
+###### CddPwmHrSfoStatusEnable
 
 | Item ||
 |--------|---------------|
@@ -996,7 +996,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | Post-Build-Time | VARIANT-POST-BUILD |
 | **Default-value** | true |
 
-##### CddPwmTypeofInterruptFunction
+###### CddPwmTypeofInterruptFunction
 
 | Item ||
 |--------|---------------|
@@ -1010,7 +1010,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | **Default-value** | CDD_PWM_ISR_VOID |
 | **Range** | CDD_PWM_ISR_VOID<br>CDD_PWM_ISR_CAT1<br>CDD_PWM_ISR_CAT2 |
 
-##### CddPwmSystemClock
+###### CddPwmSystemClock
 
 | Item ||
 |--------|---------------|
@@ -1025,7 +1025,7 @@ This container contains the module-wide configuration parameters of the CDD PWM 
 | **Max-value** | 200000000 |
 | **Min-value** | 0 |
 
-##### CddPwmMaxDutyCycle
+###### CddPwmMaxDutyCycle
 
 | Item ||
 |--------|---------------|
