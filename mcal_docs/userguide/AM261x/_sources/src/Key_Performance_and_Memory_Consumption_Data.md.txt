@@ -34,13 +34,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| dma   | 4894    | 16766    | 528    |
+| dma   | 4886    | 16766    | 528    |
  
 ### EPWM
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| epwm   | 15327    | 7    | 15432    |
+| epwm   | 15321    | 7    | 15432    |
  
 ### ETH
 
@@ -96,13 +96,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| ipc   | 5792    | 157    | 1256    |
+| ipc   | 5812    | 157    | 1256    |
  
 ### LIN
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| lin   | 2224    | 9    | 10    |
+| lin   | 2212    | 9    | 10    |
  
 ### MCU
 
@@ -138,5 +138,5 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| wdg   | 1042    | 1    | 44    |
+| wdg   | 1050    | 1    | 44    |
  

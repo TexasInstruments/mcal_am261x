@@ -356,10 +356,10 @@ Not Supported
 
 
 
-### GptChannelConfigSet
+##### GptChannelConfigSet
 This container is the base of a Configuration Set which contains the configured GPT channels. This way, different configuration sets can be defined for post-build process.
 
-#### GptChannelConfiguration
+###### GptChannelConfiguration
 Configuration of an individual GPT channel.
 
 ###### GptChannelId
@@ -447,7 +447,7 @@ Configuration of an individual GPT channel.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-##### GptWakeupConfiguration
+###### GptWakeupConfiguration
 Function pointer to callback function (for wakeup notification).
 
 ###### GptWakeupSourceRef
@@ -462,7 +462,7 @@ Function pointer to callback function (for wakeup notification).
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-### GptConfigurationOfOptApiServices
+##### GptConfigurationOfOptApiServices
 This container contains all configuration switches for configuring optional API services of the GPT driver.
 
 ###### GptDeinitApi
@@ -556,7 +556,7 @@ This container contains all configuration switches for configuring optional API 
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | false |
 
-### GptDriverConfiguration
+##### GptDriverConfiguration
 This container contains the module-wide configuration (parameters) of the GPT Driver
 
 ###### GptDevErrorDetect
@@ -811,7 +811,7 @@ This container contains the module-wide configuration (parameters) of the GPT Dr
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-#### GptClockReferencePoint
+###### GptClockReferencePoint
 This container contains a parameter, which represents a reference to a container of the type McuClockReferencePoint (defined in module MCU).
 
 ###### GptClockReference

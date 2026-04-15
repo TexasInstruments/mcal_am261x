@@ -352,10 +352,10 @@ Not supported
 
 
 
-### PwmChannelConfigSet
+##### PwmChannelConfigSet
 This container contains the configuration parameters and sub containers of the AUTOSAR Pwm module.
 
-#### PwmChannel
+###### PwmChannel
 Configuration of an individual PWM channel.
 
 ###### PwmChannelClass
@@ -576,7 +576,7 @@ Configuration of an individual PWM channel.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-### PwmConfigurationOfOptApiServices
+##### PwmConfigurationOfOptApiServices
 
 ###### PwmDeInitApi
 
@@ -665,7 +665,7 @@ Configuration of an individual PWM channel.
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 | **Default-value** | true |
 
-### PwmGeneral
+##### PwmGeneral
 
 ###### PwmDevErrorDetect
 
@@ -871,7 +871,7 @@ Configuration of an individual PWM channel.
 | Post-Build-Time | VARIANT-POST-BUILD |
 | Pre-Compile-Time | VARIANT-PRE-COMPILE |
 
-#### PwmPowerStateConfig
+###### PwmPowerStateConfig
 Each instance of this parameter defines a power state and the callback to be called when this power state is reached.
 
 **Note:** PwmMaxTimeoutDuration parameter Value should be passed as number of ticks according to
