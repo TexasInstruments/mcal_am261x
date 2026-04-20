@@ -16,7 +16,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| can   | 9528    | 1    | 8008    |
+| can   | 9570    | 1    | 8008    |
  
 ### CMPSS
 
@@ -66,13 +66,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsirx   | 1674    | 3    | 70    |
+| fsirx   | 1628    | 3    | 70    |
  
 ### FSITX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsitx   | 2124    | 10    | 57    |
+| fsitx   | 2108    | 10    | 57    |
  
 ### GPT
 
@@ -108,7 +108,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| mcu   | 6146    | 6    | 0    |
+| mcu   | 6162    | 6    | 0    |
  
 ### PORT
 
