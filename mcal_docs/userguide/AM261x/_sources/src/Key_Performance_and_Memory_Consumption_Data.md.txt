@@ -138,5 +138,5 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| wdg   | 1050    | 1    | 44    |
+| wdg   | 1086    | 1    | 44    |
  
