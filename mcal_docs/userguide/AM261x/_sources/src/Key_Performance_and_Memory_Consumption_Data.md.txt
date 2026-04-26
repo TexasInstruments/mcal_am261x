@@ -96,13 +96,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| ipc   | 5812    | 157    | 1256    |
+| ipc   | 5534    | 157    | 1256    |
  
 ### LIN
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| lin   | 2212    | 9    | 10    |
+| lin   | 2240    | 9    | 10    |
  
 ### MCU
 
