@@ -60,7 +60,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 12506    | 482    | 8240    |
+| fls   | 12626    | 482    | 8240    |
  
 ### FSIRX
 
@@ -108,7 +108,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| mcu   | 6162    | 6    | 0    |
+| mcu   | 6120    | 6    | 0    |
  
 ### PORT
 
