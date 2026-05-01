@@ -444,6 +444,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -460,6 +461,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_ChopperEnable</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -470,6 +472,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_ClearCounterStatus</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -480,6 +483,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_CounterComparatorCfg</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -487,6 +491,7 @@
               [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmDeInitApi"!][!//
                 <BSW-CALLED-ENTITY UUID="d3fa43d3-acd0-48a5-9e62-f7375493b22d">
                   <SHORT-NAME>Cdd_Pwm_DeInit</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_DeInit</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -497,6 +502,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_DeadbandBypass</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -505,6 +511,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -518,26 +525,31 @@
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="0407c44a-1856-4264-9ed2-a03e9e39209e">
                   <SHORT-NAME>Cdd_Pwm_SetRisingEdgeDelay</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetRisingEdgeDelay</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="4792620c-7047-4c90-927f-d972d124f3cb">
                   <SHORT-NAME>Cdd_Pwm_SetFallingEdgeDelay</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetFallingEdgeDelay</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="42eb1683-e1e8-4082-8f95-2f20d01b8731">
                   <SHORT-NAME>Cdd_Pwm_SetMinDeadbandDelay</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetMinDeadbandDelay</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="0d20c984-b50e-4502-9c2c-c509455154cb">
                   <SHORT-NAME>Cdd_Pwm_HrSetRisingEdgeDelay</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSetRisingEdgeDelay</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="228eec55-6006-479b-a283-0a47af4890a0">
                   <SHORT-NAME>Cdd_Pwm_HrSetFallingEdgeDelay</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSetFallingEdgeDelay</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -548,6 +560,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -564,6 +577,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -578,6 +592,7 @@
               [!ENDIF!][!//
                 <BSW-CALLED-ENTITY UUID="b5e060b4-ecc9-4837-a307-a6a7edd0ec1f">
                   <SHORT-NAME>Cdd_Pwm_EtGetEventCount</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_EtGetEventCount</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -586,6 +601,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_EtIntrClear</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -594,6 +610,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_EtIntrStatus</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -604,6 +621,7 @@
               [!IF "num:i($CddChannel) = '0'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="63139a6f-a38a-449c-af3f-2d983fac8ed8">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch0Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch0Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -617,6 +635,7 @@
               [!IF "num:i($CddChannel) = '1'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="2e067f35-ff64-42b5-948e-f79cfb628c73">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch1Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch1Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -630,6 +649,7 @@
               [!IF "num:i($CddChannel) = '2'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="0b6d687b-0219-4a27-b2c2-f8beb392076b">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch2Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch2Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -643,6 +663,7 @@
               [!IF "num:i($CddChannel) = '3'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="7e0e3327-9b81-4438-a395-fec38aae45ae">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch3Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch3Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -656,6 +677,7 @@
               [!IF "num:i($CddChannel) = '4'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="f4064529-389b-4576-ae45-3218e94cfd7b">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch4Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch4Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -669,6 +691,7 @@
               [!IF "num:i($CddChannel) = '5'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="f3bfd963-ac2e-4358-b436-ad92bd52afcc">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch5Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch5Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -682,6 +705,7 @@
               [!IF "num:i($CddChannel) = '6'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="d5941174-51bd-4c19-a6e9-b53c99c64a23">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch6Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch6Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -695,6 +719,7 @@
               [!IF "num:i($CddChannel) = '7'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="552aa5f0-bb47-40db-a0be-f861f555080e">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch7Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch7Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -708,6 +733,7 @@
               [!IF "num:i($CddChannel) = '8'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="5981319f-670f-474b-9219-f1a689e92de8">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch8Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch8Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -721,6 +747,7 @@
               [!IF "num:i($CddChannel) = '9'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="b0b5294a-34e0-4472-a812-d2fcc3d285e8">
                   <SHORT-NAME>Cdd_Pwm_G0_Ch9Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_Ch9Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -734,6 +761,7 @@
               [!IF "num:i($CddChannel) = '0'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="d03d4552-3a3a-4af8-904a-ea76c9c17700">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh0Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh0Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -747,6 +775,7 @@
               [!IF "num:i($CddChannel) = '1'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="50637d54-7edf-4f54-800a-86f7b1e2afda">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh1Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh1Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -760,6 +789,7 @@
               [!IF "num:i($CddChannel) = '2'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="409bb255-93c1-433f-82d3-f651df47e24f">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh2Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh2Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -773,6 +803,7 @@
               [!IF "num:i($CddChannel) = '3'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="284b8e67-4e19-4a0a-8ab7-ae344f070ecd">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh3Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh3Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -786,6 +817,7 @@
               [!IF "num:i($CddChannel) = '4'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="8236d5e9-7f75-4ccd-adf8-6c31d17e772d">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh4Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh4Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -799,6 +831,7 @@
               [!IF "num:i($CddChannel) = '5'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="35e011ad-0c5e-4506-b911-ac82ecc08e74">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh5Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh5Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -812,6 +845,7 @@
               [!IF "num:i($CddChannel) = '6'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="c57f20ae-36ec-43fd-80df-18147f43892a">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh6Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh6Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -825,6 +859,7 @@
               [!IF "num:i($CddChannel) = '7'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="7d85eb42-9a3c-4d5f-881d-7fb8cf77b839">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh7Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh7Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -838,6 +873,7 @@
               [!IF "num:i($CddChannel) = '8'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="8365cdf7-bf4d-4864-a7a7-dcdce4778045">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh8Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh8Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -851,6 +887,7 @@
               [!IF "num:i($CddChannel) = '9'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="9fc21e33-91dd-40d5-a83d-9358e514643d">
                   <SHORT-NAME>Cdd_Pwm_G0_TzCh9Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G0_TzCh9Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -865,6 +902,7 @@
               [!IF "num:i($CddChannel) = '0'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="c503a4d6-1f38-4466-9e5f-6ac4f1fb9600">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch0Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch0Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -878,6 +916,7 @@
               [!IF "num:i($CddChannel) = '1'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="baeeee79-4cb3-4e30-964f-b047b15d4404">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch1Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch1Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -891,6 +930,7 @@
               [!IF "num:i($CddChannel) = '2'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="5709ac18-8dcc-454d-9035-b7407e7a9319">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch2Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch2Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -904,6 +944,7 @@
               [!IF "num:i($CddChannel) = '3'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="a4395272-8549-46de-aec6-5fd2afece801">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch3Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch3Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -917,6 +958,7 @@
               [!IF "num:i($CddChannel) = '4'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="ad5b5eea-c85a-4e7e-8445-454f28fc76d1">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch4Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch4Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -930,6 +972,7 @@
               [!IF "num:i($CddChannel) = '5'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="07e3a7ce-ad40-4480-b6f4-a41e154965b0">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch5Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch5Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -943,6 +986,7 @@
               [!IF "num:i($CddChannel) = '6'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="b5bfa310-1a5b-4126-ace7-230555fd713a">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch6Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch6Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -956,6 +1000,7 @@
               [!IF "num:i($CddChannel) = '7'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="76557256-295c-4fe9-b3b1-4e978285f707">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch7Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch7Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -969,6 +1014,7 @@
               [!IF "num:i($CddChannel) = '8'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="8097d590-62f1-405f-a404-897b9b7d4c4e">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch8Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch8Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -982,6 +1028,7 @@
               [!IF "num:i($CddChannel) = '9'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="a06d974e-225b-474a-9e18-13534d670708">
                   <SHORT-NAME>Cdd_Pwm_G1_Ch9Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_Ch9Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -995,6 +1042,7 @@
               [!IF "num:i($CddChannel) = '0'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="33cadb6c-8eae-415f-881e-f3449793f48a">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh0Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh0Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -1008,6 +1056,7 @@
               [!IF "num:i($CddChannel) = '1'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="fb82291e-7240-4340-8dbd-6a58059542f4">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh1Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh1Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -1021,6 +1070,7 @@
               [!IF "num:i($CddChannel) = '2'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="7f54cdff-b524-4034-a70a-ece430fa74d4">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh2Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh2Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -1034,6 +1084,7 @@
               [!IF "num:i($CddChannel) = '3'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="ab6133ad-462d-4f7c-8a00-cd27c31e7276">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh3Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh3Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -1047,6 +1098,7 @@
               [!IF "num:i($CddChannel) = '4'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="bb30e6b4-b731-4787-bdf0-cbe06416da0b">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh4Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh4Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -1060,6 +1112,7 @@
               [!IF "num:i($CddChannel) = '5'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="07116d04-6ddc-4bea-a34a-439f37fe9af8">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh5Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh5Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -1073,6 +1126,7 @@
               [!IF "num:i($CddChannel) = '6'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="d556c00a-dbdb-4197-9b4f-d5311436f384">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh6Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh6Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -1086,6 +1140,7 @@
               [!IF "num:i($CddChannel) = '7'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="93bb7e1f-d666-48af-9119-1341ecd31a51">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh7Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh7Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -1099,6 +1154,7 @@
               [!IF "num:i($CddChannel) = '8'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="f52e17c8-c9df-4a6d-9714-0b3c7d9d6081">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh8Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh8Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -1112,6 +1168,7 @@
               [!IF "num:i($CddChannel) = '9'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="12f8f097-4835-4dd9-8791-345bf641d84c">
                   <SHORT-NAME>Cdd_Pwm_G1_TzCh9Isr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_G1_TzCh9Isr</IMPLEMENTED-ENTRY-REF>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmTypeofInterruptFunction = 'CDD_PWM_ISR_CAT2'"!][!//
@@ -1130,6 +1187,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -1145,6 +1203,7 @@
               [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmGetCounterStatus"!][!//
                 <BSW-CALLED-ENTITY UUID="f05f12c9-092a-4072-963e-4d4f62932f5e">
                   <SHORT-NAME>Cdd_Pwm_GetCounterStatus</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_GetCounterStatus</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1152,6 +1211,7 @@
               [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmVersionInfoApi"!][!//
                 <BSW-CALLED-ENTITY UUID="7db2b452-9134-4012-a79f-7d8af50423fa">
                   <SHORT-NAME>Cdd_Pwm_GetVersionInfo</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -1170,6 +1230,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -1183,21 +1244,25 @@
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="77b338a9-06bd-45b5-9d56-23fb1f86fcb6">
 				<SHORT-NAME>Cdd_Pwm_HrSetPhaseShift</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSetPhaseShift</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="3eb35bcf-5b9c-4f9a-81df-a1ea19396c5d">
                   <SHORT-NAME>Cdd_Pwm_HrSetTimeBasePeriod</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSetTimeBasePeriod</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="dba81430-e18f-4be3-acb2-c9c433a43faf">
                   <SHORT-NAME>Cdd_Pwm_HrSetCounterCompareValue</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSetCounterCompareValue</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="9daf891c-dadb-4c7c-b577-992eac9bd2c2">
                   <SHORT-NAME>Cdd_Pwm_HrSetXcmpRegValue</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_HrSetXcmpRegValue</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1208,6 +1273,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -1226,6 +1292,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -1240,6 +1307,7 @@
               [!ENDIF!][!//
                 <BSW-CALLED-ENTITY UUID="809716a8-9a23-4fbb-89ea-b4c4c04aef34">
                   <SHORT-NAME>Cdd_Pwm_Init</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -1254,6 +1322,7 @@
               [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmConfigurationOfOptionalApis/CddPwmEnableRegisterReadbackApi"!][!//
                 <BSW-CALLED-ENTITY UUID="3af20b70-0db9-4ba5-8820-7d4757febf5f">
                   <SHORT-NAME>Cdd_Pwm_RegisterReadback</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -1272,6 +1341,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -1290,6 +1360,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetAdcTrigger</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1300,6 +1371,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetOutputToIdle</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1310,6 +1382,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetPeriodDutyPhase</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1318,36 +1391,43 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetTimeBaseCounterMode</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="b4ea269e-dad2-45d8-b7ce-5bde7ce2ed9f">
                   <SHORT-NAME>Cdd_Pwm_SetPhaseShift</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetPhaseShift</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="3415d7c9-781b-43e5-b0a9-88bdecfa0da3">
                   <SHORT-NAME>Cdd_Pwm_SetTimeBasePeriod</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetTimeBasePeriod</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="37b46720-300b-467c-8943-d27aa95bbdbe">
                   <SHORT-NAME>Cdd_Pwm_SetCounterCompareValue</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetCounterCompareValue</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="33bfc7bd-e63d-4aec-9ba4-6ecd6dd54439">
                   <SHORT-NAME>Cdd_Pwm_SetXcmpRegValue</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetXcmpRegValue</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="1ba4a870-9b0a-4769-a691-b9e169540577">
                   <SHORT-NAME>Cdd_Pwm_SetXMinMaxRegValue</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetXMinMaxRegValue</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
 				<BSW-CALLED-ENTITY UUID="c4aa031a-57c5-4d03-927f-def2d85e8996">
                   <SHORT-NAME>Cdd_Pwm_SetCmpShadowRegValue</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SetCmpShadowRegValue</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1358,6 +1438,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -1376,6 +1457,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -1393,6 +1475,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -1409,6 +1492,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                 [!IF "as:modconf('Cdd_Pwm')[1]/CddPwmGeneral/CddPwmDevErrorDetect"!][!//
                   <CALL-POINTS>
@@ -1426,6 +1510,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SyncDisable</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1434,6 +1519,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_SyncEnable</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1444,6 +1530,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_TzEventStatusClear</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1452,6 +1539,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_TzGetEventStatus</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1460,6 +1548,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_TzIntrDisable</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1468,6 +1557,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_TzIntrEnable</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1476,6 +1566,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_TzTripEventDisable</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1484,6 +1575,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Cdd_Pwm_TI_AM261x/Cdd_Pwm/Cdd_Pwm_Behavior/PWM_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Cdd_Pwm_TI_AM261x/Cdd_Pwm_ModuleEntry/Cdd_Pwm_TzTripEventEnable</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -1592,6 +1684,12 @@
                 <ALIGNMENT>8</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/AUTOSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
                 <SYMBOL>VAR_INIT_8</SYMBOL>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="dd5db64e-5c4f-4fdd-9ec1-7919257d8e44">
+                <SHORT-NAME>CDD_PWM_VAR_INIT_32</SHORT-NAME>
+                <ALIGNMENT>32</ALIGNMENT>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/AUTOSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
+                <SYMBOL>VAR_INIT_32</SYMBOL>
               </MEMORY-SECTION>
               <MEMORY-SECTION UUID="7237286c-fcb7-4e06-bc83-00ab59a55b8e">
                 <SHORT-NAME>CDD_PWM_VAR_NO_INIT_16</SHORT-NAME>

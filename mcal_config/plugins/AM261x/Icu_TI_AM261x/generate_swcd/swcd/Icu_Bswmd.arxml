@@ -198,6 +198,7 @@
                 [!IF "as:modconf('Icu')[1]/IcuOptionalApis/IcuWakeupFunctionalityApi = 'true'"!][!//
                 <BSW-CALLED-ENTITY UUID="9c31e7a7-6bee-43fd-b308-864f45a6b3ad">
                   <SHORT-NAME>Icu_CheckWakeup</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Icu_TI_AM261x/Icu_ModuleEntry/Icu_CheckWakeup</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -205,6 +206,7 @@
                 [!IF "as:modconf('Icu')[1]/IcuOptionalApis/IcuDeInitApi = 'true'"!][!//
                 <BSW-CALLED-ENTITY UUID="da61946e-0699-46d5-a39f-b0368ac944f2">
                   <SHORT-NAME>Icu_Deinit</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -223,6 +225,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -241,6 +244,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -258,6 +262,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -272,6 +277,7 @@
                 [!IF "as:modconf('Icu')[1]/IcuOptionalApis/IcuDisableWakeupApi = 'true'"!][!//
                 <BSW-CALLED-ENTITY UUID="268cc470-02c5-461c-9f22-c6583dec062c">
                   <SHORT-NAME>Icu_DisableWakeup</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Icu_TI_AM261x/Icu_ModuleEntry/Icu_DisableWakeup</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -282,6 +288,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -300,6 +307,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -317,6 +325,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -331,6 +340,7 @@
                 [!IF "as:modconf('Icu')[1]/IcuOptionalApis/IcuEnableWakeupApi = 'true'"!][!//
                 <BSW-CALLED-ENTITY UUID="42e427e4-28bc-486d-abb1-f9c7ac8577b2">
                   <SHORT-NAME>Icu_EnableWakeup</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Icu_TI_AM261x/Icu_ModuleEntry/Icu_EnableWakeup</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -341,6 +351,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -359,6 +370,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -377,6 +389,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -395,6 +408,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -413,6 +427,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -431,6 +446,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -445,6 +461,7 @@
                 [!ENDIF!][!//
                 <BSW-CALLED-ENTITY UUID="b3c8bffc-8876-42a5-a641-58021809f32b">
                   <SHORT-NAME>Icu_Init</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -458,6 +475,7 @@
                 </BSW-CALLED-ENTITY>
                 <BSW-INTERRUPT-ENTITY UUID="a230001c-0f79-484a-b4f5-f229bddc5fc2">
                   <SHORT-NAME>Icu_IntISR_Fun</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -478,6 +496,7 @@
                 [!IF "as:modconf('Icu')[1]/IcuOptionalApis/IcuEnableRegisterReadbackApi = 'true'"!][!//
                 <BSW-CALLED-ENTITY UUID="b5bb2803-c671-4d3d-a9f3-d2e4d3d09180">
                   <SHORT-NAME>Icu_RegisterReadback</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -496,6 +515,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -513,6 +533,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -527,6 +548,7 @@
                 [!IF "as:modconf('Icu')[1]/IcuOptionalApis/IcuSetModeApi = 'true'"!][!//
                 <BSW-CALLED-ENTITY UUID="31e09777-bcfb-44fe-a512-f24ae7dd6f9c">
                   <SHORT-NAME>Icu_SetMode</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Icu_TI_AM261x/Icu_ModuleEntry/Icu_SetMode</IMPLEMENTED-ENTRY-REF>
                 </BSW-CALLED-ENTITY>
@@ -537,6 +559,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -555,6 +578,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -573,6 +597,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -591,6 +616,7 @@
                   <CAN-ENTER-EXCLUSIVE-AREA-REFS>
                     <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/Icu_TI_AM261x/Icu/Icu_Behavior/ICU_EXCLUSIVE_AREA_0</CAN-ENTER-EXCLUSIVE-AREA-REF>
                   </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>SINGLE-CORE-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -612,6 +638,7 @@
                 [!IF "IcuChannelId = '0'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="989f2f0b-65bc-4b7c-986d-c7f3273761cf">
                   <SHORT-NAME>Icu_ch0Notify</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -633,6 +660,7 @@
                 [!IF "IcuChannelId = '1'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="728bffd1-6839-4e0f-ae92-cc2b5435a404">
                   <SHORT-NAME>Icu_ch1Notify</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -654,6 +682,7 @@
                 [!IF "IcuChannelId = '2'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="422e180c-bfe3-41ff-931a-250c59b26fab">
                   <SHORT-NAME>Icu_ch2Notify</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -675,6 +704,7 @@
                 [!IF "IcuChannelId = '3'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="282c404f-93a8-4f29-ace4-c5c1e6b851a2">
                   <SHORT-NAME>Icu_ch3Notify</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -696,6 +726,7 @@
                 [!IF "IcuChannelId = '4'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="f065a038-597d-4fe3-91fe-988d2bc5dbc1">
                   <SHORT-NAME>Icu_ch4Notify</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -717,6 +748,7 @@
                 [!IF "IcuChannelId = '5'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="374e7e56-fa66-4687-ac72-733241c23608">
                   <SHORT-NAME>Icu_ch5Notify</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -738,6 +770,7 @@
                 [!IF "IcuChannelId = '6'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="b045d9f8-abcd-44c8-9092-dc0271f7afc6">
                   <SHORT-NAME>Icu_ch6Notify</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
@@ -759,6 +792,7 @@
                 [!IF "IcuChannelId = '7'"!][!//
                 <BSW-INTERRUPT-ENTITY UUID="9bcfcf50-3fe2-4b5e-b3f8-67c2df18b53e">
                   <SHORT-NAME>Icu_ch7Notify</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                   <CALL-POINTS>
                     [!IF "as:modconf('Icu')[1]/IcuGeneral/IcuDevErrorDetect = 'true'"!][!//
