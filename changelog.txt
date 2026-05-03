@@ -1,3 +1,18 @@
+commit ee5b2d952ee8180caa2b005edca96fc13204f1da
+Author: Akash <a-verma3@ti.com>
+Date:   Sun May 3 20:48:44 2026 +0530
+
+    am263px: Spi: Klockwork Spi fix.
+    
+    Fixes: MCAL-36360
+    
+    Signed-off-by: Akash Verma
+
+ mcal/examples/Utils/CLANG/am263/CacheP.h | 2 +-
+ mcal/include/hw/am263/Mcal_Libs_Utils.c  | 6 +++---
+ mcal/include/hw/am263/Mcal_Libs_Utils.h  | 2 +-
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+
 commit 62299f3f638b9232e2bba55f4e362ecccf42edbb
 Author: Akash <a-verma3@ti.com>
 Date:   Sat May 2 19:17:53 2026 +0530
