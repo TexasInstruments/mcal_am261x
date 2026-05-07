@@ -14302,7 +14302,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 12562    | 482    | 8240    |
+| fls   | 12558    | 482    | 8240    |
  
 ### FSIRX
 
@@ -14380,7 +14380,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| wdg   | 1086    | 1    | 44    |
+| wdg   | 1084    | 1    | 44    |
  
 
 ## CDD FLC Module
