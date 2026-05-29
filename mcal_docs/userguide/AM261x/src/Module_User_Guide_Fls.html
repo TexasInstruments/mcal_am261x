@@ -288,7 +288,7 @@ also make driver status to IDLE.</p>
 <li><p>MEMIF_IDLE: when FLS driver initialized, it will go to IDLE state.</p></li>
 <li><p>MEMIF_BUSY: In case of any on-going operation i.e., Erase OR read OR
 write, the state will be maintained as busy until the operation is completed.</p></li>
-<li><p>MEMIF_BUSY_INTERNAL is not supported.</p></li>
+<li><p>MEMIF_BUSY_INTERNAL: This is not supported.</p></li>
 </ol>
 </section>
 <section id="assumptions">
@@ -297,14 +297,13 @@ write, the state will be maintained as busy until the operation is completed.</p
 </section>
 <section id="constraints">
 <h3><span class="section-number">4.13.3.5. </span>Constraints<a class="headerlink" href="#constraints" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>For read and write operation offset should be page aligned</p></li>
-<li><p>For read and write operation length of operation should be byte aligned</p></li>
-<li><p>For interrupt mode to be enabled, indac mode should be enabled</p></li>
-<li><p>For interrupt mode to be enabled, maxReadNormalMode and maxWriteNormalMode should be set to pagesize</p></li>
-<li><p>For interrupt mode to be enabled, FLS_ERASE_VERIFICATION_ENABLED, FLS_WRITE_VERIFICATION_ENABLED, FLS_TIMEOUT_SUPERVISION_ENABLED macros should be STD_OFF</p></li>
-<li><p>Although there are 2 instance but only one instance can be used at a time</p></li>
-</ul>
+<ol class="arabic simple">
+<li><p><strong>For read and write operation offset should be page aligned</strong></p></li>
+<li><p><strong>For read and write operation length of operation should be byte aligned.</strong></p></li>
+<li><p><strong>For interrupt mode to be enabled, indac mode should be enabled.</strong></p></li>
+<li><p><strong>For interrupt mode to be enabled, maxReadNormalMode and maxWriteNormalMode should be set to pagesize.</strong></p></li>
+<li><p><strong>For interrupt mode to be enabled, FLS_ERASE_VERIFICATION_ENABLED, FLS_WRITE_VERIFICATION_ENABLED, FLS_TIMEOUT_SUPERVISION_ENABLED macros should be STD_OFF.</strong></p></li>
+</ol>
 </section>
 <section id="design-overview">
 <h3><span class="section-number">4.13.3.6. </span>Design overview<a class="headerlink" href="#design-overview" title="Link to this heading"></a></h3>
@@ -324,49 +323,34 @@ write, the state will be maintained as busy until the operation is completed.</p
 4. Cancel job is supported.<br />
 5. Compare and Blank Check flash memory location.</p></li>
 <li><p>Configure error detection (DET)</p></li>
-<li><p>Only polling mode is supported.</p></li>
-<li><p>DAC and INDAC mode of operation are supported</p></li>
+<li><p>Polling mode is supported.</p></li>
+<li><p>DAC and INDAC mode of operation are supported.</p></li>
 <li><p>Interrupt mode is supported (only in INDAC Mode)</p></li>
 <li><p>DMA mode is supported for Flash Read. (Only in DAC mode)</p></li>
+<li><p>PHY Tuning is supported.</p></li>
 </ul>
 </section>
 <section id="not-supported-features">
 <h3><span class="section-number">4.13.4.2. </span>Not supported Features<a class="headerlink" href="#not-supported-features" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>XIP Mode is not supported.</p></li>
-<li><p>PHY Tune Module is not supported.</p></li>
 </ul>
 </section>
 <section id="ip-specific-features-supported">
 <h3><span class="section-number">4.13.4.3. </span>IP specific Features supported<a class="headerlink" href="#ip-specific-features-supported" title="Link to this heading"></a></h3>
 <section id="dac-mode">
 <h4><span class="section-number">4.13.4.3.1. </span>DAC Mode<a class="headerlink" href="#dac-mode" title="Link to this heading"></a></h4>
-<p>Direct Access Controller (or DAC) refers to the operation where data interface accesses directly trigger a read or write to Flash memory.
-It is memory mapped and can be used to both access and directly execute code from external Flash memory.
-Access that use DAC do not use the embedded SRAM within the OSPI module.
-DAC mode does not support interrupt handling as it does not involve SRAM for data transfer.</p>
+<p>Direct Access Controller (or DAC) refers to the operation where data interface accesses directly trigger a read or write to Flash memory. It is memory mapped and can be used to both access and directly execute code from external Flash memory. Access that use DAC do not use the embedded SRAM within the OSPI module. DAC mode does not support interrupt handling as it does not involve SRAM for data transfer.</p>
 </section>
 <section id="indac-mode">
 <h4><span class="section-number">4.13.4.3.2. </span>INDAC Mode<a class="headerlink" href="#indac-mode" title="Link to this heading"></a></h4>
-<p>Indirect Access Controller (INDAC) uses the internal SRAM of the OSPI module. Data transfers then happen between the SRAM and Flash memory or SRAM and system memory, so no memory mapping is needed.
-The aim of the indirect mode of operation is to transfer significant numbers of bytes to/from Flash memory.
-Indirect operations are controlled and triggered by software via specific read/write transfer registers.
-Bulk transfers take place between system and flash memory in the most efficient manner.
-Fewest possible write cycles carried out inside flash device to maximize life of device.
-INDAC supports poll and interrupt based implementation. The embedded SRAM used by INDAC provides interrupt mechanism.
-Interrupts are triggered when SRAM levels fall below a watermark, and also when a write/read operation finishes from within the SRAM.
-Design implementation is non-blocking and allows the control to return to the application (CPU) while the data is still transferring in hardware.</p>
+<p>Indirect Access Controller (INDAC) uses the internal SRAM of the OSPI module. Data transfers then happen between the SRAM and Flash memory or SRAM and system memory, so no memory mapping is needed. The aim of the indirect mode of operation is to transfer significant numbers of bytes to/from Flash memory. Indirect operations are controlled and triggered by software via specific read/write transfer registers. Bulk transfers take place between system and flash memory in the most efficient manner. Fewest possible write cycles carried out inside flash device to maximize life of device. INDAC supports poll and interrupt based implementation. The embedded SRAM used by INDAC provides interrupt mechanism. Interrupts are triggered when SRAM levels fall below a watermark, and also when a write/read operation finishes from within the SRAM. Design implementation is non-blocking and allows the control to return to the application (CPU) while the data is still transferring in hardware.</p>
 </section>
 <section id="stig">
 <h4><span class="section-number">4.13.4.3.3. </span>STIG<a class="headerlink" href="#stig" title="Link to this heading"></a></h4>
-<p>Software Triggered Instruction Generator - While DAC and INDAC are used for data transfer, STIG is used
-to access the volatile and non-volatile configuration registers, status registers, and for erase functions.
-This Flash Driver Module Write, Read, Erase, BlankCheck and Compare APIs are asynchronous such that control
-will return to the application after the job from one of the APIs has been accepted. A “job” describes the
-action that will perform actual transactions to the hardware. The driver’s Fls_MainFunction () API will do the
-job processing internally, after the APIs have been called and the job has been accepted. During job processing,
-the module will perform the programming of the flash device, and will make data transfers between system and flash device.</p>
-<p>The below figure shows typical connection of the OSPI module to the flash memory</p>
+<p>Software Triggered Instruction Generator - While DAC and INDAC are used for data transfer, STIG is used to access the volatile and non-volatile configuration registers, status registers, and for erase functions. This Flash Driver Module Write, Read, Erase, BlankCheck and Compare APIs are asynchronous such that control will return to the application after the job from one of the APIs has been accepted. A “job” describes the action that will perform actual transactions to the hardware. The driver’s Fls_MainFunction () API will do the job processing internally, after the APIs have been called and the job has been accepted. During job processing, the module will perform the programming of the flash device, and will make data transfers between system and flash device.</p>
+<p>The below figure shows typical connection of the OSPI module to the
+flash memory</p>
 <figure class="align-center" id="id4">
 <img alt="OSPI connected to an external flash memory" src="../_images/fls_OSPI_blk_diag.png" />
 <figcaption>
@@ -401,15 +385,14 @@ the module will perform the programming of the flash device, and will make data 
 ┃ ┃ ┃ ┣ 📜<strong>Fls.c</strong> : <em>Contains the pre-complier switches.</em><br />
 ┃ ┃ ┃ ┗ 📜<strong>Fls_Irq.c</strong> : <em>Contains ISR function definitions..</em><br />
 ┃ ┃ ┣ 📂<strong>V2</strong><br />
-┃ ┃ ┃ ┣ 📜<strong>Fls_Brd_Nor.h</strong> : <em>Contains internal functions and data structures.</em><br />
-┃ ┃ ┃ ┗ 📜<strong>Fls_Brd_Nor_Ospi.c</strong> : <em>Contains internal functions and data structures.</em><br />
-┃ ┃ ┃ ┣ 📜<strong>Fls_Nor_config.c</strong> : <em>Contains flash specific commands</em><br />
-┃ ┃ ┃ ┣ 📜<strong>Fls_Nor_config.h</strong> : <em>Contains device specific configuration parameters.</em><br />
-┃ ┃ ┃ ┣ 📜<strong>Fls_Ospi.c</strong> : <em>Contains internal functions definitions.</em><br />
-┃ ┃ ┃ ┗ 📜<strong>Fls_Ospi.h</strong> : <em>Contains internal functions definitions and data structures.</em><br />
-structures.*<br />
-┃ ┃ ┃ ┣ 📜<strong>Fls_Ospi_Edma.c</strong> : <em>Contains internal functions definitions for dma support.</em><br />
-┃ ┃ ┃ ┗ 📜<strong>Fls_Ospi_Edma.h</strong> : <em>Contains internal functions definitions and data structures for dma support.</em><br />
+┃ ┃ ┃ ┣ 📜<strong>Fls_Brd_Nor.h</strong> : <em>Contains common declarations, macros, and data structures used across OSPI FLS driver files.</em><br />
+┃ ┃ ┃ ┣ 📜<strong>Fls_Brd_Nor_Ospi.c</strong> : <em>Contains board-level NOR flash erase, read, write, and blank check functions for OSPI.</em><br />
+┃ ┃ ┃ ┣ 📜<strong>Fls_Ospi.c</strong> : <em>Contains OSPI controller driver functions and job processing.</em><br />
+┃ ┃ ┃ ┣ 📜<strong>Fls_Ospi.h</strong> : <em>Contains OSPI controller driver interface and data structures.</em><br />
+┃ ┃ ┃ ┣ 📜<strong>Fls_Ospi_Edma.c</strong> : <em>Contains internal functions definitions for OSPI DMA support.</em><br />
+┃ ┃ ┃ ┣ 📜<strong>Fls_Ospi_Edma.h</strong> : <em>Contains internal functions definitions and data structures for OSPI DMA support.</em><br />
+┃ ┃ ┃ ┣ 📜<strong>Fls_Ospi_Phy.c</strong> : <em>Contains OSPI PHY tuning algorithm implementation.</em><br />
+┃ ┃ ┃ ┗ 📜<strong>Fls_Ospi_Phy.h</strong> : <em>Contains OSPI PHY tuning interface and configuration structures.</em><br />
 ┃ ┃ ┗ 📜Makefile<br />
 ┣ 📂mcal_config<br />
 ┣ 📂mcal_docs<br />
@@ -587,6 +570,14 @@ structures.*<br />
 <td><p>FLS_E_VERIFY_WRITE_FAILED</p></td>
 <td><p>0x08</p></td>
 </tr>
+<tr class="row-even"><td><p>Timeout exceeded</p></td>
+<td><p>FLS_E_TIMEOUT</p></td>
+<td><p>0x09</p></td>
+</tr>
+<tr class="row-odd"><td><p>Memory map / interrupt mode off but DMA on</p></td>
+<td><p>FLS_E_MEMAP_INTERRUPT_OFF_DMA_ON</p></td>
+<td><p>0x0B</p></td>
+</tr>
 </tbody>
 </table>
 <p>AUTOSAR requires that API functions check the validity of their
@@ -691,6 +682,42 @@ services:</p>
 <td><p></p></td>
 </tr>
 <tr class="row-odd"><td><p>Fls_Cancel</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>x</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Fls_SetMode</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>x</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Fls_RegisterReadback</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>x</p></td>
+<td><p></p></td>
+<td><p>x</p></td>
+</tr>
+<tr class="row-even"><td><p>Fls_SetEraseType</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>x</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Fls_Set3ByteAddressMode</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -805,11 +832,27 @@ development errors.</p>
 </tr>
 <tr class="row-odd"><td><p>FLS_SID_BLANK_CHECK</p></td>
 <td><p>0x0A</p></td>
-<td><p>FLS_BlankCheck()</p></td>
+<td><p>Fls_BlankCheck()</p></td>
 </tr>
 <tr class="row-even"><td><p>FLS_SID_MAIN_FUNCTION</p></td>
 <td><p>0x06</p></td>
-<td><p>FLS_MainFunction()</p></td>
+<td><p>Fls_MainFunction()</p></td>
+</tr>
+<tr class="row-odd"><td><p>FLS_SID_SET_MODE</p></td>
+<td><p>0x09</p></td>
+<td><p>Fls_SetMode()</p></td>
+</tr>
+<tr class="row-even"><td><p>FLS_SID_REGISTERREADBACK</p></td>
+<td><p>0x0B</p></td>
+<td><p>Fls_RegisterReadback()</p></td>
+</tr>
+<tr class="row-odd"><td><p>FLS_SID_SET_ERASE_TYPE</p></td>
+<td><p>0x0C</p></td>
+<td><p>Fls_SetEraseType()</p></td>
+</tr>
+<tr class="row-even"><td><p>FLS_SID_SET_3BYTEADDR_MODE</p></td>
+<td><p>0x0D</p></td>
+<td><p>Fls_Set3ByteAddressMode()</p></td>
 </tr>
 </tbody>
 </table>
@@ -841,13 +884,30 @@ The function Fls_SetEraseType sets the parameters like data size, data_value, er
 “typeoferase” for Fls_DrvObj, based on the erase type parameter passed to this function while calling from example app.
 These parameters are required in example app.</p>
 </section>
+<section id="fls-set3byteaddressmode">
+<h4><span class="section-number">4.13.8.1.11. </span>Fls_Set3ByteAddressMode<a class="headerlink" href="#fls-set3byteaddressmode" title="Link to this heading"></a></h4>
+<p>This function switches the OSPI controller and the connected NOR flash device to 3-byte addressing mode. It is applicable only on platforms with an OSPI controller (<code class="docutils literal notranslate"><span class="pre">FLS_OSPI_CTRL_BASE_ADDR</span></code> defined). This API can be used when interoperability with devices expecting 3-byte addressing is required.</p>
+</section>
+<section id="fls-setresetpinmode">
+<h4><span class="section-number">4.13.8.1.12. </span>Fls_setResetPinMode<a class="headerlink" href="#fls-setresetpinmode" title="Link to this heading"></a></h4>
+<p>This function sets the flash RESET# pin to the specified state (high or low) via the OSPI controller register. It is applicable on AM263Px-SIP and AM263Px Rev A boards. To perform a hardware flash reset, the caller must toggle the pin: first set it HIGH then LOW (or LOW then HIGH depending on flash polarity). Note: On a standard AM263Px EVM without SIP packaging, the RESET# pin is not wired to the flash and this function has no effect on the flash device itself.</p>
+</section>
+<section id="fls-phy-tuning-fls-phyenable-fls-phydisable">
+<h4><span class="section-number">4.13.8.1.13. </span>Fls PHY Tuning (Fls_PhyEnable / Fls_PhyDisable)<a class="headerlink" href="#fls-phy-tuning-fls-phyenable-fls-phydisable" title="Link to this heading"></a></h4>
+<p>OSPI PHY tuning is supported on AM263Px (enabled via the <code class="docutils literal notranslate"><span class="pre">FLS_OSPI_PHY_ENABLE</span></code> pre-compile switch). The PHY tuning algorithm searches for optimal TX/RX DLL delay window settings to achieve reliable high-speed 8D-8D-8D flash operation.</p>
+<ul class="simple">
+<li><p><strong>Fls_PhyEnable()</strong>: Runs the PHY tuning algorithm and enables the OSPI PHY. This must be called after <code class="docutils literal notranslate"><span class="pre">Fls_Init()</span></code> and after the flash protocol has been configured. Once enabled, all subsequent read operations use PHY-assisted data capture for improved timing margins at high frequencies.</p></li>
+<li><p><strong>Fls_PhyDisable()</strong>: Disables the OSPI PHY, reverting to non-PHY read operation.</p></li>
+</ul>
+<p>The PHY configuration parameters (tuning window, DLL mode, phase delay) are provided through SysConfig-generated configuration.</p>
+</section>
 <section id="callback-notification">
-<h4><span class="section-number">4.13.8.1.11. </span>Callback Notification<a class="headerlink" href="#callback-notification" title="Link to this heading"></a></h4>
+<h4><span class="section-number">4.13.8.1.14. </span>Callback Notification<a class="headerlink" href="#callback-notification" title="Link to this heading"></a></h4>
 <p>This implementation depends on Fee module for callback notification
 to notify the module environment about job end and job error</p>
 </section>
 <section id="schm">
-<h4><span class="section-number">4.13.8.1.12. </span>SchM<a class="headerlink" href="#schm" title="Link to this heading"></a></h4>
+<h4><span class="section-number">4.13.8.1.15. </span>SchM<a class="headerlink" href="#schm" title="Link to this heading"></a></h4>
 <p>If multiple AUTOSAR runnables have access to the same Data Store Memory block, the exported AUTOSAR specification enforces data consistency by using an AUTOSAR exclusive area. With this specification, the runnables have mutually exclusive access to the per-instance memory global data, which prevents data corruption. Beside the OS, the BSW Scheduler provides functions that FLS module calls at begin and end of critical sections. This implementation requires 1 level of exclusive access to guard critical sections.</p>
 <p>The data consistency mechanism that has to be applied to an ExclusiveArea might be domain, ECU or even project specific. The decision which mechanism has to be applied by RTE / Basic Software Scheduler is taken during ECU integration by setting the Exclusive Area configuration parameter RteExclusiveAreaImplMechanism. This parameter is an input for RTE generator. For FLS Module, data consistency and exclusive access to critical sections are required for the following sections as shown in the table below:</p>
 <table class="docutils align-default">
@@ -5700,7 +5760,9 @@ As DAC mode doesn’t support FLS interrupt, polling shall be used for FLS where
 <h2><span class="section-number">4.13.10. </span>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
 <section id="overview">
 <h3><span class="section-number">4.13.10.1. </span>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h3>
-<ol class="arabic simple">
+<ul class="simple">
+<li><p>Fls Example</p>
+<ul>
 <li><p>Initializes clock using Mcu_Init()</p></li>
 <li><p>Initialize port using Port_Init()</p></li>
 <li><p>Initialize Fls using Fls_Init()</p></li>
@@ -5713,7 +5775,9 @@ As DAC mode doesn’t support FLS interrupt, polling shall be used for FLS where
 <li><p>Reads the flash memory using Fls_Read()</p></li>
 <li><p>Check if the write operation was successful by comparing txBuf_test (hardcoded) with the actual data in flash using Fls_Compare()</p></li>
 <li><p>Check if the read operation was successful by comparing rxBuf_test (previously read) with the actual data in flash</p></li>
-</ol>
+</ul>
+</li>
+</ul>
 </section>
 <section id="hardware-software-setup-and-tools">
 <h3><span class="section-number">4.13.10.2. </span>Hardware Software Setup and Tools<a class="headerlink" href="#hardware-software-setup-and-tools" title="Link to this heading"></a></h3>
@@ -5723,91 +5787,83 @@ As DAC mode doesn’t support FLS interrupt, polling shall be used for FLS where
 <h3><span class="section-number">4.13.10.3. </span>Steps to build and run example<a class="headerlink" href="#steps-to-build-and-run-example" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>FLS example application demonstrating the MCAL Fls driver features is in folder <em>&lt;MCAL_ROOT&gt;/examples/Fls</em>.</p></li>
-<li><p>This application can be built from the root folder by giving <em>gmake –s fls_app PLATFORM=am261</em>.</p></li>
-<li><p>after the build is completed we get a binary file, which is loaded in our controller and executed.</p></li>
+<li><p>This application can be built from the root folder by giving <em>gmake –s fls_app PLATFORM=am263px</em>.</p></li>
+<li><p>after the build is completed we get a binary file,which is loaded in our controller and executed.</p></li>
 </ol>
 </section>
 <section id="example-logs">
 <h3><span class="section-number">4.13.10.4. </span>Example Logs<a class="headerlink" href="#example-logs" title="Link to this heading"></a></h3>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span>
-<span class="nl">FlsApp</span><span class="p">:</span><span class="w"> </span><span class="n">Sample</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">STARTS</span><span class="w"> </span><span class="o">!!!</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Variant</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Pre</span><span class="w"> </span><span class="n">Compile</span><span class="w"> </span><span class="n">being</span><span class="w"> </span><span class="n">used</span><span class="w"> </span><span class="o">!!!</span>
-<span class="n">FLS</span><span class="w"> </span><span class="n">MCAL</span><span class="w"> </span><span class="n">version</span><span class="w"> </span><span class="n">info</span><span class="o">:</span><span class="mf">10.1.0</span>
-<span class="n">FLS</span><span class="w"> </span><span class="n">MCAL</span><span class="w"> </span><span class="n">Module</span><span class="o">/</span><span class="n">Driver</span><span class="o">:</span><span class="mf">92.44</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="n">Executing</span><span class="w"> </span><span class="n">Sector</span><span class="w"> </span><span class="n">configuration</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">:</span><span class="w">  </span><span class="mi">1</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="n">Number</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">sector</span><span class="o">/</span><span class="n">blocks</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">erase</span><span class="o">/</span><span class="n">read</span><span class="o">/</span><span class="n">write</span><span class="o">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="n">Total</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">size</span><span class="o">:</span><span class="w"> </span><span class="mh">0x1000</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="n">Offset</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="mh">0x0</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Erasing</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">Progress</span><span class="p">.</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Ends</span><span class="o">:</span><span class="w"> </span><span class="n">SUCCESS</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Blank</span><span class="w"> </span><span class="n">Checking</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">Progress</span><span class="p">.</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Ends</span><span class="o">:</span><span class="w"> </span><span class="n">SUCCESS</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Writing</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">Progress</span><span class="p">.</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Ends</span><span class="o">:</span><span class="w"> </span><span class="n">SUCCESS</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Reading</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">Progress</span><span class="p">.</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Ends</span><span class="o">:</span><span class="w"> </span><span class="n">SUCCESS</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Write</span><span class="w"> </span><span class="n">Compare</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">Progress</span><span class="p">.</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Ends</span><span class="o">:</span><span class="w"> </span><span class="n">SUCCESS</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Read</span><span class="w"> </span><span class="n">Compare</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">Progress</span><span class="p">.</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Ends</span><span class="o">:</span><span class="w"> </span><span class="n">SUCCESS</span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Cancel</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w">         </span><span class="mf">1.</span><span class="w"> </span><span class="n">Writing</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w">         </span><span class="mf">2.</span><span class="w"> </span><span class="n">Canceling</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Canceled</span><span class="w"> </span><span class="p">(</span><span class="n">SUCCESS</span><span class="p">)</span><span class="w"> </span><span class="o">!</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="o">----------</span><span class="w"> </span><span class="n">FLS</span><span class="w"> </span><span class="n">Sample</span><span class="w"> </span><span class="n">application</span><span class="w"> </span><span class="n">Done</span><span class="w"> </span><span class="o">!!</span><span class="w"> </span><span class="o">----------</span><span class="w">  </span>
-<span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span>
-<span class="n">All</span><span class="w"> </span><span class="n">tests</span><span class="w"> </span><span class="n">have</span><span class="w"> </span><span class="n">passed</span>
+<span class="w"> </span><span class="nl">FlsApp</span><span class="p">:</span><span class="w"> </span><span class="n">Sample</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">STARTS</span><span class="w"> </span><span class="o">!!!</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Variant</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Pre</span><span class="w"> </span><span class="n">Compile</span><span class="w"> </span><span class="n">being</span><span class="w"> </span><span class="n">used</span><span class="w"> </span><span class="o">!!!</span>
+<span class="w"> </span><span class="n">FLS</span><span class="w"> </span><span class="n">MCAL</span><span class="w"> </span><span class="n">version</span><span class="w"> </span><span class="n">info</span><span class="o">:</span><span class="mf">11.0.0</span>
+<span class="w"> </span><span class="n">FLS</span><span class="w"> </span><span class="n">MCAL</span><span class="w"> </span><span class="n">Module</span><span class="o">/</span><span class="n">Driver</span><span class="o">:</span><span class="mf">92.44</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="n">Executing</span><span class="w"> </span><span class="n">Sector</span><span class="w"> </span><span class="n">configuration</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">:</span><span class="w">  </span><span class="mi">1</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="n">Number</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">sector</span><span class="o">/</span><span class="n">blocks</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">erase</span><span class="o">/</span><span class="n">read</span><span class="o">/</span><span class="n">write</span><span class="o">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="n">Total</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">size</span><span class="o">:</span><span class="w"> </span><span class="mh">0x1000</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="n">Offset</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="mh">0x0</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Erasing</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">Progress</span><span class="p">.</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Ends</span><span class="o">:</span><span class="w"> </span><span class="n">SUCCESS</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Blank</span><span class="w"> </span><span class="n">Checking</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">Progress</span><span class="p">.</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Ends</span><span class="o">:</span><span class="w"> </span><span class="n">SUCCESS</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Writing</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">Progress</span><span class="p">.</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Ends</span><span class="o">:</span><span class="w"> </span><span class="n">SUCCESS</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Reading</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">Progress</span><span class="p">.</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Ends</span><span class="o">:</span><span class="w"> </span><span class="n">SUCCESS</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Write</span><span class="w"> </span><span class="n">Compare</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">Progress</span><span class="p">.</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Ends</span><span class="o">:</span><span class="w"> </span><span class="n">SUCCESS</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Read</span><span class="w"> </span><span class="n">Compare</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">Progress</span><span class="p">.</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Ends</span><span class="o">:</span><span class="w"> </span><span class="n">SUCCESS</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Cancel</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w">         </span><span class="mf">1.</span><span class="w"> </span><span class="n">Writing</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w">         </span><span class="mf">2.</span><span class="w"> </span><span class="n">Canceling</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="n">Job</span><span class="w"> </span><span class="n">Canceled</span><span class="w"> </span><span class="p">(</span><span class="n">SUCCESS</span><span class="p">)</span><span class="w"> </span><span class="o">!</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span><span class="w"> </span><span class="o">----------</span><span class="w"> </span><span class="n">FLS</span><span class="w"> </span><span class="n">Sample</span><span class="w"> </span><span class="n">application</span><span class="w"> </span><span class="n">Done</span><span class="w"> </span><span class="o">!!</span><span class="w"> </span><span class="o">----------</span>
+<span class="w"> </span><span class="nl">FLS_APP</span><span class="p">:</span>
 
 </pre></div>
 </div>
 </section>
 <section id="file-structure">
 <h3><span class="section-number">4.13.10.5. </span>File Structure<a class="headerlink" href="#file-structure" title="Link to this heading"></a></h3>
-<p>📦AM261x<br />
+<p>📦AM263Px<br />
 ┣ 📂build<br />
 ┣ 📂mcal<br />
 ┃ ┣ 📂<strong>examples</strong><br />
 ┃ ┃ ┣ 📂<strong>Fls</strong><br />
 ┃ ┃ ┃ ┣ 📂<strong>soc</strong><br />
-┃ ┃ ┃ ┣ 📜<strong>FlsApp.c</strong> : <em>Contains FLS test example.</em><br />
-┃ ┃ ┃ ┣ 📜Makefile<br />
-┃ ┃ ┣ 📂<strong>Flsdiag_ospi</strong><br />
-┃ ┃ ┃ ┣ 📂<strong>soc</strong><br />
-┃ ┃ ┃ ┣ 📜<strong>Fls_DiagApp.c</strong> : <em>Contains FLS Diag test example.</em><br />
-┃ ┃ ┃ ┣ 📜<strong>Fls_NOR_SFDP.c</strong> : <em>Contains SFDP Driver APIs implementation.</em><br />
-┃ ┃ ┃ ┣ 📜<strong>Fls_NOR_SFDP.h</strong> : <em>Contains SFDP Driver APIs implementation.</em><br />
-┃ ┃ ┃ ┣ 📜Makefile<br />
+┃ ┃ ┃ ┣ 📜<strong>Flsapp.c</strong> : <em>Contains Fls test example</em><br />
+┃ ┃ ┃ ┗ 📜Makefile<br />
 ┃ ┣ 📂<strong>examples_config</strong><br />
 ┃ ┃ ┣ 📂<strong>Fls_Demo_Cfg</strong><br />
-┃ ┃ ┃ ┣ 📂<strong>soc</strong><br />
-┃ ┃ ┃ ┃ ┣ 📂<strong>am261</strong><br />
-┃ ┃ ┃ ┃ ┃ ┣ 📂<strong>r5f0_0</strong><br />
+┃ ┃ ┃ ┗ 📂<strong>soc</strong><br />
+┃ ┃ ┃ ┃ ┣ 📂<strong>am263px</strong><br />
+┃ ┃ ┃ ┃ ┃ ┗ 📂<strong>r5f0_0</strong><br />
 ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂include<br />
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜<strong>Fls_Cfg.h</strong> : <em>Contains the Precompile switches, Symbolic names.</em><br />
-┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂src<br />
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜<strong>Fls_Cfg.c</strong> : <em>Contains all Pre-Compile Configured parameters</em><br />
-┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜<strong>Fls_PBcfg.c</strong> : <em>Contains all Post-Build Configured parameters</em><br />
+┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗📜<strong>Fls_Cfg.h</strong> : <em>Contains the configuration parameters</em><br />
+┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂src<br />
+┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣📜<strong>Fls_Cfg.c</strong> : <em>Contains all Pre-Compile Configured parameters</em><br />
+┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜<strong>Fls_PBcfg.c</strong> : <em>contains all Post build configured parameters</em><br />
 ┃ 📂mcal_config<br />
 ┃ 📂mcal_docs<br />
-┣ 📜README.txt</p>
+┗ 📜README.txt</p>
 </section>
 </section>
 <section id="faq-s">
 <h2><span class="section-number">4.13.11. </span>FAQ’s<a class="headerlink" href="#faq-s" title="Link to this heading"></a></h2>
 <p>Q1. What if some flashes also support write enable for non-volatile registers?</p>
-<p>Before writing to any register in flash, write enable command is issued to the flash.
-The Write enable can be issued to both volatile and non volatile registers depending on what the flash supports. Currently the existing flash in the device supports write enable to volatile registers. In case any external flash (e.g. S25FL064LABMFB01X) supports write enable to both volatile and non volatile registers, the user can issue write enable command for non volatile registers using Nor_OspiCmdWrite API. User can also update the fls_config_sfdp_1.cmdWren parameter in Flash_sfdpParams_init API in V2/Fls_Nor_config.c file by following the flash datasheet.</p>
+<p>Before writing to any register in flash, write enable command is issued to the flash.  The Write enable can be issued to both volatile and non volatile registers depending on     what the flash supports. Currently the existing flash in the device supports write enable to volatile registers. In case any external flash (e.g. S25FL064LABMFB01X) supports write enable to both volatile and non volatile registers, the user can issue write enable command for non volatile registers using Nor_OspiCmdWrite API. User can also update the fls_config_sfdp_1.cmdWren parameter in Flash_sfdpParams_init API in V2/Fls_Nor_config.c file by following the flash datasheet.</p>
 <p>Q2. How to enable interrupt mode in Flash?</p>
-<p>To enable interrupt mode, FLS_USE_INTERRUPTS should be set to STD_ON. INDAC mode should be enabled in interrupt mode as ospi controller uses SRAM level to trigger interrupt and INDAC mode of operation uses SRAM for data transfer. Also maxReadNormalMode and maxWriteNormalMode should be set to page size of the flash. Further, FLS_ERASE_VERIFICATION_ENABLED, FLS_WRITE_VERIFICATION_ENABLED and FLS_TIMEOUT_SUPERVISION_ENABLED should be disabled in interrupt mode.</p>
+<p>To enable interrupt mode, FLS_USE_INTERRUPTS should be set to STD_ON. INDAC mode should be enabled in interrupt mode as ospi controller uses SRAM level to trigger interrupt and INDAC mode of operation uses SRAM for data transfer. Also maxReadNormalMode and maxWriteNormalMode should be set to page size of the flash. Further, FLS_ERASE_VERIFICATION_ENABLED,FLS_WRITE_VERIFICATION_ENABLED and FLS_TIMEOUT_SUPERVISION_ENABLED should be disabled in interrupt mode.</p>
 </section>
 <section id="references">
 <h2><span class="section-number">4.13.12. </span>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
