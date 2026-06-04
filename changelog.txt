@@ -1,3 +1,33 @@
+commit c4da0b19096632310f9ac11290095eefb3615e3e
+Author: Swathi G Bhat <s-bhat2@ti.com>
+Date:   Thu Jun 4 12:33:08 2026 +0530
+
+    all: all: Updated cicd script to accept override json files
+    
+    Fixes: MCAL-38582
+    
+    Signed-off-by: Swathi G Bhat
+
+ mcal_misc/scripts/cicd/test_result_compare.py   | 57 +++++++++++++++++++++++--
+ mcal_misc/scripts/cicd/test_result_validator.sh | 20 ++++++++-
+ 2 files changed, 71 insertions(+), 6 deletions(-)
+
+commit 41564d5cd172186b71b9400565cf1ca4b47eecc7
+Author: Swathi G Bhat <s-bhat2@ti.com>
+Date:   Wed Jun 3 20:11:07 2026 +0530
+
+    all: Spi: Added conditional check for Spi_LevelDelivered in bswmd template
+    
+    Fixes: MCAL-38578
+    
+    Signed-off-by: Swathi G Bhat
+
+ .../generate_swcd/swcd/Spi_Bswmd.arxml             |   7 +
+ .../generate_swcd/swcd/Spi_Bswmd.arxml             |   7 +
+ .../generate_swcd/swcd/Spi_Bswmd.arxml             |   7 +
+ release_notes.md                                   | 333 ++-------------------
+ 4 files changed, 52 insertions(+), 302 deletions(-)
+
 commit f6672267e9cfa312499c356aad53dc0de5f86c51
 Author: Swathi G Bhat <s-bhat2@ti.com>
 Date:   Tue Jun 2 17:47:04 2026 +0530
