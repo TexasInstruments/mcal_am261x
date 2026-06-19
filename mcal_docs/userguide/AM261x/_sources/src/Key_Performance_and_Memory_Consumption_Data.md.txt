@@ -22,7 +22,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| cdd_cmpss   | 2010    | 0    | 0    |
+| cdd_cmpss   | 2076    | 0    | 0    |
  
 ### DIO
 
@@ -54,25 +54,25 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| cdd_flc   | 486    | 0    | 0    |
+| cdd_flc   | 548    | 0    | 0    |
  
 ### FLS
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 12558    | 482    | 8240    |
+| fls   | 12636    | 482    | 8240    |
  
 ### FSIRX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsirx   | 1628    | 3    | 70    |
+| fsirx   | 1704    | 3    | 70    |
  
 ### FSITX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsitx   | 2108    | 10    | 57    |
+| fsitx   | 2178    | 10    | 57    |
  
 ### GPT
 
