@@ -59,7 +59,7 @@
                 </ECUC-INTEGER-PARAM-DEF>
               </PARAMETERS>
               <SUB-CONTAINERS>
-                <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:74f0ce69-2156-4784-bae9-57ea4699e6e4">
+                <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:4f43f9ee-a9e1-4557-916b-2f33a62dee6c">
                   <SHORT-NAME>IcuChannel</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">Configuration of an individual ICU channel.</L-2>
@@ -579,7 +579,7 @@
                   <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
                   <DEFAULT-VALUE>false</DEFAULT-VALUE>
                 </ECUC-BOOLEAN-PARAM-DEF>
-                <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:24a348ed-2ff8-426c-a392-18f905c53c25">
+                <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:a645be7a-ff46-4cd2-ac66-38f438b4d3f1">
                   <SHORT-NAME>IcuIrqType</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">ISR Category type:
@@ -615,7 +615,7 @@
                     </ECUC-ENUMERATION-LITERAL-DEF>
                   </LITERALS>
                 </ECUC-ENUMERATION-PARAM-DEF>
-                <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:4745b6cf-b46f-4fe4-8bfa-c1a47fdd7412">
+                <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:a5c2267b-22a6-4b4b-94d8-1f89c218b99d">
                   <SHORT-NAME>IcuDeviceVariant</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">Select SOC variant </L-2>

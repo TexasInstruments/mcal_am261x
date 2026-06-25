@@ -138,7 +138,7 @@
                       <MAX>31</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:7cc25f83-b89c-4ba0-8766-7ba087185c98">
+                    <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:146e2b9b-9806-4cb9-97ab-58dc846bca66">
                       <SHORT-NAME>PwmHwUnit</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">The parameter PWM_IDLE_STATE represents the output state of the PWM after the signal is stopped (e.g. call of Pwm_SetOutputToIdle).</L-2>
@@ -317,7 +317,7 @@
                         </ECUC-ENUMERATION-LITERAL-DEF>
                       </LITERALS>
                     </ECUC-ENUMERATION-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:da8053d5-b4f7-45c6-a06c-ab873f15af81">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:65bea479-015a-40af-a0c9-f26de03806a4">
                       <SHORT-NAME>PwmFunctionalClock</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">Value of the System clock frequency in Hz Default frequency is 125MHz for EPWM, and 25Mhz for GPT.</L-2>
@@ -391,7 +391,7 @@
                       <MAX>7</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:b1691bdf-e530-4ee3-83ff-c3c7c91432fd">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:578bec64-de1c-4585-9a9f-3fccc1fd1248">
                       <SHORT-NAME>PwmHSClkPrescaler</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">High-Speed Time-base Clock Prescale Bits. These bits determine                         part of the time-base clock prescale value and acts as a clock divider for the time-base clock.                         TBCLK = SYSCLKOUT/(PwmHSClkPrescaler x PwmClkPrescaler)                         0x0 = div by 1, 0x1 = div by 2, 0x2 = div by 4, 0x3 = div by 6, 0x4 = div by 8, 0x5 = div by 10                         0x6 = div by 12, 0x7 = div by 14</L-2>
@@ -689,7 +689,7 @@
                   <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
                   <DEFAULT-VALUE>false</DEFAULT-VALUE>
                 </ECUC-BOOLEAN-PARAM-DEF>
-                <ECUC-INTEGER-PARAM-DEF UUID="ECUC:32c56ea6-2b57-4968-83a2-357d467db908">
+                <ECUC-INTEGER-PARAM-DEF UUID="ECUC:fafc6c14-c816-4dc7-ba16-bc3a7493d2b2">
                   <SHORT-NAME>PwmDefaultOSCounterId</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">Default Os Counter Id if node reference to OsCounter ref PwmOsCounterRef is not set</L-2>
@@ -1008,7 +1008,7 @@
                 </ECUC-ENUMERATION-PARAM-DEF>
               </PARAMETERS>
               <REFERENCES>
-                <ECUC-REFERENCE-DEF UUID="ECUC:26c9bdff-38cf-4f0b-8754-7472d0d41cb9">
+                <ECUC-REFERENCE-DEF UUID="ECUC:b83013ee-c2a9-4bcb-a213-309eabf3315a">
                   <SHORT-NAME>PwmOsCounterRef</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">This parameter contains a reference to the OsCounter, which is used by the PWM driver.</L-2>
@@ -1092,13 +1092,13 @@
                 </ECUC-PARAM-CONF-CONTAINER-DEF>
               </SUB-CONTAINERS>
             </ECUC-PARAM-CONF-CONTAINER-DEF>
-            <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:e435c52c-58b2-4506-ae6c-da9a9b76ad99">
+            <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:6b909516-86da-4e8f-94bd-ec532e319bc9">
               <SHORT-NAME>PwmPublishedInformation</SHORT-NAME>
               <DESC>
                 <L-2 L="EN">Additional published parameters not covered by &quot;Common&quot; Published Information. Note that these parameters have &quot;PUBLISHED-INFORMATION&quot; configuration class setting, since they are published information.</L-2>
               </DESC>
               <PARAMETERS>
-                <ECUC-ENUMERATION-PARAM-DEF UUID="4f815cf1-b16c-4054-bf58-9649ed0040da">
+                <ECUC-ENUMERATION-PARAM-DEF UUID="9dce4911-6160-41a9-9e5a-41ee5be91bf1">
                   <SHORT-NAME>PwmDeviceVariant</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">Select SOC AM261x variant </L-2>

@@ -185,7 +185,7 @@
                   <a:a name="SCOPE" value="LOCAL"/>
                   <a:a name="SYMBOLICNAMEVALUE" value="false"/>
                   <a:a name="UUID"
-                       value="ECUC:6d7d0d8a-3348-4b9a-ba5a-7a808b2ac780"/>
+                       value="ECUC:39cce150-2eb2-461a-9142-8e156989f781"/>
                   <a:da name="INVALID" type="Range">
                     <a:tst expr="&lt;=4"/>
                     <a:tst expr="&gt;=0"/>
@@ -219,7 +219,7 @@
                     <a:a name="DESC"
                          value="EN: All data needed to configure one SPI-channel"/>
                     <a:a name="UUID"
-                         value="ECUC:ea0b3275-57db-4665-bf46-8baa9a2e3ad5"/>
+                         value="ECUC:ba6d6dbd-a868-46e8-8f2e-f9588d635256"/>
                     <v:var name="SpiChannelId" type="INTEGER">
                       <a:a name="DESC"
                            value="EN: SPI Channel ID, used as parameter in SPI API functions."/>
@@ -663,7 +663,7 @@
                       </a:a>
                       <a:a name="ORIGIN" value="Texas Instruments"/>
                       <a:a name="UUID"
-                           value="ECUC:f3e7f7db-54f1-4a4a-9b08-253ec0d863a1"/>
+                           value="ECUC:fc06c0a2-3515-409a-bbf3-436760f8f239"/>
                       <a:da name="DEFAULT" value="0"/>
                       <a:da name="INVALID" type="Range">
                         <a:tst expr="&lt;=65535"/>
@@ -675,7 +675,7 @@
                       <a:a name="DESC"
                            value="EN: MCSPI HW specific external device config. Should be populated only if hwUnitId is of type MCSPI"/>
                       <a:a name="UUID"
-                           value="ECUC:b1cea778-9884-402b-9535-a819da9e6b7e"/>
+                           value="ECUC:ab69f17b-4a3f-455b-8cf5-8b4911d21fd8"/>
                       <v:var name="SpiExtDeviceMCSPITxRxMode"
                              type="ENUMERATION">
                         <a:a name="DESC"
@@ -690,7 +690,7 @@
                         <a:a name="SCOPE" value="LOCAL"/>
                         <a:a name="SYMBOLICNAMEVALUE" value="false"/>
                         <a:a name="UUID"
-                             value="ECUC:4f815cf1-b16c-4054-bf58-9649ed0040da"/>
+                             value="ECUC:24c2ea2a-fcde-4ad7-abf9-d8a2ae90e739"/>
                         <a:da name="DEFAULT" value="SPI_TX_RX_MODE_BOTH"/>
                         <a:da name="RANGE">
                           <a:v>SPI_TX_RX_MODE_BOTH</a:v>
@@ -711,7 +711,7 @@
                         <a:a name="SCOPE" value="LOCAL"/>
                         <a:a name="SYMBOLICNAMEVALUE" value="false"/>
                         <a:a name="UUID"
-                             value="ECUC:2cb62012-292d-448f-b6a1-078270658e97"/>
+                             value="ECUC:4b35c4ec-280b-47a4-bc16-b3248b4da256"/>
                         <a:da name="DEFAULT" value="true"/>
                       </v:var>
                       <v:var name="SpiExtDeviceMCSPIStartBitLevel"
@@ -902,7 +902,7 @@
                       <a:a name="ORIGIN" value="AUTOSAR_ECUC"/>
                       <a:a name="SCOPE" value="LOCAL"/>
                       <a:a name="UUID"
-                           value="ECUC:70464ecc-4fa6-4931-adc5-0acb3604cb15"/>
+                           value="ECUC:f9374d8b-2942-4041-8321-76706132f6ba"/>
                       <a:da name="REF"
                             value="ASPathDataOfSchema:/AUTOSAR/EcucDefs/Spi/SpiDriver/SpiExternalDevice"/>
                     </v:ref>
@@ -929,7 +929,7 @@
                         <a:a name="DESC"
                              value="EN: References to SPI channels and their order within the Job."/>
                         <a:a name="UUID"
-                             value="ECUC:6a4113e1-75fa-4cac-a818-cce8010ab1e2"/>
+                             value="ECUC:f7c0369d-7a2d-410f-961c-07e201b76497"/>
                         <v:var name="SpiChannelIndex" type="INTEGER">
                           <a:a name="DESC"
                                value="EN: This parameter specifies the order of Channels within the Job."/>
@@ -944,7 +944,7 @@
                           <a:a name="SCOPE" value="LOCAL"/>
                           <a:a name="SYMBOLICNAMEVALUE" value="false"/>
                           <a:a name="UUID"
-                               value="ECUC:0b4c064e-8dde-419a-8b44-42a4407dd983"/>
+                               value="ECUC:6bd9a40b-4f91-4275-b418-386ccb396de8"/>
                           <a:da name="DEFAULT" value="0"/>
                           <a:da name="INVALID" type="Range">
                             <a:tst expr="&lt;=255"/>
@@ -964,7 +964,7 @@
                           <a:a name="POSTBUILDVARIANTVALUE" value="true"/>
                           <a:a name="SCOPE" value="LOCAL"/>
                           <a:a name="UUID"
-                               value="ECUC:3f4ee099-8167-4a80-ba66-038e57359c46"/>
+                               value="ECUC:e57762fe-6b60-4e30-9bf3-292a91046ae3"/>
                           <a:da name="REF"
                                 value="ASPathDataOfSchema:/AUTOSAR/EcucDefs/Spi/SpiDriver/SpiChannel"/>
                         </v:ref>
@@ -1092,7 +1092,7 @@
                       <a:a name="SCOPE" value="LOCAL"/>
                       <a:a name="SYMBOLICNAMEVALUE" value="false"/>
                       <a:a name="UUID"
-                           value="ECUC:3265cb4d-db11-4c59-b3ad-fd0d5aa0040a"/>
+                           value="ECUC:1731996e-f82a-44ae-8601-8220a847bb7f"/>
                       <a:da name="DEFAULT" value="SPI_UNIT_MCSPI0"/>
                       <a:da name="RANGE">
                         <a:v>SPI_UNIT_MCSPI0</a:v>
@@ -1125,7 +1125,7 @@
                       </a:a>
                       <a:a name="ORIGIN" value="Texas Instruments"/>
                       <a:a name="SCOPE" value="LOCAL"/>
-                      <a:a name="UUID" value="2d4772b1-18c7-4643-b0eb-9f40bed23de7"/>
+                      <a:a name="UUID" value="7089c83a-cd8b-442e-8f72-dcec7c6375fb"/>
                       <a:da name="ENABLE" type="XPath" expr="../SpiHwUnitDmaEnable = 'true'"/>
                       <a:da name="REF" value="ASPathDataOfSchema:/TI_AM261x/Cdd_Dma/CddDmaDriverHandler"/>
                     </v:ref>
@@ -1149,7 +1149,7 @@
                 <a:a name="DESC"
                      value="EN: General configuration settings for SPI-Handler"/>
                 <a:a name="UUID"
-                     value="ECUC:480086b4-53a1-4e67-ae4c-2063087d1dd3"/>
+                     value="ECUC:e0e8b9dc-92da-4606-bfd7-b3d401b6ce4a"/>
                 <v:var name="SpiCancelApi" type="BOOLEAN">
                   <a:a name="DESC"
                        value="EN: Switches the Spi_Cancel function ON or OFF."/>
@@ -1163,7 +1163,7 @@
                   <a:a name="SCOPE" value="LOCAL"/>
                   <a:a name="SYMBOLICNAMEVALUE" value="false"/>
                   <a:a name="UUID"
-                       value="ECUC:33e55d19-67fd-4fdd-8d16-37098753e356"/>
+                       value="ECUC:39de3f64-5202-491e-bd0f-2ddbc7a5c2af"/>
                   <a:da name="DEFAULT" value="true"/>
                 </v:var>
                 <v:var name="SpiEnableJobLog" type="BOOLEAN">
@@ -1236,7 +1236,7 @@
                   <a:a name="SCOPE" value="LOCAL"/>
                   <a:a name="SYMBOLICNAMEVALUE" value="false"/>
                   <a:a name="UUID"
-                       value="ECUC:0ae36278-6ef3-4b83-89ae-02358da5042c"/>
+                       value="ECUC:a52fcc05-d9cf-463d-b43f-be15cc15b05c"/>
                   <a:da name="DEFAULT" value="10000"/>
                   <a:da name="INVALID" type="Range">
                     <a:tst expr="&lt;=4294967295"/>
@@ -1381,7 +1381,7 @@
                   <a:a name="SCOPE" value="LOCAL"/>
                   <a:a name="SYMBOLICNAMEVALUE" value="false"/>
                   <a:a name="UUID"
-                       value="ECUC:9afdaaa0-10cb-4fb7-9aa8-d7ba36be9e2c"/>
+                       value="ECUC:446bfb09-39c5-485f-b254-952ea88b83d3"/>
                   <a:da name="DEFAULT" value="true"/>
                 </v:var>
                 <v:var name="SpiHwStatusApi" type="BOOLEAN">
@@ -1523,7 +1523,7 @@
                   <a:a name="ORIGIN" value="Texas Instruments"/>
                   <a:a name="SYMBOLICNAMEVALUE" value="false"/>
                   <a:a name="UUID"
-                       value="ECUC:4a5a7170-fc8d-49ff-b270-2c2b24b3a21f"/>
+                       value="ECUC:74a0febe-4e99-42c2-8b0a-e8e0c9463970"/>
                   <a:da name="DEFAULT" value="SPI_ISR_CAT2"/>
                   <a:da name="RANGE">
                     <a:v>SPI_ISR_VOID</a:v>
@@ -1539,7 +1539,7 @@
                       <icc:v vclass="PreCompile">VariantPreCompile</icc:v>
                     </a:a>
                     <a:a name="ORIGIN" value="Texas Instruments"/>
-				  <a:a name="UUID" value="ECUC:32c56ea6-2b57-4968-83a2-357d467db908"/>
+				  <a:a name="UUID" value="ECUC:0d2919e9-f1fc-4e85-abc3-4cc8a41b884d"/>
                     <a:da name="INVALID" type="Range">
                       <a:tst expr="&lt;=16"/>
                       <a:tst expr="&gt;=0"/>
@@ -1558,7 +1558,7 @@
 					<a:a name="OPTIONAL" value="true"/>
 					<a:a name="ORIGIN" value="Texas Instruments"/>
 					<a:a name="SCOPE" value="LOCAL"/>
-					<a:a name="UUID" value="ECUC:26c9bdff-38cf-4f0b-8754-7472d0d41cb9"/>
+					<a:a name="UUID" value="ECUC:bb0ce609-1c01-4ee6-912b-8b756fc1d8eb"/>
 					<a:da name="REF"
 		value="ASPathDataOfSchema:/AUTOSAR/EcucDefs/Os/OsCounter"/>
 					<a:da name="ENABLE" value="true"/>
@@ -1577,7 +1577,7 @@
                   </a:a>
                   <a:a name="ORIGIN" value="Texas Instruments"/>
                   <a:a name="UUID"
-                       value="ECUC:48e44cb2-35ae-4078-8fed-17e728257ca8"/>
+                       value="ECUC:a8271810-47c1-4223-b52f-b9ceebb51be0"/>
                   <a:da name="DEFAULT" value="32000"/>
                   <a:da name="INVALID" type="Range">
                     <a:tst expr="&lt;=4294967295"/>
@@ -1626,7 +1626,7 @@
                   <a:a name="SCOPE" value="LOCAL"/>
                   <a:a name="SYMBOLICNAMEVALUE" value="false"/>
                   <a:a name="UUID"
-                       value="ECUC:70edc491-c59b-4376-bc8a-ecac559250c7"/>
+                       value="ECUC:c84d7894-31bd-4ba5-bc11-cfd8a08b21ec"/>
                   <a:da name="DEFAULT" value="64"/>
                   <a:da name="INVALID" type="Range">
                     <a:tst expr="&lt;=4294967295"/>
@@ -1647,7 +1647,7 @@
                   <a:a name="SCOPE" value="LOCAL"/>
                   <a:a name="SYMBOLICNAMEVALUE" value="false"/>
                   <a:a name="UUID"
-                       value="ECUC:4745b6cf-b46f-4fe4-8bfa-c1a47fdd7412"/>
+                       value="ECUC:73b64b00-3edc-4751-8cf4-50dc9decb309"/>
                   <a:da name="DEFAULT" value="AM261x"/>
                   <a:da name="RANGE" value="AM261x"/>
                 </v:var>
@@ -1659,7 +1659,7 @@
                     <a:a name="DESC"
                          value="EN: Structure for storing enabled SPI HW units"/>
                     <a:a name="UUID"
-                         value="ECUC:986d7ce7-e9f2-4e1b-9a0e-c6a4e9c2a3ed"/>
+                         value="ECUC:47f48648-d0fa-4c9e-8354-50e55f37c3ab"/>
                     <v:var name="SpiHwUnitEnabledFlag" type="ENUMERATION">
                       <a:a name="DESC" value="EN: Group configurations"/>
                       <a:a name="IMPLEMENTATIONCONFIGCLASS"
@@ -1688,7 +1688,7 @@
                 <a:a name="DESC"
                      value="EN: Container holding all SPI specific published information parameters"/>
                 <a:a name="UUID"
-                     value="ECUC:f8059619-213b-455c-9706-745609dfcae6"/>
+                     value="ECUC:7f82e5d4-56aa-4e53-8154-260fecd8014d"/>
                 <v:var name="SpiMaxHwUnit" type="INTEGER_LABEL">
                   <a:a name="DESC"
                        value="EN: Number of different SPI hardware microcontroller peripherals (units/busses) available and handled by this SPI Handler/Driver module."/>

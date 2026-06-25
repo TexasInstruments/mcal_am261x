@@ -33,7 +33,7 @@
                                    <a:a name="POSTBUILDVARIANTSUPPORT" value="true" />
                                    <a:a name="RELEASE" value="asc:4.3.1" />
                                    <a:a name="UPPER-MULTIPLICITY" value="1" />
-                                   <a:a name="UUID" value="ECUC:c03234fe-4dca-445e-a47c-1bc11e6c1832" />
+                                   <a:a name="UUID" value="ECUC:4acd512a-cd28-44af-91cc-98953fa71247" />
                                    <v:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION">
                                         <a:a name="IMPLEMENTATIONCONFIGCLASS" type="IMPLEMENTATIONCONFIGCLASS">
                                              <icc:v vclass="PreCompile">VariantPostBuild</icc:v>
@@ -66,7 +66,7 @@
                                              <a:a name="SCOPE" value="LOCAL" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
                                              <a:a name="UUID"
-                                                  value="ECUC:f43bffda-8d3a-4520-b424-b558fcbe752c" />
+                                                  value="ECUC:8ae6f84b-a512-4a70-9f94-68db443c1ae9" />
                                              <a:da name="ENABLE" type="XPath"
                                                   expr="as:modconf('Cdd_FsiTx')[1]/CddFsiTxGeneral/CddFsiTxNotifyCapability = 'true'" />
                                              <a:da name="DEFAULT" value="NULL_PTR" />
@@ -118,7 +118,7 @@
                                              <a:da name="MAX" type="XPath" expr="num:i(node:value(as:modconf('Cdd_FsiTx')[1]/CddFsiTxGeneral/CddFsiTxMaxHwUnitCount))"/>
                                              <v:ctr name="CddFsiTxHwUnit" type="IDENTIFIABLE">
                                                   <a:a name="DESC" value="EN: This container contains the Driver configuration (parameters) depending on which FSI Hw unit is get configured" />
-                                                  <a:a name="UUID" value="ECUC:c67e7c58-3daf-457n-a213-95ae89b248d8" />
+                                                  <a:a name="UUID" value="ECUC:7fd9f042-eceb-4a0d-b6c1-9a1be42365df" />
 
                                                   <v:var name="CddFsiTxHwUnitId" type="ENUMERATION">
                                                        <a:a name="DESC" value="EN: Description: Numeric ID of the HW Unit. This symbolic name allows accessing Fsi Hw Unit data. Enumeration literals are defined vendor specific.
@@ -133,7 +133,7 @@
                                                        <a:a name="POSTBUILDVARIANTVALUE" value="true" />
                                                        <a:a name="SCOPE" value="LOCAL" />
                                                        <a:a name="SYMBOLICNAMEVALUE" value="false" />
-                                                       <a:a name="UUID" value="ECUC:7aa65640-e385-4037-v799-40ce3e785755" />
+                                                       <a:a name="UUID" value="ECUC:dd79ddc4-2c50-4c78-a18f-e537a55ec119" />
                                                        <a:da name="RANGE">
                                                             <a:v>CDD_FSI_TX_HWUNIT_0</a:v>
 
@@ -181,7 +181,7 @@
                                                        <a:a name="POSTBUILDVARIANTVALUE" value="true" />
                                                        <a:a name="SCOPE" value="LOCAL" />
                                                        <a:a name="SYMBOLICNAMEVALUE" value="false" />
-                                                       <a:a name="UUID" value="ECUC:ea7f8f6a-5c34-4bc4-808e-dc02c4c233ac" />
+                                                       <a:a name="UUID" value="ECUC:3cb349b6-d95a-4033-8d49-dd5f99483662" />
                                                        <a:da name="DEFAULT" value="20000" />
                                                        <a:da name="INVALID" type="Range">
                                                             <a:tst expr="&lt;=4294967295" />
@@ -226,7 +226,7 @@
                                                        <a:a name="POSTBUILDVARIANTVALUE" value="true" />
                                                        <a:a name="SCOPE" value="LOCAL" />
                                                        <a:a name="SYMBOLICNAMEVALUE" value="false" />
-                                                       <a:a name="UUID" value="ECUC:f348b1e4-aabc-46ee-a71a-02cc6e76tca6" />
+                                                       <a:a name="UUID" value="ECUC:6266dcd6-40aa-4ea3-b7fe-1d63f7e404ec" />
                                                        <a:da name="ENABLE" value="true" />
                                                        <a:da name="RANGE">
                                                             <a:v>CDD_FSI_TX_INTERRUPT_MODE</a:v>
@@ -379,7 +379,7 @@
                                                        </a:a>
                                                        <a:a name="ORIGIN" value="Texas Instruments" />
                                                        <a:a name="UUID"
-                                                            value="0bc2d871-1004-44a2-8934-8fb46a095dqc" />
+                                                            value="2bf275ca-d842-4e5d-b5ac-277c0c4108e4" />
                                                        <a:da name="ENABLE" type="XPath"
                                                             expr="as:modconf('Cdd_FsiTx')[1]/CddFsiTxGeneral/CddFsiTxDMAEnable = 'true'" />
                                                        <a:da name="REF"
@@ -406,7 +406,7 @@
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
-                                             <a:a name="UUID" value="ECUC:32c0e8fd-6160-4ffb-V4a0-0fa22757dbae" />
+                                             <a:a name="UUID" value="ECUC:4ed4c6a1-2caa-4930-b19d-6fec0fc80b23" />
                                              <a:da name="DEFAULT" value="true" />
                                         </v:var>
                                         <v:var name="CddFsiTxTransmitApi" type="BOOLEAN">
@@ -448,7 +448,7 @@
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
-                                             <a:a name="UUID" value="ECUC:db321b92-871a-4a62-8778-09b8848d8f2c" />
+                                             <a:a name="UUID" value="ECUC:ca687d0c-1d99-44bd-a227-22ebecb0d82b" />
                                              <a:da name="DEFAULT" value="true" />
                                              <a:da name="VISIBLE" value="true" />
                                         </v:var>
@@ -502,7 +502,7 @@
                                                   <a:a name="ORIGIN" value="Texas Instruments" />
                                                   <a:a name="SCOPE" value="LOCAL" />
                                                   <a:a name="SYMBOLICNAMEVALUE" value="false" />
-                                                  <a:a name="UUID" value="ECUC:6fe4295d-06n9-4c34-b9f2-339S2df6bd58" />
+                                                  <a:a name="UUID" value="ECUC:fdd4108c-03e8-4b51-9154-147e75e97f34" />
                                                   <a:da name="DEFAULT" value="true" />
                                              </v:var>
 
@@ -514,7 +514,7 @@
                                              </a:a>
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
-                                             <a:a name="UUID" value="ECUC:240a9eb6-7a1b-4f43-bfab-bb6a15457d0d" />
+                                             <a:a name="UUID" value="ECUC:d4a0ab0b-4a00-4033-bc8d-28f5e7956ad6" />
                                              <a:da name="DEFAULT" value="CDD_FSI_TX_ISR_CAT1" />
                                              <a:da name="RANGE">
                                                   <a:v>CDD_FSI_TX_ISR_VOID</a:v>
@@ -549,7 +549,7 @@
                                                   <icc:v vclass="PreCompile">VariantPostBuild</icc:v>
                                              </a:a>
                                              <a:a name="OPTIONAL" value="false" />
-                                             <a:a name="UUID" value="ECUC:4745b6cf-b46f-4fe4-8bfa-c1a47fdd7412" />
+                                             <a:a name="UUID" value="ECUC:c118a089-5f2b-4063-a33a-a7de1edc2964" />
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
@@ -570,7 +570,7 @@
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
-                                             <a:a name="UUID" value="ECUC:ab0f7a27-9247-49c3-a48e-a8409ef7fd65" />
+                                             <a:a name="UUID" value="ECUC:6efc1ec0-731e-4580-8d08-1c7094624325" />
                                              <a:da name="DEFAULT" value="1" />
                                              <a:da name="INVALID" type="Range">
                                                   <a:tst expr="&lt;=1" />
@@ -588,7 +588,7 @@
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
-                                             <a:a name="UUID" value="ECUC:b2cfcb7b-0a84-7r50-bebd-32ee405e4398" />
+                                             <a:a name="UUID" value="ECUC:182bdc9b-427c-4123-9877-4a012a793f17" />
                                              <a:da name="DEFAULT" value="true" />
                                         </v:var>
                                         <v:var name="CddFsiTxBufferOverRunInterrupt" type="BOOLEAN">
@@ -665,7 +665,7 @@
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
-                                             <a:a name="UUID" value="ECUC:8ea4cb89-cf5e-4afc-95ce-cebac08ac0e6" />
+                                             <a:a name="UUID" value="ECUC:f70cd403-0fca-4ae7-be19-00e306e693da" />
                                              <a:da name="DEFAULT" value="true" />
                                         </v:var>
 
@@ -677,7 +677,7 @@
                                              </a:a>
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
-                                             <a:a name="UUID" value="ECUC:0217b971-6fd9-4486-bd96-94b91a14fedd" />
+                                             <a:a name="UUID" value="ECUC:7510235f-a247-4f83-9bce-66d956e40af0" />
                                              <a:da name="DEFAULT" value="false" />
                                         </v:var>
                                         <v:var name="CddFsiTxMultiLaneEnable" type="BOOLEAN">
@@ -701,7 +701,7 @@
                                              </a:a>
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
-                                             <a:a name="UUID" value="ECUC:272c9c43-c3dc-45e3-88cd-2ab19c61dfea" />
+                                             <a:a name="UUID" value="ECUC:455491b3-af71-4ef4-9d0e-61a0dc24e04e" />
                                              <a:da name="DEFAULT" value="63" />
                                              <a:da name="EDITABLE" value="false" />
                                              <a:da name="READONLY" value="false" />
@@ -718,7 +718,7 @@
                                              <a:a name="OPTIONAL" value="true"/>
                                              <a:a name="ORIGIN" value="Texas Instruments"/>
                                              <a:a name="SCOPE" value="LOCAL"/>
-                                             <a:a name="UUID" value="ECUC:26c9bdff-38cf-4f0b-8754-7472d0d41cb9"/>
+                                             <a:a name="UUID" value="ECUC:9c60237e-36c7-4a9e-be12-6fb6eaff61c0"/>
                                              <a:da name="REF"
                                              value="ASPathDataOfSchema:/AUTOSAR/EcucDefs/Os/OsCounter"/>
                                          </v:ref>
@@ -731,7 +731,7 @@
                                              <icc:v vclass="PreCompile">VariantPreCompile</icc:v>
                                            </a:a>
                                            <a:a name="ORIGIN" value="Texas Instruments"/>
-                                           <a:a name="UUID" value="ECUC:6dc462ec-a924-4633-b6ac-2d00ef0d3965"/>
+                                           <a:a name="UUID" value="ECUC:224cf569-26a5-4ca6-93a7-b57d9bd54dfc"/>
                                            <a:da name="INVALID" type="Range">
                                              <a:tst expr="&lt;=16"/>
                                              <a:tst expr="&gt;=0"/>
@@ -783,7 +783,7 @@
                                    MCAL- -->
                                    <v:ctr name="CddFsiTxPublishedInformation" type="IDENTIFIABLE">
                                         <a:a name="DESC" value="EN: Additional published parameters not covered by &quot;Common&quot; Published Information. Note that these parameters have &quot;PUBLISHED-INFORMATION&quot; configuration class setting, since they are published information." />
-                                        <a:a name="UUID" value="ECUC:e435c51b-58b2-4506-ae6c-da9a9b76ad99" />
+                                        <a:a name="UUID" value="ECUC:5f73ed66-f465-4948-a6bc-ebb948228373" />
                                         <!--Design:  -->
                                         <v:var name="CddFsiTxMinPrescaleValue" type="INTEGER">
                                              <a:a name="DESC" value="EN: Minimum value of Prescalar value that can be selected for Cdd Fsi. This is of type published information and not editable." />
@@ -795,7 +795,7 @@
                                              </a:a>
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
-                                             <a:a name="UUID" value="ECUC:248e0e6d-94c7-4836-b879-b29edd1d9a90" />
+                                             <a:a name="UUID" value="ECUC:82d1637a-727d-4797-8eb4-8d033235afbc" />
                                              <a:da name="DEFAULT" value="1" />
                                              <a:da name="EDITABLE" value="false" />
                                              <a:da name="READONLY" value="false" />
@@ -828,7 +828,7 @@
                                              </a:a>
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
-                                             <a:a name="UUID" value="ECUC:179c2cda-8fn3-43ab-b973-6aa3d42d9g33" />
+                                             <a:a name="UUID" value="ECUC:03486065-ba48-49f5-afa7-bc27e98441cc" />
                                              <a:da name="DEFAULT" value="1" />
                                              <a:da name="EDITABLE" value="false" />
                                              <a:da name="READONLY" value="false" />
@@ -862,7 +862,7 @@
                                              </a:a>
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
-                                             <a:a name="UUID" value="ECUC:31ce48fb-6756-41c0-80ea-cf17a4273hh9" />
+                                             <a:a name="UUID" value="ECUC:3973f91f-6fb2-42f5-b53e-91b8d54472c8" />
                                              <a:da name="DEFAULT" value="1" />
                                              <a:da name="EDITABLE" value="false" />
                                              <a:da name="READONLY" value="false" />

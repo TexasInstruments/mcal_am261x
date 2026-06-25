@@ -83,7 +83,7 @@
                         <a:a name="DESC"
                              value="EN: Configuration of an individual ICU channel."/>
                         <a:a name="UUID"
-                             value="ECUC:74f0ce69-2156-4784-bae9-57ea4699e6e4"/>
+                             value="ECUC:4f43f9ee-a9e1-4557-916b-2f33a62dee6c"/>
                         <v:var name="IcuChannelId" type="INTEGER">
                           <a:a name="DESC"
                                value="EN: Channel Id of the ICU channel. This value will be assigned to the symbolic name derived of the IcuChannel container short name."/>
@@ -446,7 +446,7 @@
                     <a:a name="ORIGIN" value="Texas Instruments"/>
                     <a:a name="SYMBOLICNAMEVALUE" value="false"/>
                     <a:a name="UUID" 
-                         value="ECUC:24a348ed-2ff8-426c-a392-18f905c53c25"/>
+                         value="ECUC:a645be7a-ff46-4cd2-ac66-38f438b4d3f1"/>
                     <a:da name="DEFAULT" value="ICU_ISR_CAT1"/>
                     <a:da name="RANGE">
                          <a:v>ICU_ISR_VOID</a:v>
@@ -461,7 +461,7 @@
                         <icc:v vclass="PreCompile">VariantPostBuild</icc:v>
                       </a:a>
                       <a:a name="OPTIONAL" value="false"/>
-                      <a:a name="UUID" value="ECUC:4745b6cf-b46f-4fe4-8bfa-c1a47fdd7412"/>
+                      <a:a name="UUID" value="ECUC:a5c2267b-22a6-4b4b-94d8-1f89c218b99d"/>
                       <a:a name="ORIGIN" value="Texas Instruments"/>
                       <a:a name="SCOPE" value="LOCAL"/>
                       <a:a name="SYMBOLICNAMEVALUE" value="false"/>

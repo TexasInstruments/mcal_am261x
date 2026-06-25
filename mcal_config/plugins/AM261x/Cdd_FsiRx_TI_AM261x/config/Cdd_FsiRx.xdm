@@ -73,7 +73,7 @@
                                              <a:a name="SCOPE" value="LOCAL" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
                                              <a:a name="UUID"
-                                                  value="ECUC:f43bffda-8d3a-4520-b424-b558fcbe752c" />
+                                                  value="ECUC:2a92779c-f8de-4933-9234-4a9c837fc8be" />
                                              <a:da name="ENABLE" type="XPath"
                                                   expr="as:modconf('Cdd_FsiRx')[1]/CddFsiRxGeneral/CddFsiRxNotifyCapability = 'true'" />
                                              <a:da name="DEFAULT"
@@ -305,7 +305,7 @@
                                                        </a:a>
                                                        <a:a name="ORIGIN" value="Texas Instruments" />
                                                        <a:a name="UUID"
-                                                            value="0bc2d871-1004-44a2-8934-8fb46a095dqc" />
+                                                            value="01e5bf70-8c2f-4626-83e8-12bf3d066174" />
                                                        <a:da name="ENABLE" type="XPath"
                                                             expr="as:modconf('Cdd_FsiRx')[1]/CddFsiRxGeneral/CddFsiRxDMAEnable = 'true'" />
                                                        <a:da name="REF"
@@ -374,7 +374,7 @@
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
                                              <a:a name="UUID"
-                                                  value="ECUC:240a9eb6-7a1b-4f43-bfab-bb6a15457d0d" />
+                                                  value="ECUC:6f984e96-1f56-41c4-9863-644471a5dbef" />
                                              <a:da name="DEFAULT" value="CDD_FSI_RX_ISR_CAT1" />
                                              <a:da name="RANGE">
                                                   <a:v>CDD_FSI_RX_ISR_VOID</a:v>
@@ -413,7 +413,7 @@
                                              </a:a>
                                              <a:a name="OPTIONAL" value="false" />
                                              <a:a name="UUID"
-                                                  value="ECUC:4745b6cf-b46f-4fe4-8bfa-c1a47fdd7412" />
+                                                  value="ECUC:ed796d29-4372-4b8d-bb86-4dcf75b9ae48" />
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
@@ -435,7 +435,7 @@
                                              <a:a name="SCOPE" value="LOCAL" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
                                              <a:a name="UUID"
-                                                  value="ECUC:ab0f7a27-9247-49c3-a48e-a8409ef7fd65" />
+                                                  value="ECUC:35e12206-986d-4bc2-b097-4bc2719019dd" />
                                              <a:da name="DEFAULT" value="1" />
                                              <a:da name="INVALID" type="Range">
                                                   <a:tst expr="&lt;=1" />
@@ -663,7 +663,7 @@
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SYMBOLICNAMEVALUE" value="false" />
                                              <a:a name="UUID"
-                                                  value="ECUC:0217b971-6fd9-4486-bd96-94b91a14fedd" />
+                                                  value="ECUC:5788bc1d-8991-4946-a2dd-baa4c22bdc0b" />
                                              <a:da name="DEFAULT" value="false" />
                                         </v:var>
                                         <v:var name="CddFsiRxMultiLaneEnable" type="BOOLEAN">
@@ -693,7 +693,7 @@
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
                                              <a:a name="UUID"
-                                                  value="ECUC:26c9bdff-38cf-4f0b-8754-7472d0d41cb9" />
+                                                  value="ECUC:4c3c3d4d-eabe-4551-b25e-3b43cdead960" />
                                              <a:da name="REF"
                                                   value="ASPathDataOfSchema:/AUTOSAR/EcucDefs/Os/OsCounter" />
                                         </v:ref>
@@ -709,7 +709,7 @@
                                              </a:a>
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="UUID"
-                                                  value="ECUC:6dc462ec-a924-4633-b6ac-2d00ef0d3965" />
+                                                  value="ECUC:089e02a7-cff3-4a39-90c0-455ba0fb7080" />
                                              <a:da name="INVALID" type="Range">
                                                   <a:tst expr="&lt;=16" />
                                                   <a:tst expr="&gt;=0" />
@@ -868,7 +868,7 @@
                                              <a:a name="ORIGIN" value="Texas Instruments" />
                                              <a:a name="SCOPE" value="LOCAL" />
                                              <a:a name="UUID"
-                                                  value="ECUC:272c9c43-c3dc-45e3-88cd-2ab19c61dfea" />
+                                                  value="ECUC:1cd5343a-4fd7-4318-aef4-a50e62fd9578" />
                                              <a:da name="DEFAULT" value="2" />
                                              <a:da name="EDITABLE" value="false" />
                                              <a:da name="READONLY" value="false" />

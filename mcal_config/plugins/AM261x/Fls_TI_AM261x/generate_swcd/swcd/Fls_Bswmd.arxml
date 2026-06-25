@@ -83,7 +83,7 @@
             </BSW-MODULE-DEPENDENCY>
           </BSW-MODULE-DEPENDENCYS>
 		  [!IF "as:modconf('Fls')[1]/FlsConfigSet/FlsEnableDMA = 'true'"!]
-            <BSW-MODULE-DEPENDENCY UUID="001f86df-035b-40db-8295-46ef7f9defe6">
+            <BSW-MODULE-DEPENDENCY UUID="b1a807a7-e3b6-420d-b1b0-c2ecdc23581e">
               <SHORT-NAME>Cdd_Dma</SHORT-NAME>
               <TARGET-MODULE-ID>255</TARGET-MODULE-ID>
               <TARGET-MODULE-REFS>
