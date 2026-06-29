@@ -206,7 +206,7 @@ Reset Reason Config
 
 [!IF "as:modconf('Mcu')[1]/McuGeneralConfiguration/McuNoPll = 'false'"!][!//
 /*
-   PLL Clock Configuration for AM263Px
+   PLL Clock Configuration for AM261x
 */
 #define McuCoreDPLLClockout             2000000000U
 #define McuCoreDPLLClockout_HSDIV0      400000000U
