@@ -272,7 +272,7 @@ Mcu_PllStatusType Mcu_GetPllLockStatus(void)
 void Mcu_PerformSoftSysReset(uint32 resetVal)
 {
 #ifdef MCAL_DYNAMIC_BUILD
-    /* Donot reset for Dynamic analysis*/
+    /* Donot reset for LDRA analysis*/
 #else
     uint32 regWriteStatus = 0U;
 

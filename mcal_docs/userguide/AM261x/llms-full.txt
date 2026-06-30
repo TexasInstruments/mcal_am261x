@@ -14400,7 +14400,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| mcu   | 6614    | 6    | 0    |
+| mcu   | 6120    | 6    | 0    |
  
 ### PORT
 
