@@ -14332,7 +14332,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| epwm   | 15321    | 7    | 15432    |
+| epwm   | 15325    | 7    | 15432    |
  
 ### ETH
 
@@ -14412,7 +14412,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| pwm   | 5070    | 7    | 249    |
+| pwm   | 5074    | 7    | 249    |
  
 ### SPI
 
