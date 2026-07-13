@@ -1,3 +1,22 @@
+commit aa8c17ee20d66c59d46c58771b99c4011ce95817
+Author: Akash <a-verma3@ti.com>
+Date:   Thu Jul 9 11:42:13 2026 +0530
+
+    all: I2C: Added functional test case for coverage gap.
+    
+    - Cover the gap for Cancel and HW Reset API in different phase of transfer.
+    
+    Fixes: MCAL-37960
+    
+    Signed-off-by: Akash Verma
+
+ mcal/I2c/V0/Cdd_I2c_Hw.c                           |  31 ++
+ mcal/I2c/src/Cdd_I2c_Priv.c                        |   4 +
+ mcal_test/i2c_test/testInput/i2cTestCases.c        |  27 ++
+ mcal_test/i2c_test/testLib/i2cTest.h               |   7 +
+ .../i2c_test/testLib/i2cTestFunctionalTestCase.c   | 419 +++++++++++++++++++++
+ 5 files changed, 488 insertions(+)
+
 commit a901d90912df6630bbe929118bc78596e7f37981
 Author: Swathi G Bhat <s-bhat2@ti.com>
 Date:   Thu Jul 9 16:38:26 2026 +0530
