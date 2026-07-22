@@ -14358,13 +14358,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsirx   | 1704    | 3    | 70    |
+| fsirx   | 1700    | 3    | 70    |
  
 ### FSITX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsitx   | 2178    | 10    | 57    |
+| fsitx   | 2174    | 10    | 57    |
  
 ### GPT
 
