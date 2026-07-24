@@ -14302,7 +14302,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| adc   | 5930    | 4    | 2984    |
+| adc   | 5908    | 4    | 2984    |
  
 ### CAN
 
