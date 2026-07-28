@@ -14388,7 +14388,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| ipc   | 5566    | 157    | 1256    |
+| ipc   | 5578    | 157    | 1256    |
  
 ### LIN
 
