@@ -66,13 +66,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsirx   | 1700    | 3    | 70    |
+| fsirx   | 1706    | 3    | 70    |
  
 ### FSITX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsitx   | 2174    | 10    | 57    |
+| fsitx   | 2172    | 10    | 57    |
  
 ### GPT
 
@@ -126,13 +126,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| spi   | 6688    | 1    | 2604    |
+| spi   | 6686    | 1    | 2604    |
  
 ### UART
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| uart   | 4700    | 1    | 196    |
+| uart   | 4748    | 1    | 196    |
  
 ### WDG
 
