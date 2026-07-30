@@ -14308,7 +14308,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| can   | 9570    | 1    | 8008    |
+| can   | 9558    | 1    | 8008    |
  
 ### CMPSS
 
