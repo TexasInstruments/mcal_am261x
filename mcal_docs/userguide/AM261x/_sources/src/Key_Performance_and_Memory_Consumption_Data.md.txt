@@ -60,19 +60,19 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 12828    | 482    | 8240    |
+| fls   | 12874    | 486    | 8240    |
  
 ### FSIRX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsirx   | 1706    | 3    | 70    |
+| fsirx   | 1690    | 3    | 70    |
  
 ### FSITX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsitx   | 2172    | 10    | 57    |
+| fsitx   | 2116    | 10    | 57    |
  
 ### GPT
 
@@ -108,7 +108,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| mcu   | 6614    | 6    | 0    |
+| mcu   | 6610    | 6    | 0    |
  
 ### PORT
 
@@ -126,7 +126,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| spi   | 6686    | 1    | 2604    |
+| spi   | 6686    | 1    | 2620    |
  
 ### UART
 
