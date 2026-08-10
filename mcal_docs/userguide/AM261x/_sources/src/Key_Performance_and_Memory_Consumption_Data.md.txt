@@ -60,7 +60,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 12874    | 486    | 8240    |
+| fls   | 13060    | 486    | 8240    |
  
 ### FSIRX
 
@@ -96,7 +96,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| ipc   | 5578    | 157    | 1256    |
+| ipc   | 5586    | 157    | 1256    |
  
 ### LIN
 
