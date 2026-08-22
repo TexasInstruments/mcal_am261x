@@ -1,3 +1,39 @@
+commit f2773afc7475e17b3addf08acf016f521bda8d7a
+Author: Sivaraj R <sivaraj@ti.com>
+Date:   Sat Aug 22 16:48:56 2026 +0530
+
+    all: scripts: add SBOM build and generation via fossa
+    
+    Add SBOM build integration to the Windows release build pipeline using the
+    fossa-based sbom_generate.sh tool from the sbom repo.
+    
+    Changes in mcal_release_build.sh:
+    - Add --enable_sbom_build, --fossa_api_key, and --sbom_report_only
+      parameters (all default to disabled/empty so existing jobs are
+      unaffected)
+    - Add sbom_log / sbom_error_log variables for per-step logging
+    - Define sbom_repo pointing to ssh://git@bitbucket.itg.ti.com/mcu-sdk/sbom.git
+    - Add run_sbom_build() function that:
+      - Clones the sbom repo (or reuses an existing clone to save time)
+      - Reuses the already-cloned mcal product repo from push_package_to_git
+        (--source=dir) when available, falling back to --source=git with the
+        correct mcal_github_branch otherwise
+      - Supports --report-only mode via sbom_report_only flag to skip
+        fossa analyze and only fetch reports from the server
+      - Zips reports as <release_folder>_sbom.zip into the artifacts dir
+        and registers it as a build target
+    - Call run_sbom_build() after push_package_to_git when enable_sbom_build=true
+    
+    Changes in mcal_make_all.sh:
+    - Add --enable_sbom_build, --fossa_api_key, and --sbom_report_only
+      parameters and pass them through to mcal_release_build.sh per-platform
+    
+    Signed-off-by: Sivaraj R <sivaraj@ti.com>
+
+ mcal_misc/scripts/windows/mcal_make_all.sh      |  18 +++-
+ mcal_misc/scripts/windows/mcal_release_build.sh | 108 ++++++++++++++++++++++++
+ 2 files changed, 125 insertions(+), 1 deletion(-)
+
 commit 016c9e07e726d3f23ebc5832441026c0a253eda0
 Author: Swathi G Bhat <s-bhat2@ti.com>
 Date:   Thu Aug 20 10:24:32 2026 +0530
