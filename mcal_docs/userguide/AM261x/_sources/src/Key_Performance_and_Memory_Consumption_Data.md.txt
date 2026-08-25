@@ -60,7 +60,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fls   | 13060    | 486    | 8240    |
+| fls   | 13090    | 490    | 8240    |
  
 ### FSIRX
 
