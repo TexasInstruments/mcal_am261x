@@ -14360,13 +14360,13 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsirx   | 1690    | 3    | 70    |
+| fsirx   | 1726    | 3    | 70    |
  
 ### FSITX
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| fsitx   | 2116    | 10    | 57    |
+| fsitx   | 2152    | 10    | 57    |
  
 ### GPT
 
