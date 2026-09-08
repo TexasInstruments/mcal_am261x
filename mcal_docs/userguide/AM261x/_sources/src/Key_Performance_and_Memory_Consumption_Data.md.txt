@@ -126,7 +126,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| spi   | 6686    | 1    | 2620    |
+| spi   | 6642    | 1    | 2620    |
  
 ### UART
 
