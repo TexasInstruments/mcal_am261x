@@ -1,0 +1,50 @@
+# Silicon Errata - MCAL Support and Workarounds
+
+## Overview
+This document tracks Silicon Errata coverage for AM261x Sitara MCU within the MCAL (Microcontroller Abstraction Layer) implementation. Each errata is identified by an errata ID and mapped to its MCAL support status.
+
+**Silicon Revision Analyzed:** 1.0
+
+### Reference Documentation
+
+For complete details on each errata, including workaround procedures and technical background, refer to the official device errata document:
+
+**[AM261x Silicon Errata (SPRZ576A)](https://www.ti.com/lit/er/sprz576a/sprz576a.pdf?ts=1788516384163&ref_url=https%253A%252F%252Fwww.google.com%252F)**
+
+This document contains the complete errata specifications, including severity levels, workaround details, and implementation guidance for each silicon errata.
+
+## Errata Summary
+
+| Errata ID | Module | Description | MCAL Supported | Silicon Revisions Affected | Comments |
+|-----------|--------|-------------|-----------------|--------|----------|
+| i2189 | OSPI | Controller PHY Tuning Algorithm | YES | 1.0 | PHY tuning algorithm implemented in Fls_Ospi_Phy.c. Control via user APIs: Fls_PhyEnable() and Fls_PhyDisable() (declared in Fls.h) |
+| i2310 | UART | Erroneous clear/trigger of timeout interrupt | YES | 1.0 | UART_i2310WA function implemented |
+| i2311 | UART | Spurious DMA Interrupts | YES | 1.0 | MCAL restricts RX/TX trigger levels to pre-defined power-of-2 compliant values, effectively preventing the spurious DMA interrupt condition described in i2311 |
+| i2324 | CLOCKS | No synchronizer between GCM and GCD status signals | YES | 1.0 | Mcu_Timeoutevent() — Polling loop with timeout; regWriteReadback() — Write verification |
+| i2345 | CPSW | Ethernet Packet corruption - CPDMA spans memory banks | NO | 1.0 | The driver doesn't enforce memory bank boundary alignment. Application must handle buffer allocation to prevent packets from spanning banks |
+| i2351 | OSPI | Direct Access Controller (DAC) - no Continuous Read with NAND | NA | 1.0 | Current MCAL supports only NOR flash |
+| i2352 | CONTROLSS-SDFM | Dynamically Changing Threshold Settings trigger Spurious Events | NA | 1.0 | SDFM module not supported in current MCAL version |
+| i2353 | CONTROLSS-SDFM | Dynamically Changing Data Filter Settings trigger Spurious Events | NA | 1.0 | SDFM module not supported in current MCAL version |
+| i2354 | CONTROLSS-SDFM | Back-to-Back Writes to SDCPARMx corrupt State Machine | NA | 1.0 | SDFM module not supported in current MCAL version |
+| i2356 | CONTROLSS-ADC | Interrupts may Stop if INTxCONT not Set | PARTIAL | 1.0 | The continuous mode is NOT enabled by default during ADC_Init(). Application must explicitly call Adc_SetInterruptContinuousMode() for each group to enable the workaround |
+| i2357 | CONTROLSS-ePWM | ePWM Glitch if Trip Remains Active at End of Blanking Window | NO | 1.0 | MCAL does not provide blanking window register control |
+| i2358 | CONTROLSS-ePWM | Trip Events Not Filtered for First 3 Cycles After Blanking Start | NO | 1.0 | MCAL does not provide blanking window register control |
+| i2359 | CONTROLSS-CMPSS | Prescaler counter behavior different when DACSOURCE reconfigured | NO | 1.0 | If dynamic DAC source reconfiguration required during operation, application must perform soft reset between reconfigurations per device errata workaround |
+| i2374 | PBIST | PBIST fails - clock frequency mismatch | NA | 1.0 | PBIST testing outside MCAL scope. Handled by device initialization firmware or bootloader |
+| i2383 | OSPI | 2-byte address not supported in PHY DDR mode | NO | 1.0 | Alternatively 4-byte addressing can be used |
+| i2411 | TCM | 128 Bytes burst access not supported for TCM | NO | 1.0 | Application must configure TPIC_DBS_CONFIG register during MCU initialization to disable 128-byte burst mode on interconnect masters |
+| i2412 | USB | USB cannot generate interrupt on DMA access error | NA | 1.0 | USB module DMA error interrupt functionality outside current MCAL support |
+| i2427 | SEC | RAM SEC causes Spurious RAM writes (L2 & MBOX corruption) | NA | 1.0 | RAM SEC error handling outside current MCAL support |
+| i2428 | DTHE | AES generates extra DMA request at end of GCM encrypt | NA | 1.0 | AES module outside current MCAL support |
+| i2433 | ICSS | 64-bit IEP timer read - no lock MSW logic when LSW read | NA | 1.0 | IEP timer functionality outside current MCAL support |
+| i2439 | CPSW | Host to Ethernet Timestamp Accuracy Issue | YES | 1.0 | Workaround: Host TX timestamps disabled (TS_TX_HOST_TS_EN=0). |
+| i2440 | CPSW | Host to Ethernet Timestamp Sequence ID issue | YES | 1.0 | Related to i2439 - same workaround applied. |
+| i2479 | OSPI | OSPI Boot Issue with GPIO61 Reset Pin Configuration | NA | 1.0 | GPIO61 reset pin configuration during OSPI boot is outside MCAL scope. Refer to device errata for boot-level workaround details |
+| i2480 | GPIO | 1µs glitch on GPIO61/OSPI0_RESET_OUT0 during OSPI Boot | NA | 1.0 | GPIO61 reset output glitch during OSPI boot is outside MCAL scope. Implement board-level filtering if required per errata workaround |
+
+## Support Status Legend
+
+- **YES**: Errata is fully supported and implemented in MCAL
+- **NO**: Errata is not supported in MCAL; application or workaround required
+- **PARTIAL**: Errata support is available but not enabled by default; API available for application to enable
+- **NA**: Errata is not applicable to MCAL (module not supported, ROM/bootloader only, etc.)
