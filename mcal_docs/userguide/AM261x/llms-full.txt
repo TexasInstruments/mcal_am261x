@@ -14351,7 +14351,7 @@ Will be updated in future release
 
 | Modules   | .text  |  .data  |  .bss  |
 | ------------ | ----------| -------- | ---------- |
-| port   | 3074    | 1    | 176    |
+| port   | 3094    | 1    | 176    |
      
 ### PWM
 
